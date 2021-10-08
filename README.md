@@ -1,5 +1,5 @@
 # HGTdetect
-HGTdetect is a versatile toolbox to identify horizontal gene (HGT) transfer events combined with phylogenetic analysis.
+HGTdetect is a versatile toolbox to identify horizontal gene transfer (HGT) events combined with phylogenetic analysis.
 
 ## HGT identification pipeline
 ![image](https://github.com/SysBioChalmers/HGTdetect/blob/master/doc/HGT_pipeline.png)
