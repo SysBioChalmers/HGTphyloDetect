@@ -1,0 +1,349 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR COMMA
+SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL Taxonomy
+
+#dataset color (can be changed later)
+COLOR #000000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES 1
+
+#each dataset can have a legend, which is defined below
+#for each row in the legend, there should be one shape, color and label
+#shape should be a number between 1 and 5:
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+
+LEGEND_TITLE Taxonomy
+LEGEND_SHAPES 1 1 1 1
+LEGEND_COLORS #e31a1c #28b1aa #2D33E7 #969696
+LEGEND_LABELS Saccharomycotina Fungi Bacteria Other 
+# LEGEND_SHAPES 1 1 1 1 1 1 1 1 1 1 1 1
+# LEGEND_COLORS #e31a1c #fb9a99 #ff7f00 #28b1aa #b15928 #6a3d9a #cab2d6 #1f78b4 #a6cee3 #33a02c #ffff99 #969696 
+# LEGEND_LABELS Leotiomycetes Sordariomycetes Eurotiomycetes Dothideomycetes other_Pezizomycotina other_Ascomycota other_Fungi other_Opisthokonta other_Eukaryota Bacteria Archaea Viruses 
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#width of the colored strip
+STRIP_WIDTH 35
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 5
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 2
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #969696
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 1
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the DATA keyword                #
+#=================================================================#
+DATA
+
+#Examples:
+#assign a red colored strip to leaf 9606, with label 'Human' (label is displayed in the mouseover popups)
+#9606 #ff0000 Human
+
+#assign a green, semi-transparent (alpha 0.5) strip to an internal node, without any label. If 'Show internal values' is set to 'No', this will only be displayed if the node is collapsed. 
+#9606|5664 rgba(0,255,0,0.5)
+WP_061021165.1-Bradyrhizobium_sp._CCH5-F6_Proteobacteria #2D33E7 Bacteria
+GAJ33771.1-Bradyrhizobium_sp._DOA9_Proteobacteria #2D33E7 Bacteria
+WP_035674808.1-Bradyrhizobium_liaoningense_Proteobacteria #2D33E7 Bacteria
+WP_028179375.1-Bradyrhizobium_japonicum_Proteobacteria #2D33E7 Bacteria
+WP_061878281.1-Bradyrhizobium_liaoningense_Proteobacteria #2D33E7 Bacteria
+WP_158669522.1-Bradyrhizobium_guangdongense_Proteobacteria #2D33E7 Bacteria
+WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298_Proteobacteria #2D33E7 Bacteria
+WP_100175831.1-Bradyrhizobium_nitroreducens_Proteobacteria #2D33E7 Bacteria
+WP_142250055.1-Bradyrhizobium_sp._UNPF46_Proteobacteria #2D33E7 Bacteria
+RTM13090.1-Bradyrhizobiaceae_bacterium_Proteobacteria #2D33E7 Bacteria
+WP_128939625.1-Bradyrhizobium_zhanjiangense_Proteobacteria #2D33E7 Bacteria
+WP_128955323.1-Bradyrhizobium_zhanjiangense_Proteobacteria #2D33E7 Bacteria
+WP_183258594.1-Bradyrhizobium_sp._CIR48_Proteobacteria #2D33E7 Bacteria
+WP_183231495.1-Bradyrhizobium_sp._SBR1B_Proteobacteria #2D33E7 Bacteria
+WP_092259760.1-Bradyrhizobium_sp._Rc3b_Proteobacteria #2D33E7 Bacteria
+WP_018322728.1-Bradyrhizobium_sp._WSM2793_Proteobacteria #2D33E7 Bacteria
+WP_183237909.1-Bradyrhizobium_sp._CIR18_Proteobacteria #2D33E7 Bacteria
+WP_152103320.1-Bradyrhizobium_sp._TM102_Proteobacteria #2D33E7 Bacteria
+WP_091965654.1-Bradyrhizobium_shewense_Proteobacteria #2D33E7 Bacteria
+WP_104462928.1-Bradyrhizobium_sp._AC87j1_Proteobacteria #2D33E7 Bacteria
+WP_135167913.1-Bradyrhizobium_frederickii_Proteobacteria #2D33E7 Bacteria
+WP_126256569.1-Bradyrhizobium_sp._LVM_105_Proteobacteria #2D33E7 Bacteria
+WP_135162274.1-Bradyrhizobium_frederickii_Proteobacteria #2D33E7 Bacteria
+WP_028135100.1-Bradyrhizobium_japonicum_Proteobacteria #2D33E7 Bacteria
+WP_151642895.1-Bradyrhizobium_betae_Proteobacteria #2D33E7 Bacteria
+WP_015687718.1-Bradyrhizobium_cosmicum_Proteobacteria #2D33E7 Bacteria
+WP_145664020.1-Bradyrhizobium_stylosanthis_Proteobacteria #2D33E7 Bacteria
+WP_063691485.1-Bradyrhizobium_stylosanthis_Proteobacteria #2D33E7 Bacteria
+WP_007594037.1-Bradyrhizobium_sp._WSM1253_Proteobacteria #2D33E7 Bacteria
+WP_027516639.1-Bradyrhizobium_sp._WSM1417_Proteobacteria #2D33E7 Bacteria
+WP_027568791.1-Bradyrhizobium_sp._URHA0013_Proteobacteria #2D33E7 Bacteria
+WP_085395770.1-Bradyrhizobium_canariense_Proteobacteria #2D33E7 Bacteria
+WP_085352090.1-Bradyrhizobium_canariense_Proteobacteria #2D33E7 Bacteria
+WP_063993269.1-Bradyrhizobium_sp._Proteobacteria #2D33E7 Bacteria
+WP_018457146.1-Bradyrhizobium_sp._WSM4349_Proteobacteria #2D33E7 Bacteria
+WP_106942729.1-Bradyrhizobium_sp._MOS002_Proteobacteria #2D33E7 Bacteria
+WP_011085536.1-Bradyrhizobium_diazoefficiens_Proteobacteria #2D33E7 Bacteria
+WP_038965832.1-Bradyrhizobium_diazoefficiens_Proteobacteria #2D33E7 Bacteria
+WP_182869822.1-Bradyrhizobium_diazoefficiens_Proteobacteria #2D33E7 Bacteria
+QHP72204.1-Bradyrhizobium_sp._LCT2_Proteobacteria #2D33E7 Bacteria
+WP_161535945.1-Bradyrhizobium_sp._LCT2_Proteobacteria #2D33E7 Bacteria
+WP_060912981.1-Bradyrhizobium_diazoefficiens_Proteobacteria #2D33E7 Bacteria
+BAR59885.1-Bradyrhizobium_diazoefficiens_Proteobacteria #2D33E7 Bacteria
+KGJ68294.1-Bradyrhizobium_diazoefficiens_Proteobacteria #2D33E7 Bacteria
+WP_028174753.1-Bradyrhizobium_diazoefficiens_Proteobacteria #2D33E7 Bacteria
+WP_148744709.1-Bradyrhizobium_hipponense_Proteobacteria #2D33E7 Bacteria
+WP_128961978.1-Bradyrhizobium_guangzhouense_Proteobacteria #2D33E7 Bacteria
+WP_128953098.1-Bradyrhizobium_guangzhouense_Proteobacteria #2D33E7 Bacteria
+WP_057753835.1-Bradyrhizobium_manausense_Proteobacteria #2D33E7 Bacteria
+MBC9878718.1-Bradyrhizobium_campsiandrae_Proteobacteria #2D33E7 Bacteria
+WP_092295676.1-Bradyrhizobium_sp._Ghvi_Proteobacteria #2D33E7 Bacteria
+WP_128967591.1-Bradyrhizobium_guangdongense_Proteobacteria #2D33E7 Bacteria
+WP_027528936.1-Bradyrhizobium_sp._WSM3983_Proteobacteria #2D33E7 Bacteria
+WP_148775460.1-Bradyrhizobium_rifense_Proteobacteria #2D33E7 Bacteria
+WP_148749019.1-Bradyrhizobium_cytisi_Proteobacteria #2D33E7 Bacteria
+WP_008138438.1-Bradyrhizobium_sp._YR681_Proteobacteria #2D33E7 Bacteria
+WP_129271949.1-Bradyrhizobium_betae_Proteobacteria #2D33E7 Bacteria
+WP_092029312.1-Bradyrhizobium_sp._OK095_Proteobacteria #2D33E7 Bacteria
+WP_092214970.1-Bradyrhizobium_arachidis_Proteobacteria #2D33E7 Bacteria
+WP_084803943.1-Bradyrhizobium_sp._NAS80.1_Proteobacteria #2D33E7 Bacteria
+WP_074117602.1-Bradyrhizobium_sp._AS23.2_Proteobacteria #2D33E7 Bacteria
+WP_071915975.1-Bradyrhizobium_japonicum_Proteobacteria #2D33E7 Bacteria
+WP_063984832.1-Bradyrhizobium_sp._Proteobacteria #2D33E7 Bacteria
+WP_166089364.1-Bradyrhizobium_sp._1S5_Proteobacteria #2D33E7 Bacteria
+WP_166350707.1-Bradyrhizobium_sp._323S2_Proteobacteria #2D33E7 Bacteria
+WP_038931390.1-Bradyrhizobium_japonicum_Proteobacteria #2D33E7 Bacteria
+WP_039157276.1-Bradyrhizobium_japonicum_Proteobacteria #2D33E7 Bacteria
+WP_028156991.1-Bradyrhizobium_japonicum_Proteobacteria #2D33E7 Bacteria
+WP_041955910.1-Bradyrhizobium_japonicum_Proteobacteria #2D33E7 Bacteria
+WP_063680948.1-Bradyrhizobium_neotropicale_Proteobacteria #2D33E7 Bacteria
+WP_027550185.1-Bradyrhizobium_sp._Cp5.3_Proteobacteria #2D33E7 Bacteria
+WP_063705824.1-Bradyrhizobium_centrolobii_Proteobacteria #2D33E7 Bacteria
+WP_027526029.1-Bradyrhizobium_sp._Ec3.3_Proteobacteria #2D33E7 Bacteria
+WP_140980779.1-Bradyrhizobium_guangdongense_Proteobacteria #2D33E7 Bacteria
+WP_028347371.1-Bradyrhizobium_murdochi_Proteobacteria #2D33E7 Bacteria
+WP_057843198.1-Bradyrhizobium_retamae_Proteobacteria #2D33E7 Bacteria
+WP_065748757.1-Bradyrhizobium_sp._LMTR_3_Proteobacteria #2D33E7 Bacteria
+WP_171577827.1-Bradyrhizobium_australiense_Proteobacteria #2D33E7 Bacteria
+WP_065730813.1-Bradyrhizobium_icense_Proteobacteria #2D33E7 Bacteria
+WP_065756637.1-Bradyrhizobium_paxllaeri_Proteobacteria #2D33E7 Bacteria
+WP_057859318.1-Bradyrhizobium_lablabi_Proteobacteria #2D33E7 Bacteria
+WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011_Proteobacteria #2D33E7 Bacteria
+WP_057833547.1-Bradyrhizobium_jicamae_Proteobacteria #2D33E7 Bacteria
+WP_108514566.1-Bradyrhizobium_algeriense_Proteobacteria #2D33E7 Bacteria
+WP_057900995.1-Bradyrhizobium_valentinum_Proteobacteria #2D33E7 Bacteria
+WP_057851642.1-Bradyrhizobium_valentinum_Proteobacteria #2D33E7 Bacteria
+WP_092515866.1-Afipia_sp._GAS231_Proteobacteria #2D33E7 Bacteria
+SDP08864.1-Afipia_sp._GAS231_Proteobacteria #2D33E7 Bacteria
+WP_155805222.1-Bradyrhizobium_sp._URHA0002_Proteobacteria #2D33E7 Bacteria
+WP_079586579.1-Bradyrhizobium_lablabi_Proteobacteria #2D33E7 Bacteria
+TKW79521.1-Bradyrhizobium_icense_Proteobacteria #2D33E7 Bacteria
+WP_100419024.1-Bradyrhizobium_lablabi_Proteobacteria #2D33E7 Bacteria
+WP_143206068.1-Bradyrhizobium_erythrophlei_Proteobacteria #2D33E7 Bacteria
+MBA2399293.1-Bradyrhizobium_sp._Proteobacteria #2D33E7 Bacteria
+MBA4036164.1-Bradyrhizobium_sp._Proteobacteria #2D33E7 Bacteria
+WP_069276965.1-Bradyrhizobium_elkanii_Proteobacteria #2D33E7 Bacteria
+WP_130580234.1-Bradyrhizobium_sp._Leo170_Proteobacteria #2D33E7 Bacteria
+WP_130222300.1-Bradyrhizobium_sp._Leo121_Proteobacteria #2D33E7 Bacteria
+WP_100380578.1-Afipia_broomeae_Proteobacteria #2D33E7 Bacteria
+WP_146687675.1-Bradyrhizobium_canariense_Proteobacteria #2D33E7 Bacteria
+TMK06221.1-Alphaproteobacteria_bacterium_Proteobacteria #2D33E7 Bacteria
+THD60673.1-Bradyrhizobium_sp._Proteobacteria #2D33E7 Bacteria
+WP_079601315.1-Bradyrhizobium_erythrophlei_Proteobacteria #2D33E7 Bacteria
+WP_079544782.1-Bradyrhizobium_lablabi_Proteobacteria #2D33E7 Bacteria
+WP_024518537.1-Bradyrhizobium_sp._Tv2a-2_Proteobacteria #2D33E7 Bacteria
+WP_024511517.1-Bradyrhizobium_sp._ARR65_Proteobacteria #2D33E7 Bacteria
+TMJ47098.1-Alphaproteobacteria_bacterium_Proteobacteria #2D33E7 Bacteria
+TMK39387.1-Alphaproteobacteria_bacterium_Proteobacteria #2D33E7 Bacteria
+WP_172134110.1-Bradyrhizobium_sp._81013_Proteobacteria #2D33E7 Bacteria
+WP_172111906.1-Bradyrhizobium_sp._83012_Proteobacteria #2D33E7 Bacteria
+WP_172180802.1-Bradyrhizobium_sp._83002_Proteobacteria #2D33E7 Bacteria
+WP_083842450.1-Bradyrhizobium_sp._ORS_375_Proteobacteria #2D33E7 Bacteria
+WP_035655465.1-Bradyrhizobium_sp._STM_3809_Proteobacteria #2D33E7 Bacteria
+CCD98599.1-Bradyrhizobium_sp._STM_3809_Proteobacteria #2D33E7 Bacteria
+WP_168167890.1-Bradyrhizobium_sp._BTAi1_Proteobacteria #2D33E7 Bacteria
+NVN85223.1-Rhodopseudomonas_sp._Proteobacteria #2D33E7 Bacteria
+WP_011439962.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria #2D33E7 Bacteria
+WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria #2D33E7 Bacteria
+WP_002714592.1-Afipia_clevelandensis_Proteobacteria #2D33E7 Bacteria
+WP_046828790.1-Afipia_massiliensis_Proteobacteria #2D33E7 Bacteria
+WP_076861029.1-Bradyrhizobium_mercantei_Proteobacteria #2D33E7 Bacteria
+OJY09878.1-Rhizobiales_bacterium_62-47_Proteobacteria #2D33E7 Bacteria
+PYN74367.1-Candidatus_Rokubacteria_bacterium_Candidatus #969696 Other
+PYM96198.1-Candidatus_Rokubacteria_bacterium_Candidatus #969696 Other
+OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22_Candidatus #969696 Other
+PYN46404.1-Candidatus_Rokubacteria_bacterium_Candidatus #969696 Other
+PYN32128.1-Candidatus_Rokubacteria_bacterium_Candidatus #969696 Other
+WP_089945766.1-Candidatus_Entotheonella_palauensis_Candidatus #969696 Other
+WP_089717141.1-Candidatus_Entotheonella_palauensis_Candidatus #969696 Other
+KAB2911669.1-Hyphomicrobiaceae_bacterium_Proteobacteria #2D33E7 Bacteria
+WP_027475679.1-Curvibacter_gracilis_Proteobacteria #2D33E7 Bacteria
+WP_157443435.1-Curvibacter_lanceolatus_Proteobacteria #2D33E7 Bacteria
+RUP23521.1-Curvibacter_sp._Proteobacteria #2D33E7 Bacteria
+GBU15266.1-Polaromonas_sp._Proteobacteria #2D33E7 Bacteria
+WP_155709830.1-Massilia_dura_Proteobacteria #2D33E7 Bacteria
+RZL87373.1-Variovorax_sp._Proteobacteria #2D33E7 Bacteria
+WP_145759386.1-Variovorax_sp._1180_Proteobacteria #2D33E7 Bacteria
+WP_126183471.1-Variovorax_sp._369_Proteobacteria #2D33E7 Bacteria
+WP_020722993.1-Variovorax_paradoxus_Proteobacteria #2D33E7 Bacteria
+WP_184605932.1-Variovorax_sp._BK613_Proteobacteria #2D33E7 Bacteria
+WP_132801781.1-Variovorax_sp._BK370_Proteobacteria #2D33E7 Bacteria
+WP_132755990.1-Variovorax_sp._BK151_Proteobacteria #2D33E7 Bacteria
+WP_176665552.1-Variovorax_sp._SG517_Proteobacteria #2D33E7 Bacteria
+WP_184638849.1-Variovorax_guangxiensis_Proteobacteria #2D33E7 Bacteria
+WP_126020505.1-Variovorax_guangxiensis_Proteobacteria #2D33E7 Bacteria
+WP_093195641.1-Variovorax_sp._YR750_Proteobacteria #2D33E7 Bacteria
+WP_126472589.1-Variovorax_gossypii_Proteobacteria #2D33E7 Bacteria
+WP_097197469.1-Variovorax_sp._YR752_Proteobacteria #2D33E7 Bacteria
+WP_093174861.1-Variovorax_sp._YR266_Proteobacteria #2D33E7 Bacteria
+WP_093076613.1-Variovorax_sp._OV084_Proteobacteria #2D33E7 Bacteria
+WP_093057006.1-Variovorax_sp._YR634_Proteobacteria #2D33E7 Bacteria
+WP_130421160.1-Variovorax_sp._BK460_Proteobacteria #2D33E7 Bacteria
+WP_093131647.1-Variovorax_sp._OK605_Proteobacteria #2D33E7 Bacteria
+WP_007837899.1-Variovorax_sp._CF313_Proteobacteria #2D33E7 Bacteria
+WP_081267376.1-Variovorax_paradoxus_Proteobacteria #2D33E7 Bacteria
+ODU15846.1-Variovorax_sp._SCN_67-85_Proteobacteria #2D33E7 Bacteria
+WP_172705422.1-Variovorax_paradoxus_Proteobacteria #2D33E7 Bacteria
+KPU98577.1-Variovorax_paradoxus_Proteobacteria #2D33E7 Bacteria
+MBS76598.1-Variovorax_sp._Proteobacteria #2D33E7 Bacteria
+WP_093343818.1-Variovorax_sp._PDC80_Proteobacteria #2D33E7 Bacteria
+KAF1061273.1-Variovorax_sp._Proteobacteria #2D33E7 Bacteria
+TAJ61793.1-Variovorax_sp._Proteobacteria #2D33E7 Bacteria
+WP_093435402.1-Variovorax_sp._770b2_Proteobacteria #2D33E7 Bacteria
+WP_052810747.1-Variovorax_paradoxus_Proteobacteria #2D33E7 Bacteria
+WP_013538622.1-Variovorax_paradoxus_Proteobacteria #2D33E7 Bacteria
+WP_176660984.1-Variovorax_sp._SG533_Proteobacteria #2D33E7 Bacteria
+WP_145738683.1-Variovorax_beijingensis_Proteobacteria #2D33E7 Bacteria
+WP_062470459.1-Variovorax_boronicumulans_Proteobacteria #2D33E7 Bacteria
+WP_095948515.1-Variovorax_boronicumulans_Proteobacteria #2D33E7 Bacteria
+WP_159278964.1-Variovorax_boronicumulans_Proteobacteria #2D33E7 Bacteria
+WP_159274326.1-Variovorax_boronicumulans_Proteobacteria #2D33E7 Bacteria
+WP_070061350.1-Variovorax_boronicumulans_Proteobacteria #2D33E7 Bacteria
+WP_095743122.1-Variovorax_boronicumulans_Proteobacteria #2D33E7 Bacteria
+WP_139703542.1-Variovorax_sp._KBS0712_Proteobacteria #2D33E7 Bacteria
+WP_099794476.1-Variovorax_sp._54_Proteobacteria #2D33E7 Bacteria
+WP_101490554.1-Variovorax_sp._RO1_Proteobacteria #2D33E7 Bacteria
+WP_153281245.1-Variovorax_paradoxus_Proteobacteria #2D33E7 Bacteria
+WP_056574498.1-Variovorax_sp._Root473_Proteobacteria #2D33E7 Bacteria
+WP_119556153.1-Acidovorax_cavernicola_Proteobacteria #2D33E7 Bacteria
+WP_093241869.1-Variovorax_sp._EL159_Proteobacteria #2D33E7 Bacteria
+WP_187113215.1-Variovorax_sp._PAMC26660_Proteobacteria #2D33E7 Bacteria
+WP_124458460.1-Variovorax_sp._KBW07_Proteobacteria #2D33E7 Bacteria
+QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina #e31a1c Saccharomycotina
+QUERY_Saccharomyces_cerevisiae_YOL164W #e31a1c Saccharomycotina
+XP_002555886.1-Lachancea_thermotolerans_Saccharomycotina #e31a1c Saccharomycotina
+SCW03834.1-Lachancea_fermentati_Saccharomycotina #e31a1c Saccharomycotina
+XP_018221989.1-Saccharomyces_eubayanus_Saccharomycotina #e31a1c Saccharomycotina
+QID88192.1-Saccharomyces_pastorianus_Saccharomycotina #e31a1c Saccharomycotina
+WP_092831606.1-Rhodospirillales_bacterium_URHD0017_Proteobacteria #2D33E7 Bacteria
+MBB5054515.1-Afipia_massiliensis_Proteobacteria #2D33E7 Bacteria
+WP_184089169.1-Afipia_massiliensis_Proteobacteria #2D33E7 Bacteria
+WP_046827511.1-Afipia_massiliensis_Proteobacteria #2D33E7 Bacteria
+WP_062313220.1-Bradyrhizobium_sp._CCH10-C7_Proteobacteria #2D33E7 Bacteria
+HBR43714.1-Afipia_sp._Proteobacteria #2D33E7 Bacteria
+HAQ93654.1-Afipia_sp._Proteobacteria #2D33E7 Bacteria
+WP_006021976.1-Afipia_broomeae_Proteobacteria #2D33E7 Bacteria
+RTL81632.1-Bradyrhizobiaceae_bacterium_Proteobacteria #2D33E7 Bacteria
+TXJ10197.1-Afipia_sp._Proteobacteria #2D33E7 Bacteria
+WP_002713184.1-Afipia_clevelandensis_Proteobacteria #2D33E7 Bacteria
+WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria #2D33E7 Bacteria
+NGX94573.1-Candidatus_Afipia_apatlaquensis_Proteobacteria #2D33E7 Bacteria
+WP_175367589.1-Tardiphaga_robiniae_Proteobacteria #2D33E7 Bacteria
+WP_120288614.1-Tardiphaga_sp._YR296_Proteobacteria #2D33E7 Bacteria
+WP_184513838.1-Tardiphaga_robiniae_Proteobacteria #2D33E7 Bacteria
+WP_089261759.1-Tardiphaga_sp._OK246_Proteobacteria #2D33E7 Bacteria
+WP_092138970.1-Bradyrhizobium_sp._NFR13_Proteobacteria #2D33E7 Bacteria
+WP_115033941.1-Tardiphaga_sp._CF115_Proteobacteria #2D33E7 Bacteria
+WP_149531854.1-Tardiphaga_sp._P9-11_Proteobacteria #2D33E7 Bacteria
+OJY11205.1-Rhizobiales_bacterium_62-47_Proteobacteria #2D33E7 Bacteria
+WP_146690165.1-Bradyrhizobium_canariense_Proteobacteria #2D33E7 Bacteria
+WP_100386102.1-Afipia_broomeae_Proteobacteria #2D33E7 Bacteria
+WP_008968903.1-Bradyrhizobium_sp._STM_3843_Proteobacteria #2D33E7 Bacteria
+WP_164571151.1-Rhodopseudomonas_sp._BR0C11_Proteobacteria #2D33E7 Bacteria
+WP_107345917.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_164638651.1-Rhodopseudomonas_sp._BR0G17_Proteobacteria #2D33E7 Bacteria
+WP_107356882.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_011159875.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_012497548.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_119019080.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_013504207.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_047308756.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_164630935.1-Rhodopseudomonas_sp._WA056_Proteobacteria #2D33E7 Bacteria
+WP_119858943.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_142883484.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_022722993.1-Rhodopseudomonas_sp._B29_Proteobacteria #2D33E7 Bacteria
+WP_054162298.1-Rhodopseudomonas_sp._AAP120_Proteobacteria #2D33E7 Bacteria
+WP_110782500.1-Rhodopseudomonas_faecalis_Proteobacteria #2D33E7 Bacteria
+WP_027276359.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+TAH64925.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_011665574.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+ABD08837.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+WP_041798938.1-Rhodopseudomonas_palustris_Proteobacteria #2D33E7 Bacteria
+NVN87899.1-Rhodopseudomonas_sp._Proteobacteria #2D33E7 Bacteria
+OQW56345.1-Proteobacteria_bacterium_SG_bin9_Proteobacteria #2D33E7 Bacteria
+WP_136963313.1-Phreatobacter_stygius_Proteobacteria #2D33E7 Bacteria
+WP_136868902.1-Pseudomonas_bauzanensis_Proteobacteria #2D33E7 Bacteria
+EZQ18937.1-Pseudomonas_bauzanensis_Proteobacteria #2D33E7 Bacteria
+WP_185267007.1-Pseudomonas_xiamenensis_Proteobacteria #2D33E7 Bacteria
+WP_093476299.1-Pseudomonas_yangmingensis_Proteobacteria #2D33E7 Bacteria
+WP_108104178.1-Pseudomonas_mangrovi_Proteobacteria #2D33E7 Bacteria
+WP_017937932.1-Pseudomonas_thermotolerans_Proteobacteria #2D33E7 Bacteria
+MAB24835.1-Pseudomonadales_bacterium_Proteobacteria #2D33E7 Bacteria
+WP_182248855.1-Pseudomonas_sp._5Ae-yellow_Proteobacteria #2D33E7 Bacteria
+WP_083726556.1-Pseudomonas_pachastrellae_Proteobacteria #2D33E7 Bacteria
+PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11_Proteobacteria #2D33E7 Bacteria
+WP_057659955.1-Pseudoxanthomonas_dokdonensis_Proteobacteria #2D33E7 Bacteria
+WP_077034059.1-Pelomonas_sp._KK5_Proteobacteria #2D33E7 Bacteria
+WP_151072822.1-Cupriavidus_oxalaticus_Proteobacteria #2D33E7 Bacteria
+WP_163259863.1-Caulobacter_sp._17J65-9_Proteobacteria #2D33E7 Bacteria
+WP_187448402.1-Caulobacter_sp._17J80-11_Proteobacteria #2D33E7 Bacteria
+WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015_Proteobacteria #2D33E7 Bacteria
+WP_071072555.1-Cupriavidus_malaysiensis_Proteobacteria #2D33E7 Bacteria
+WP_071038742.1-Cupriavidus_sp._USMAA2-4_Proteobacteria #2D33E7 Bacteria
+WP_071018820.1-Cupriavidus_sp._USMAHM13_Proteobacteria #2D33E7 Bacteria
+WP_066731373.1-Cupriavidus_sp._D384_Proteobacteria #2D33E7 Bacteria
+WP_116319445.1-Cupriavidus_sp._P-10_Proteobacteria #2D33E7 Bacteria
+WP_025586346.1-Cupriavidus_taiwanensis_Proteobacteria #2D33E7 Bacteria
+WP_116388232.1-Cupriavidus_taiwanensis_Proteobacteria #2D33E7 Bacteria
+WP_116377884.1-Cupriavidus_taiwanensis_Proteobacteria #2D33E7 Bacteria
+WP_062795892.1-Cupriavidus_nantongensis_Proteobacteria #2D33E7 Bacteria
+WP_116320039.1-Cupriavidus_sp._P-10_Proteobacteria #2D33E7 Bacteria
+WP_061999991.1-Burkholderia_sp._PAMC_28687_Proteobacteria #2D33E7 Bacteria
+WP_062170184.1-Burkholderia_sp._PAMC_26561_Proteobacteria #2D33E7 Bacteria
+WP_081889718.1-Caballeronia_sordidicola_Proteobacteria #2D33E7 Bacteria
+PZW26129.1-Thermosporothrix_hazakensis_Chloroflexi #2D33E7 Bacteria
+WP_111324427.1-Thermosporothrix_hazakensis_Chloroflexi #2D33E7 Bacteria
+WP_183035411.1-Cupriavidus_sp._UME77_Proteobacteria #2D33E7 Bacteria
+MBB1634382.1-Cupriavidus_sp._UME77_Proteobacteria #2D33E7 Bacteria
+WP_150987011.1-Cupriavidus_basilensis_Proteobacteria #2D33E7 Bacteria
+WP_092594144.1-Ralstonia_sp._25mfcol4.1_Proteobacteria #2D33E7 Bacteria
