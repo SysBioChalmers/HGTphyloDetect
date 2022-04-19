@@ -14,7 +14,7 @@ is designed for ease of use and could accurately find HGT events with a very low
 in a high-throughput manner.
 
 ## HGT identification pipeline
-![image](https://github.com/SysBioChalmers/HGTdetect/blob/master/doc/HGT_workflow.png)
+![image](https://github.com/SysBioChalmers/HGTdetect/blob/master/doc/HGT_workflow.pdf)
 
 ## Contact
 * [Le Yuan](https://www.chalmers.se/en/Staff/Pages/leyu.aspx) ([@leyuan](https://github.com/le-yuan)), Chalmers University of Technology, Sweden
