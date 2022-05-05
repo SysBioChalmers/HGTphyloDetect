@@ -17,7 +17,7 @@ in a high-throughput manner.
 ![image](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/doc/HGT_workflow.png)
 
 ## Example
-We provide a user-friendly example for small test, users just need to prepare a Fasta file including protein id and protein sequence, note that protein id should be from the GenBank protein db. 
+We provide a user-friendly example for small test, users just need to prepare a Fasta file including protein id and protein sequence, note that protein id should be from the GenBank protein db.<br>
 (1) If you are now in the HGTphyloDetect directory, just enter into the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) via the command line:
 ```linux
 cd example
@@ -28,7 +28,7 @@ cd example
 python HGT_workflow.py input.fasta
 ```
 
-(3) Finally, our software would generate the output results for this gene/protein, i.e., Alien index, E value and donor information:
+(3) Finally, our software would generate the output results as a file under the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example)for this gene/protein, i.e., Alien index, E value and donor information. For example:
 |Gene/Protein | Alien index | E value | Donor id | 	Donor taxonomy |
 |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | AAT92670 |   199.17|    3.16e-87|  WP_208929673|  Bacteria/Firmicutes|
