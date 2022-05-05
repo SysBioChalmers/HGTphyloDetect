@@ -28,7 +28,7 @@ cd example
 python HGT_workflow.py input.fasta
 ```
 
-(3) Finally, our software would generate the output results as a file under the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example)for this gene/protein, i.e., Alien index, E value and donor information. For example:
+(3) Finally, our software would generate the output results as a file under the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) for this gene/protein, i.e., Alien index, E value and donor information. For example:
 |Gene/Protein | Alien index | E value | Donor id | 	Donor taxonomy |
 |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | AAT92670 |   199.17|    3.16e-87|  WP_208929673|  Bacteria/Firmicutes|
