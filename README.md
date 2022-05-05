@@ -23,14 +23,14 @@ We provide a user-friendly example for small test, users just need to prepare a 
 cd example
 ```
 
-(2) Users can run the script for the input file: 
+(2) Then users can run the script for the input file: 
 ```linux
 python HGT_workflow.py input.fasta
 ```
 
-(3) Then our software would generate the output results for this gene/protein, i.e., Alien index, E value and donor information:
+(3) Finally, our software would generate the output results for this gene/protein, i.e., Alien index, E value and donor information:
 |Gene/Protein | Alien index | E value | Donor id | 	Donor taxonomy |
-| --------------- |:------------:|:------------:|:---------------:|:---------------:|
+|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | AAT92670 |   199.17|    3.16e-87|  WP_208929673|  Bacteria/Firmicutes|
 
 ## Contact
