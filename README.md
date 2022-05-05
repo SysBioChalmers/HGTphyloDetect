@@ -17,7 +17,7 @@ in a high-throughput manner.
 ![image](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/doc/HGT_workflow.png)
 
 ## Example
-We provide a user-friendly example for small test, users just need to prepare a Fasta file including protein id and protein sequence, note that protein id should be from the GenBank protein db.<br>
+We provide a user-friendly example for small test, users just need to prepare a Fasta file including protein id and protein sequence, note that protein id should be from the GenBank protein db.<br><br>
 (1) If you are now in the HGTphyloDetect directory, just enter into the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) via the command line:
 ```linux
 cd example
