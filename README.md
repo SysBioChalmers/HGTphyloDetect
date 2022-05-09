@@ -16,6 +16,9 @@ in a high-throughput manner.
 ## HGT identification pipeline
 ![image](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/doc/HGT_workflow.png)
 
+## User Manual
+Please check the documentation [User tutorial](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/User%20tutorial.pdf) for the user manual.
+
 ## Example
 We provide a user-friendly example for small test, users just need to prepare a Fasta file including protein id and protein sequence, note that protein id should be from the GenBank protein db.<br><br>
 (1) If you are now in the HGTphyloDetect directory, just enter into the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) via the command line:
