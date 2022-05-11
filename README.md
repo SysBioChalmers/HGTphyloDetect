@@ -24,9 +24,6 @@ $ cd HGTphyloDetect
 $ pip install -r requirements.txt
 ```
 
-## User Manual
-Please check the documentation [User tutorial](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/User%20tutorial.pdf) for the user manual.
-
 ## Example
 We provide a user-friendly example for small test, users just need to prepare a Fasta file including protein id and protein sequence, note that protein id should be from the GenBank protein db.<br><br>
 (1) If you are now in the HGTphyloDetect directory, just enter into the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) via the command line:
@@ -43,6 +40,9 @@ python HGT_workflow.py input.fasta
 |Gene/Protein | Alien index | E value | Donor id | 	Donor taxonomy |
 |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | AAT92670 |   199.17|    3.16e-87|  WP_208929673|  Bacteria/Firmicutes|
+
+## User Manual
+Please check the documentation [User tutorial](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/User%20tutorial.pdf) for the user manual.
 
 ## Contact
 * [Le Yuan](https://www.chalmers.se/en/Staff/Pages/leyu.aspx) ([@leyuan](https://github.com/le-yuan)), Chalmers University of Technology, Sweden
