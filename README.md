@@ -16,6 +16,14 @@ in a high-throughput manner.
 ## HGT identification pipeline
 ![image](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/doc/HGT_workflow.png)
 
+## Installation
+Install the latest version with:
+```bash
+$ git clone https://github.com/SysBioChalmers/HGTphyloDetect.git
+$ cd HGTphyloDetect
+$ pip install -r requirements.txt
+```
+
 ## User Manual
 Please check the documentation [User tutorial](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/User%20tutorial.pdf) for the user manual.
 
