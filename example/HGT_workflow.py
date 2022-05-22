@@ -76,7 +76,7 @@ def main() :
             print('Yes, blast file already exists, nice!')
         else :
             # Need to install blast!
-            myCmd = "blastp -db nr -remote -query ./%s.fasta -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue length pident' -out ./blastp_files/%s.txt" %('input', gene)
+            myCmd = "blastp -db nr -remote -query ./%s.fasta -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue bitscore length pident' -out ./blastp_files/%s.txt" %('input', gene)
             os.system(myCmd)
 
         ncbi = NCBITaxa()
