@@ -31,7 +31,7 @@ def parse_NCBI(gene):
     for blast in blast_results :
         accession = blast.strip("\n").split("\t")[1]
         accession_number.append(accession)
-        evalue[accession] = float(blast.strip('\n').split("\t")[-3])
+        evalue[accession] = float(blast.strip('\n').split("\t")[2])
     return accession_number, evalue
 
 def getTaxid(accession):

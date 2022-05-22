@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # coding: utf-8
 
+### Usage: python blastp.py input.fasta
+
 import os
 import sys
 import time
@@ -19,7 +21,7 @@ def main() :
     for gene in genes :
         print(gene)
         # Execute shell commands in Python
-        myCmd = "blastp -db nr -remote -query ./%s -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue length pident' -out ./%s.txt" % (name, gene)
+        myCmd = "blastp -db nr -remote -query ./%s -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue bitscore length pident' -out ./%s.txt" % (name, gene)
         os.system(myCmd)
 
     elapsed_time = (time.time() - start_time)
