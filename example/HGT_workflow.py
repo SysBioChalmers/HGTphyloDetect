@@ -110,12 +110,17 @@ def main() :
                 print('Taxid by BLAST:', taxid)
             except :
                 continue
-            lineage = ncbi.get_lineage(taxid)
-            lineage2ranks = ncbi.get_rank(lineage)
-            ranks2lineage = dict((rank, taxid) for (taxid, rank) in lineage2ranks.items())
 
-            taxonomy_alignment = ranks2lineage
-            LINNAEUS_FILTER = ["subphylum","kingdom","superkingdom"]
+            try :
+                lineage = ncbi.get_lineage(taxid)
+                lineage2ranks = ncbi.get_rank(lineage)
+                ranks2lineage = dict((rank, taxid) for (taxid, rank) in lineage2ranks.items())
+
+                taxonomy_alignment = ranks2lineage
+                LINNAEUS_FILTER = ["subphylum","kingdom","superkingdom"]
+            except :
+                print('Warning: %s taxid not found!' % str(taxid))
+                continue
 
             try :
                 if taxonomy_alignment['kingdom'] != gene_kingdom : 
