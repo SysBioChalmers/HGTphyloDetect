@@ -20,7 +20,7 @@ def main() :
 
     for gene in genes :
         print(gene)
-        # Execute shell commands in Python
+        # Execute shell command line in Python using the os.system function
         myCmd = "blastp -db nr -remote -query ./%s -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue bitscore length pident' -out ./%s.txt" % (name, gene)
         os.system(myCmd)
 
