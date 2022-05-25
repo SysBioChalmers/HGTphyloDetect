@@ -24,7 +24,7 @@ def parse_NCBI(gene):
     for blast in blast_results :
         accession = blast.strip("\n").split("\t")[1]
         accession_number.append(accession)
-        accession_bitscore[accession] = float(blast.strip('\n').split("\t")[-2])
+        accession_bitscore[accession] = float(blast.strip('\n').split("\t")[3])
     return accession_number, accession_bitscore
 
 def getTaxid(accession):
@@ -51,11 +51,14 @@ def getTaxid(accession):
 def main() :
     name = sys.argv[1:][0]
     genes = list()
+    geneSeq = dict()
     HGT = list()
 
     with open(name, 'r') as handleGene :
         for record in SeqIO.parse(handleGene, "fasta") :
             gene = str(record.id)
+            sequence = str(record.seq)
+            geneSeq[gene] = sequence
             genes.append(gene)
 
     n=0
@@ -65,60 +68,86 @@ def main() :
         print(gene)
 
         if os.path.exists("./blastp_files/%s.txt" % gene) :
-            accession_number,evalue = parse_NCBI(gene)
+            accession_number,accession_bitscore = parse_NCBI(gene)
             print('Yes, blast file already exists, nice!')
         else :
             # Need to install blast!
-            myCmd = "blastp -db nr -remote -query ./%s.fasta -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue length pident' -out ./blastp_files/%s.txt" %('input', gene)
+            with open('./%s.fasta' % gene, 'w') as outfile :
+                outfile.write('>'+gene+'\n')
+                outfile.write(geneSeq[gene]+'\n')
+            if not os.path.exists("./blastp_files/") :
+                os.system('mkdir ./blastp_files')
+            myCmd = "blastp -db nr -remote -query ./%s.fasta -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue bitscore length pident' -out ./blastp_files/%s.txt" %(gene, gene)
             os.system(myCmd)
+            os.remove('./%s.fasta' % gene)
+            accession_number,accession_bitscore = parse_NCBI(gene)
 
         ncbi = NCBITaxa()
-        recipient_organism = list()
+        recipient_accession = list()
         outgroup_accession = list()
         recipient_accession_bitscore = dict()
-        outgroup_accession_bioscore = dict()
+        outgroup_accession_bitscore = dict()
         recipient_species = list()
         outgroup_species = list()
 
-        for accession in accession_number :
+        try :
+            gene_taxid = getTaxid(gene)
+            gene_lineage = ncbi.get_lineage(gene_taxid)
+            gene_lineage2ranks = ncbi.get_rank(gene_lineage)
+            gene_ranks2lineage = dict((rank, taxid) for (taxid, rank) in gene_lineage2ranks.items())
+            gene_taxonomy_alignment = gene_ranks2lineage
+            gene_kingdom = gene_taxonomy_alignment['kingdom']
+            gene_subphylum = gene_taxonomy_alignment['subphylum']
+            # print(gene_kingdom)
+            # print(type(gene_kingdom)) # <class 'int'>
+            # print(gene_subphylum)
+        except :
+            print('Attention: please check the gene accession id!')
+            break
+
+        for accession in accession_number[:200] :
             try :
                 taxid = getTaxid(accession)
-                # taxid = getTaxid2(accession)
-                # print(taxid)
+                print('Taxid by BLAST:', taxid)
             except :
                 continue
-            lineage = ncbi.get_lineage(taxid)
-            lineage2ranks = ncbi.get_rank(lineage)
-            ranks2lineage = dict((rank, taxid) for (taxid, rank) in lineage2ranks.items())
-            # print(ranks2lineage)
-
-            taxid2name = ncbi.get_taxid_translator(lineage)
-            taxonomy_alignment = ranks2lineage
 
             try :
-                if taxonomy_alignment['subphylum'] == 147537 :
-                    recipient_organism.append(accession)
+                lineage = ncbi.get_lineage(taxid)
+                lineage2ranks = ncbi.get_rank(lineage)
+                ranks2lineage = dict((rank, taxid) for (taxid, rank) in lineage2ranks.items())
+                # print(ranks2lineage)
+
+                taxid2name = ncbi.get_taxid_translator(lineage)
+                taxonomy_alignment = ranks2lineage
+            except :
+                print('Warning: %s taxid not found!' % str(taxid))
+                continue
+
+            try :
+                if taxonomy_alignment['subphylum'] == gene_subphylum :
+                    recipient_accession.append(accession)
                     recipient_species.append(taxonomy_alignment['species'])
 
-                if taxonomy_alignment['kingdom'] == 4751 and taxonomy_alignment['subphylum'] != 147537 :
+                if taxonomy_alignment['kingdom'] == gene_kingdom and taxonomy_alignment['subphylum'] != gene_subphylum :
                     outgroup_accession.append(accession)
                     outgroup_species.append(taxonomy_alignment['species'])
             except :
                 continue
 
-        for accession_id in recipient_organism :
+        for accession_id in recipient_accession :
             recipient_accession_bitscore[accession_id] = accession_bitscore[accession_id]
 
         for accession_id in outgroup_accession :
-            outgroup_accession_bioscore[accession_id] = accession_bitscore[accession_id]
+            outgroup_accession_bitscore[accession_id] = accession_bitscore[accession_id]
 
         if recipient_accession_bitscore :
             max_recipient_organism_accession_key = max(recipient_accession_bitscore,key=recipient_accession_bitscore.get)
             max_recipient_organism_bitscore = recipient_accession_bitscore[max_recipient_organism_accession_key]
 
-        if outgroup_accession_bioscore :
-            max_outgroup_accession_key = max(outgroup_accession_bioscore,key=outgroup_accession_bioscore.get)
-            max_other_species_bitscore = outgroup_accession_bioscore[max_outgroup_accession_key]
+        if outgroup_accession_bitscore :
+            max_outgroup_accession_key = max(outgroup_accession_bitscore,key=outgroup_accession_bitscore.get)
+            max_outgroup_bitscore = outgroup_accession_bitscore[max_outgroup_accession_key]
             if max_outgroup_accession_key :
                 max_taxid = getTaxid(max_outgroup_accession_key)
                 max_lineage = ncbi.get_lineage(max_taxid)
@@ -129,31 +158,34 @@ def main() :
                 except :
                     continue
 
-                print(gene)
-                print(max_recipient_organism_bitscore)
-                print(max_other_species_bitscore)
-                print(max_taxid2name)
+                # print(gene)
+                # print(max_recipient_organism_bitscore)
+                # print(max_outgroup_bitscore)
+                # print(max_taxid2name)
 
                 if recipient_species :
                     recipient_species_number = len(set(recipient_species))
                 if outgroup_species :
                     outgroup_species_number = len(set(outgroup_species))
 
-                HGT_index = format(max_other_species_bitscore/max_recipient_organism_bitscore, '.4f')
+                HGT_index = format(max_outgroup_bitscore/max_recipient_organism_bitscore, '.4f')
                 Outg_pct = format(outgroup_species_number/(outgroup_species_number+recipient_species_number), '.4f')
 
-                print(HGT_index)
-                print(recipient_species_number)
-                print(outgroup_species_number)
-                print(Outg_pct) 
-                if max_other_species_bitscore>100 and float(HGT_index)>=0.5 and float(Outg_pct)>=0.8 :
+                print('HGT index: %s' % str(HGT_index))
+                print('Out_pct: %s' % str(Outg_pct))
+                if max_outgroup_bitscore>100 and float(HGT_index)>=0.5 and float(Outg_pct)>=0.8 :
+                    print('This is a HGT event')
                     taxonomy = max_taxid2name[max_ranks2lineage['kingdom']] + '/' + max_taxid2name[max_ranks2lineage['subphylum']]
-                    item = [gene, max_other_species_bitscore, Outg_pct, HGT_index, taxonomy]
+                    item = [gene, max_outgroup_bitscore, Outg_pct, HGT_index, taxonomy]
+                    HGT.append(item)
+                else :
+                    print('This is not a HGT event')
+                    item = [gene, max_outgroup_bitscore, Outg_pct, HGT_index, 'No']
                     HGT.append(item)
 
-    outfile = open("./output.tsv", "wt")
+    outfile = open("./output_close_HGT.tsv", "wt")
     tsv_writer = csv.writer(outfile, delimiter="\t")
-    column = ['Gene', 'Bitscore', 'Outg_pct', 'HGT index', 'Donor taxonomy']
+    column = ['Gene/Protein', 'Bitscore', 'Out_pct', 'HGT index', 'Donor taxonomy']
     tsv_writer.writerow(column)
     for HGT_info in HGT :
         tsv_writer.writerow(HGT_info)

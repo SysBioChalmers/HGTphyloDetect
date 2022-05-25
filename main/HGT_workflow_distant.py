@@ -58,11 +58,14 @@ def getTaxid(accession):
 def main() :
     name = sys.argv[1:][0]
     genes = list()
+    geneSeq = dict()
     HGT = list()
 
     with open(name, 'r') as handleGene :
         for record in SeqIO.parse(handleGene, "fasta") :
             gene = str(record.id)
+            sequence = str(record.seq)
+            geneSeq[gene] = sequence
             genes.append(gene)
 
     n=0
@@ -76,8 +79,15 @@ def main() :
             print('Yes, blast file already exists, nice!')
         else :
             # Need to install blast!
-            myCmd = "blastp -db nr -remote -query ./%s.fasta -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue length pident' -out ./blastp_files/%s.txt" %('input', gene)
+            with open('./%s.fasta' % gene, 'w') as outfile :
+                outfile.write('>'+gene+'\n')
+                outfile.write(geneSeq[gene]+'\n')
+            if not os.path.exists("./blastp_files/") :
+                os.system('mkdir ./blastp_files')
+            myCmd = "blastp -db nr -remote -query ./%s.fasta -max_target_seqs 250 -task 'blastp-fast' -outfmt '7 qacc sacc evalue bitscore length pident' -out ./blastp_files/%s.txt" %(gene, gene)
             os.system(myCmd)
+            os.remove('./%s.fasta' % gene)
+            accession_number,evalue = parse_NCBI(gene)
 
         ncbi = NCBITaxa()
         outgroup = list()
@@ -110,12 +120,17 @@ def main() :
                 print('Taxid by BLAST:', taxid)
             except :
                 continue
-            lineage = ncbi.get_lineage(taxid)
-            lineage2ranks = ncbi.get_rank(lineage)
-            ranks2lineage = dict((rank, taxid) for (taxid, rank) in lineage2ranks.items())
 
-            taxonomy_alignment = ranks2lineage
-            LINNAEUS_FILTER = ["subphylum","kingdom","superkingdom"]
+            try :
+                lineage = ncbi.get_lineage(taxid)
+                lineage2ranks = ncbi.get_rank(lineage)
+                ranks2lineage = dict((rank, taxid) for (taxid, rank) in lineage2ranks.items())
+
+                taxonomy_alignment = ranks2lineage
+                LINNAEUS_FILTER = ["subphylum","kingdom","superkingdom"]
+            except :
+                print('Warning: %s taxid not found!' % str(taxid))
+                continue
 
             try :
                 if taxonomy_alignment['kingdom'] != gene_kingdom : 
@@ -186,7 +201,7 @@ def main() :
             hgt = 'No'
             HGT.append([gene,alienindex,'No', 'No', 'No'])
 
-    outfile = open("./output.tsv", "wt")
+    outfile = open("./output_distant_HGT.tsv", "wt")
     tsv_writer = csv.writer(outfile, delimiter="\t")
     column = ['Gene/Protein', 'Alien index', 'E value', 'Donor id', 'Donor taxonomy']
     tsv_writer.writerow(column)
