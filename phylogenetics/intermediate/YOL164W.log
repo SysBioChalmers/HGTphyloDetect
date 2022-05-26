@@ -1,0 +1,757 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    hebbe20-2 (AVX2, FMA3, 62 GB RAM)
+Command: /cephyr/users/leyu/Hebbe/leyu/Tools/iqtree-1.6.12/bin/iqtree -nt 6 -st AA -s ../fasta/YOL164W/YOL164W_aln_trimmed.fasta -m TEST -mrate G4 -keep-ident -bb 1000 -pre ../fasta/YOL164W/YOL164W
+Seed:    659541 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Sep 28 12:23:44 2021
+Kernel:  AVX+FMA - 6 threads (20 CPU cores detected)
+
+Reading alignment file ../fasta/YOL164W/YOL164W_aln_trimmed.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 271 sequences with 629 columns, 577 distinct patterns
+524 parsimony-informative, 35 singleton sites, 70 constant sites
+WARNING: Some sequence names are changed as follows:
+QLG72306.1-Zygotorulaspora_mrakii@Saccharomycotina -> QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina
+WP_007837899.1-Variovorax_sp._CF313@Proteobacteria -> WP_007837899.1-Variovorax_sp._CF313_Proteobacteria
+WP_093241869.1-Variovorax_sp._EL159@Proteobacteria -> WP_093241869.1-Variovorax_sp._EL159_Proteobacteria
+WP_132801781.1-Variovorax_sp._BK370@Proteobacteria -> WP_132801781.1-Variovorax_sp._BK370_Proteobacteria
+WP_184638849.1-Variovorax_guangxiensis@Proteobacteria -> WP_184638849.1-Variovorax_guangxiensis_Proteobacteria
+WP_184605932.1-Variovorax_sp._BK613@Proteobacteria -> WP_184605932.1-Variovorax_sp._BK613_Proteobacteria
+WP_145759386.1-Variovorax_sp._1180@Proteobacteria -> WP_145759386.1-Variovorax_sp._1180_Proteobacteria
+WP_093435402.1-Variovorax_sp._770b2@Proteobacteria -> WP_093435402.1-Variovorax_sp._770b2_Proteobacteria
+WP_176665552.1-Variovorax_sp._SG517@Proteobacteria -> WP_176665552.1-Variovorax_sp._SG517_Proteobacteria
+WP_097197469.1-Variovorax_sp._YR752@Proteobacteria -> WP_097197469.1-Variovorax_sp._YR752_Proteobacteria
+WP_093195641.1-Variovorax_sp._YR750@Proteobacteria -> WP_093195641.1-Variovorax_sp._YR750_Proteobacteria
+WP_119556153.1-Acidovorax_cavernicola@Proteobacteria -> WP_119556153.1-Acidovorax_cavernicola_Proteobacteria
+WP_093174861.1-Variovorax_sp._YR266@Proteobacteria -> WP_093174861.1-Variovorax_sp._YR266_Proteobacteria
+WP_126020505.1-Variovorax_guangxiensis@Proteobacteria -> WP_126020505.1-Variovorax_guangxiensis_Proteobacteria
+WP_093076613.1-Variovorax_sp._OV084@Proteobacteria -> WP_093076613.1-Variovorax_sp._OV084_Proteobacteria
+WP_081267376.1-Variovorax_paradoxus@Proteobacteria -> WP_081267376.1-Variovorax_paradoxus_Proteobacteria
+WP_132755990.1-Variovorax_sp._BK151@Proteobacteria -> WP_132755990.1-Variovorax_sp._BK151_Proteobacteria
+TAJ61793.1-Variovorax_sp.@Proteobacteria -> TAJ61793.1-Variovorax_sp._Proteobacteria
+WP_126183471.1-Variovorax_sp._369@Proteobacteria -> WP_126183471.1-Variovorax_sp._369_Proteobacteria
+WP_130421160.1-Variovorax_sp._BK460@Proteobacteria -> WP_130421160.1-Variovorax_sp._BK460_Proteobacteria
+ODU15846.1-Variovorax_sp._SCN_67-85@Proteobacteria -> ODU15846.1-Variovorax_sp._SCN_67-85_Proteobacteria
+WP_153281245.1-Variovorax_paradoxus@Proteobacteria -> WP_153281245.1-Variovorax_paradoxus_Proteobacteria
+WP_013538622.1-Variovorax_paradoxus@Proteobacteria -> WP_013538622.1-Variovorax_paradoxus_Proteobacteria
+WP_093057006.1-Variovorax_sp._YR634@Proteobacteria -> WP_093057006.1-Variovorax_sp._YR634_Proteobacteria
+WP_052810747.1-Variovorax_paradoxus@Proteobacteria -> WP_052810747.1-Variovorax_paradoxus_Proteobacteria
+WP_124458460.1-Variovorax_sp._KBW07@Proteobacteria -> WP_124458460.1-Variovorax_sp._KBW07_Proteobacteria
+WP_062470459.1-Variovorax_boronicumulans@Proteobacteria -> WP_062470459.1-Variovorax_boronicumulans_Proteobacteria
+WP_139703542.1-Variovorax_sp._KBS0712@Proteobacteria -> WP_139703542.1-Variovorax_sp._KBS0712_Proteobacteria
+WP_099794476.1-Variovorax_sp._54@Proteobacteria -> WP_099794476.1-Variovorax_sp._54_Proteobacteria
+WP_056574498.1-Variovorax_sp._Root473@Proteobacteria -> WP_056574498.1-Variovorax_sp._Root473_Proteobacteria
+WP_101490554.1-Variovorax_sp._RO1@Proteobacteria -> WP_101490554.1-Variovorax_sp._RO1_Proteobacteria
+WP_126472589.1-Variovorax_gossypii@Proteobacteria -> WP_126472589.1-Variovorax_gossypii_Proteobacteria
+WP_070061350.1-Variovorax_boronicumulans@Proteobacteria -> WP_070061350.1-Variovorax_boronicumulans_Proteobacteria
+WP_095948515.1-Variovorax_boronicumulans@Proteobacteria -> WP_095948515.1-Variovorax_boronicumulans_Proteobacteria
+WP_159274326.1-Variovorax_boronicumulans@Proteobacteria -> WP_159274326.1-Variovorax_boronicumulans_Proteobacteria
+WP_187113215.1-Variovorax_sp._PAMC26660@Proteobacteria -> WP_187113215.1-Variovorax_sp._PAMC26660_Proteobacteria
+WP_095743122.1-Variovorax_boronicumulans@Proteobacteria -> WP_095743122.1-Variovorax_boronicumulans_Proteobacteria
+WP_159278964.1-Variovorax_boronicumulans@Proteobacteria -> WP_159278964.1-Variovorax_boronicumulans_Proteobacteria
+WP_172705422.1-Variovorax_paradoxus@Proteobacteria -> WP_172705422.1-Variovorax_paradoxus_Proteobacteria
+KPU98577.1-Variovorax_paradoxus@Proteobacteria -> KPU98577.1-Variovorax_paradoxus_Proteobacteria
+WP_176660984.1-Variovorax_sp._SG533@Proteobacteria -> WP_176660984.1-Variovorax_sp._SG533_Proteobacteria
+WP_093343818.1-Variovorax_sp._PDC80@Proteobacteria -> WP_093343818.1-Variovorax_sp._PDC80_Proteobacteria
+WP_145738683.1-Variovorax_beijingensis@Proteobacteria -> WP_145738683.1-Variovorax_beijingensis_Proteobacteria
+XP_002555886.1-Lachancea_thermotolerans@Saccharomycotina -> XP_002555886.1-Lachancea_thermotolerans_Saccharomycotina
+WP_020722993.1-Variovorax_paradoxus@Proteobacteria -> WP_020722993.1-Variovorax_paradoxus_Proteobacteria
+SCW03834.1-Lachancea_fermentati@Saccharomycotina -> SCW03834.1-Lachancea_fermentati_Saccharomycotina
+XP_018221989.1-Saccharomyces_eubayanus@Saccharomycotina -> XP_018221989.1-Saccharomyces_eubayanus_Saccharomycotina
+MBS76598.1-Variovorax_sp.@Proteobacteria -> MBS76598.1-Variovorax_sp._Proteobacteria
+QID88192.1-Saccharomyces_pastorianus@Saccharomycotina -> QID88192.1-Saccharomyces_pastorianus_Saccharomycotina
+WP_093131647.1-Variovorax_sp._OK605@Proteobacteria -> WP_093131647.1-Variovorax_sp._OK605_Proteobacteria
+KAF1061273.1-Variovorax_sp.@Proteobacteria -> KAF1061273.1-Variovorax_sp._Proteobacteria
+OQW56345.1-Proteobacteria_bacterium_SG_bin9@Proteobacteria -> OQW56345.1-Proteobacteria_bacterium_SG_bin9_Proteobacteria
+WP_092831606.1-Rhodospirillales_bacterium_URHD0017@Proteobacteria -> WP_092831606.1-Rhodospirillales_bacterium_URHD0017_Proteobacteria
+WP_175367589.1-Tardiphaga_robiniae@Proteobacteria -> WP_175367589.1-Tardiphaga_robiniae_Proteobacteria
+WP_184513838.1-Tardiphaga_robiniae@Proteobacteria -> WP_184513838.1-Tardiphaga_robiniae_Proteobacteria
+WP_089261759.1-Tardiphaga_sp._OK246@Proteobacteria -> WP_089261759.1-Tardiphaga_sp._OK246_Proteobacteria
+WP_120288614.1-Tardiphaga_sp._YR296@Proteobacteria -> WP_120288614.1-Tardiphaga_sp._YR296_Proteobacteria
+WP_092138970.1-Bradyrhizobium_sp._NFR13@Proteobacteria -> WP_092138970.1-Bradyrhizobium_sp._NFR13_Proteobacteria
+WP_146690165.1-Bradyrhizobium_canariense@Proteobacteria -> WP_146690165.1-Bradyrhizobium_canariense_Proteobacteria
+WP_100386102.1-Afipia_broomeae@Proteobacteria -> WP_100386102.1-Afipia_broomeae_Proteobacteria
+WP_057659955.1-Pseudoxanthomonas_dokdonensis@Proteobacteria -> WP_057659955.1-Pseudoxanthomonas_dokdonensis_Proteobacteria
+WP_115033941.1-Tardiphaga_sp._CF115@Proteobacteria -> WP_115033941.1-Tardiphaga_sp._CF115_Proteobacteria
+WP_149531854.1-Tardiphaga_sp._P9-11@Proteobacteria -> WP_149531854.1-Tardiphaga_sp._P9-11_Proteobacteria
+OJY11205.1-Rhizobiales_bacterium_62-47@Proteobacteria -> OJY11205.1-Rhizobiales_bacterium_62-47_Proteobacteria
+WP_077034059.1-Pelomonas_sp._KK5@Proteobacteria -> WP_077034059.1-Pelomonas_sp._KK5_Proteobacteria
+WP_062313220.1-Bradyrhizobium_sp._CCH10-C7@Proteobacteria -> WP_062313220.1-Bradyrhizobium_sp._CCH10-C7_Proteobacteria
+NVN87899.1-Rhodopseudomonas_sp.@Proteobacteria -> NVN87899.1-Rhodopseudomonas_sp._Proteobacteria
+WP_011665574.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_011665574.1-Rhodopseudomonas_palustris_Proteobacteria
+MBB5054515.1-Afipia_massiliensis@Proteobacteria -> MBB5054515.1-Afipia_massiliensis_Proteobacteria
+WP_184089169.1-Afipia_massiliensis@Proteobacteria -> WP_184089169.1-Afipia_massiliensis_Proteobacteria
+TXJ10197.1-Afipia_sp.@Proteobacteria -> TXJ10197.1-Afipia_sp._Proteobacteria
+WP_046827511.1-Afipia_massiliensis@Proteobacteria -> WP_046827511.1-Afipia_massiliensis_Proteobacteria
+HBR43714.1-Afipia_sp.@Proteobacteria -> HBR43714.1-Afipia_sp._Proteobacteria
+ABD08837.1-Rhodopseudomonas_palustris@Proteobacteria -> ABD08837.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_041798938.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_041798938.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_006021976.1-Afipia_broomeae@Proteobacteria -> WP_006021976.1-Afipia_broomeae_Proteobacteria
+WP_110782500.1-Rhodopseudomonas_faecalis@Proteobacteria -> WP_110782500.1-Rhodopseudomonas_faecalis_Proteobacteria
+RTL81632.1-Bradyrhizobiaceae_bacterium@Proteobacteria -> RTL81632.1-Bradyrhizobiaceae_bacterium_Proteobacteria
+HAQ93654.1-Afipia_sp.@Proteobacteria -> HAQ93654.1-Afipia_sp._Proteobacteria
+TAH64925.1-Rhodopseudomonas_palustris@Proteobacteria -> TAH64925.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_027475679.1-Curvibacter_gracilis@Proteobacteria -> WP_027475679.1-Curvibacter_gracilis_Proteobacteria
+NGX94573.1-Candidatus_Afipia_apatlaquensis@Proteobacteria -> NGX94573.1-Candidatus_Afipia_apatlaquensis_Proteobacteria
+WP_027276359.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_027276359.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_164571151.1-Rhodopseudomonas_sp._BR0C11@Proteobacteria -> WP_164571151.1-Rhodopseudomonas_sp._BR0C11_Proteobacteria
+WP_164638651.1-Rhodopseudomonas_sp._BR0G17@Proteobacteria -> WP_164638651.1-Rhodopseudomonas_sp._BR0G17_Proteobacteria
+WP_107345917.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_107345917.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_163259863.1-Caulobacter_sp._17J65-9@Proteobacteria -> WP_163259863.1-Caulobacter_sp._17J65-9_Proteobacteria
+WP_107356882.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_107356882.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_136963313.1-Phreatobacter_stygius@Proteobacteria -> WP_136963313.1-Phreatobacter_stygius_Proteobacteria
+RUP23521.1-Curvibacter_sp.@Proteobacteria -> RUP23521.1-Curvibacter_sp._Proteobacteria
+WP_011159875.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_011159875.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_157443435.1-Curvibacter_lanceolatus@Proteobacteria -> WP_157443435.1-Curvibacter_lanceolatus_Proteobacteria
+WP_012497548.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_012497548.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_002713184.1-Afipia_clevelandensis@Proteobacteria -> WP_002713184.1-Afipia_clevelandensis_Proteobacteria
+WP_013504207.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_013504207.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_008968903.1-Bradyrhizobium_sp._STM_3843@Proteobacteria -> WP_008968903.1-Bradyrhizobium_sp._STM_3843_Proteobacteria
+KAB2911669.1-Hyphomicrobiaceae_bacterium@Proteobacteria -> KAB2911669.1-Hyphomicrobiaceae_bacterium_Proteobacteria
+WP_119019080.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_119019080.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_022722993.1-Rhodopseudomonas_sp._B29@Proteobacteria -> WP_022722993.1-Rhodopseudomonas_sp._B29_Proteobacteria
+WP_047308756.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_047308756.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_164630935.1-Rhodopseudomonas_sp._WA056@Proteobacteria -> WP_164630935.1-Rhodopseudomonas_sp._WA056_Proteobacteria
+WP_187448402.1-Caulobacter_sp._17J80-11@Proteobacteria -> WP_187448402.1-Caulobacter_sp._17J80-11_Proteobacteria
+GBU15266.1-Polaromonas_sp.@Proteobacteria -> GBU15266.1-Polaromonas_sp._Proteobacteria
+WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C@Proteobacteria -> WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+WP_151072822.1-Cupriavidus_oxalaticus@Proteobacteria -> WP_151072822.1-Cupriavidus_oxalaticus_Proteobacteria
+WP_108104178.1-Pseudomonas_mangrovi@Proteobacteria -> WP_108104178.1-Pseudomonas_mangrovi_Proteobacteria
+WP_119858943.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_119858943.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_017937932.1-Pseudomonas_thermotolerans@Proteobacteria -> WP_017937932.1-Pseudomonas_thermotolerans_Proteobacteria
+WP_142883484.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_142883484.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_089945766.1-Candidatus_Entotheonella_palauensis@Candidatus -> WP_089945766.1-Candidatus_Entotheonella_palauensis_Candidatus
+WP_084803943.1-Bradyrhizobium_sp._NAS80.1@Proteobacteria -> WP_084803943.1-Bradyrhizobium_sp._NAS80.1_Proteobacteria
+OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22@Candidatus -> OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22_Candidatus
+WP_074117602.1-Bradyrhizobium_sp._AS23.2@Proteobacteria -> WP_074117602.1-Bradyrhizobium_sp._AS23.2_Proteobacteria
+WP_046828790.1-Afipia_massiliensis@Proteobacteria -> WP_046828790.1-Afipia_massiliensis_Proteobacteria
+WP_065748757.1-Bradyrhizobium_sp._LMTR_3@Proteobacteria -> WP_065748757.1-Bradyrhizobium_sp._LMTR_3_Proteobacteria
+WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011@Proteobacteria -> WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011_Proteobacteria
+WP_057833547.1-Bradyrhizobium_jicamae@Proteobacteria -> WP_057833547.1-Bradyrhizobium_jicamae_Proteobacteria
+WP_089717141.1-Candidatus_Entotheonella_palauensis@Candidatus -> WP_089717141.1-Candidatus_Entotheonella_palauensis_Candidatus
+WP_171577827.1-Bradyrhizobium_australiense@Proteobacteria -> WP_171577827.1-Bradyrhizobium_australiense_Proteobacteria
+WP_079601315.1-Bradyrhizobium_erythrophlei@Proteobacteria -> WP_079601315.1-Bradyrhizobium_erythrophlei_Proteobacteria
+EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C@Proteobacteria -> EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C@Proteobacteria -> WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+WP_155805222.1-Bradyrhizobium_sp._URHA0002@Proteobacteria -> WP_155805222.1-Bradyrhizobium_sp._URHA0002_Proteobacteria
+WP_065756637.1-Bradyrhizobium_paxllaeri@Proteobacteria -> WP_065756637.1-Bradyrhizobium_paxllaeri_Proteobacteria
+WP_002714592.1-Afipia_clevelandensis@Proteobacteria -> WP_002714592.1-Afipia_clevelandensis_Proteobacteria
+WP_092515866.1-Afipia_sp._GAS231@Proteobacteria -> WP_092515866.1-Afipia_sp._GAS231_Proteobacteria
+WP_128961978.1-Bradyrhizobium_guangzhouense@Proteobacteria -> WP_128961978.1-Bradyrhizobium_guangzhouense_Proteobacteria
+WP_128953098.1-Bradyrhizobium_guangzhouense@Proteobacteria -> WP_128953098.1-Bradyrhizobium_guangzhouense_Proteobacteria
+SDP08864.1-Afipia_sp._GAS231@Proteobacteria -> SDP08864.1-Afipia_sp._GAS231_Proteobacteria
+WP_071915975.1-Bradyrhizobium_japonicum@Proteobacteria -> WP_071915975.1-Bradyrhizobium_japonicum_Proteobacteria
+WP_057859318.1-Bradyrhizobium_lablabi@Proteobacteria -> WP_057859318.1-Bradyrhizobium_lablabi_Proteobacteria
+WP_065730813.1-Bradyrhizobium_icense@Proteobacteria -> WP_065730813.1-Bradyrhizobium_icense_Proteobacteria
+WP_079586579.1-Bradyrhizobium_lablabi@Proteobacteria -> WP_079586579.1-Bradyrhizobium_lablabi_Proteobacteria
+WP_063680948.1-Bradyrhizobium_neotropicale@Proteobacteria -> WP_063680948.1-Bradyrhizobium_neotropicale_Proteobacteria
+WP_155709830.1-Massilia_dura@Proteobacteria -> WP_155709830.1-Massilia_dura_Proteobacteria
+WP_028347371.1-Bradyrhizobium_murdochi@Proteobacteria -> WP_028347371.1-Bradyrhizobium_murdochi_Proteobacteria
+PYN74367.1-Candidatus_Rokubacteria_bacterium@Candidatus -> PYN74367.1-Candidatus_Rokubacteria_bacterium_Candidatus
+WP_092295676.1-Bradyrhizobium_sp._Ghvi@Proteobacteria -> WP_092295676.1-Bradyrhizobium_sp._Ghvi_Proteobacteria
+WP_108514566.1-Bradyrhizobium_algeriense@Proteobacteria -> WP_108514566.1-Bradyrhizobium_algeriense_Proteobacteria
+TMJ47098.1-Alphaproteobacteria_bacterium@Proteobacteria -> TMJ47098.1-Alphaproteobacteria_bacterium_Proteobacteria
+WP_063984832.1-Bradyrhizobium_sp.@Proteobacteria -> WP_063984832.1-Bradyrhizobium_sp._Proteobacteria
+WP_027528936.1-Bradyrhizobium_sp._WSM3983@Proteobacteria -> WP_027528936.1-Bradyrhizobium_sp._WSM3983_Proteobacteria
+WP_024518537.1-Bradyrhizobium_sp._Tv2a-2@Proteobacteria -> WP_024518537.1-Bradyrhizobium_sp._Tv2a-2_Proteobacteria
+WP_145664020.1-Bradyrhizobium_stylosanthis@Proteobacteria -> WP_145664020.1-Bradyrhizobium_stylosanthis_Proteobacteria
+WP_028156991.1-Bradyrhizobium_japonicum@Proteobacteria -> WP_028156991.1-Bradyrhizobium_japonicum_Proteobacteria
+WP_066731373.1-Cupriavidus_sp._D384@Proteobacteria -> WP_066731373.1-Cupriavidus_sp._D384_Proteobacteria
+WP_100380578.1-Afipia_broomeae@Proteobacteria -> WP_100380578.1-Afipia_broomeae_Proteobacteria
+PYM96198.1-Candidatus_Rokubacteria_bacterium@Candidatus -> PYM96198.1-Candidatus_Rokubacteria_bacterium_Candidatus
+WP_071072555.1-Cupriavidus_malaysiensis@Proteobacteria -> WP_071072555.1-Cupriavidus_malaysiensis_Proteobacteria
+WP_071038742.1-Cupriavidus_sp._USMAA2-4@Proteobacteria -> WP_071038742.1-Cupriavidus_sp._USMAA2-4_Proteobacteria
+WP_007594037.1-Bradyrhizobium_sp._WSM1253@Proteobacteria -> WP_007594037.1-Bradyrhizobium_sp._WSM1253_Proteobacteria
+WP_143206068.1-Bradyrhizobium_erythrophlei@Proteobacteria -> WP_143206068.1-Bradyrhizobium_erythrophlei_Proteobacteria
+WP_071018820.1-Cupriavidus_sp._USMAHM13@Proteobacteria -> WP_071018820.1-Cupriavidus_sp._USMAHM13_Proteobacteria
+WP_146687675.1-Bradyrhizobium_canariense@Proteobacteria -> WP_146687675.1-Bradyrhizobium_canariense_Proteobacteria
+WP_148749019.1-Bradyrhizobium_cytisi@Proteobacteria -> WP_148749019.1-Bradyrhizobium_cytisi_Proteobacteria
+WP_011085536.1-Bradyrhizobium_diazoefficiens@Proteobacteria -> WP_011085536.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+WP_038965832.1-Bradyrhizobium_diazoefficiens@Proteobacteria -> WP_038965832.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+QHP72204.1-Bradyrhizobium_sp._LCT2@Proteobacteria -> QHP72204.1-Bradyrhizobium_sp._LCT2_Proteobacteria
+WP_161535945.1-Bradyrhizobium_sp._LCT2@Proteobacteria -> WP_161535945.1-Bradyrhizobium_sp._LCT2_Proteobacteria
+PYN46404.1-Candidatus_Rokubacteria_bacterium@Candidatus -> PYN46404.1-Candidatus_Rokubacteria_bacterium_Candidatus
+RZL87373.1-Variovorax_sp.@Proteobacteria -> RZL87373.1-Variovorax_sp._Proteobacteria
+WP_063691485.1-Bradyrhizobium_stylosanthis@Proteobacteria -> WP_063691485.1-Bradyrhizobium_stylosanthis_Proteobacteria
+WP_063993269.1-Bradyrhizobium_sp.@Proteobacteria -> WP_063993269.1-Bradyrhizobium_sp._Proteobacteria
+WP_060912981.1-Bradyrhizobium_diazoefficiens@Proteobacteria -> WP_060912981.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+WP_079544782.1-Bradyrhizobium_lablabi@Proteobacteria -> WP_079544782.1-Bradyrhizobium_lablabi_Proteobacteria
+WP_063705824.1-Bradyrhizobium_centrolobii@Proteobacteria -> WP_063705824.1-Bradyrhizobium_centrolobii_Proteobacteria
+BAR59885.1-Bradyrhizobium_diazoefficiens@Proteobacteria -> BAR59885.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+KGJ68294.1-Bradyrhizobium_diazoefficiens@Proteobacteria -> KGJ68294.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+PZW26129.1-Thermosporothrix_hazakensis@Chloroflexi -> PZW26129.1-Thermosporothrix_hazakensis_Chloroflexi
+WP_111324427.1-Thermosporothrix_hazakensis@Chloroflexi -> WP_111324427.1-Thermosporothrix_hazakensis_Chloroflexi
+WP_028174753.1-Bradyrhizobium_diazoefficiens@Proteobacteria -> WP_028174753.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+WP_076861029.1-Bradyrhizobium_mercantei@Proteobacteria -> WP_076861029.1-Bradyrhizobium_mercantei_Proteobacteria
+MAB24835.1-Pseudomonadales_bacterium@Proteobacteria -> MAB24835.1-Pseudomonadales_bacterium_Proteobacteria
+WP_041955910.1-Bradyrhizobium_japonicum@Proteobacteria -> WP_041955910.1-Bradyrhizobium_japonicum_Proteobacteria
+MBA2399293.1-Bradyrhizobium_sp.@Proteobacteria -> MBA2399293.1-Bradyrhizobium_sp._Proteobacteria
+WP_166089364.1-Bradyrhizobium_sp._1S5@Proteobacteria -> WP_166089364.1-Bradyrhizobium_sp._1S5_Proteobacteria
+WP_054162298.1-Rhodopseudomonas_sp._AAP120@Proteobacteria -> WP_054162298.1-Rhodopseudomonas_sp._AAP120_Proteobacteria
+MBC9878718.1-Bradyrhizobium_campsiandrae@Proteobacteria -> MBC9878718.1-Bradyrhizobium_campsiandrae_Proteobacteria
+WP_008138438.1-Bradyrhizobium_sp._YR681@Proteobacteria -> WP_008138438.1-Bradyrhizobium_sp._YR681_Proteobacteria
+WP_158669522.1-Bradyrhizobium_guangdongense@Proteobacteria -> WP_158669522.1-Bradyrhizobium_guangdongense_Proteobacteria
+TMK39387.1-Alphaproteobacteria_bacterium@Proteobacteria -> TMK39387.1-Alphaproteobacteria_bacterium_Proteobacteria
+WP_128967591.1-Bradyrhizobium_guangdongense@Proteobacteria -> WP_128967591.1-Bradyrhizobium_guangdongense_Proteobacteria
+WP_057753835.1-Bradyrhizobium_manausense@Proteobacteria -> WP_057753835.1-Bradyrhizobium_manausense_Proteobacteria
+WP_028135100.1-Bradyrhizobium_japonicum@Proteobacteria -> WP_028135100.1-Bradyrhizobium_japonicum_Proteobacteria
+WP_057900995.1-Bradyrhizobium_valentinum@Proteobacteria -> WP_057900995.1-Bradyrhizobium_valentinum_Proteobacteria
+WP_035655465.1-Bradyrhizobium_sp._STM_3809@Proteobacteria -> WP_035655465.1-Bradyrhizobium_sp._STM_3809_Proteobacteria
+WP_027550185.1-Bradyrhizobium_sp._Cp5.3@Proteobacteria -> WP_027550185.1-Bradyrhizobium_sp._Cp5.3_Proteobacteria
+WP_057843198.1-Bradyrhizobium_retamae@Proteobacteria -> WP_057843198.1-Bradyrhizobium_retamae_Proteobacteria
+RTM13090.1-Bradyrhizobiaceae_bacterium@Proteobacteria -> RTM13090.1-Bradyrhizobiaceae_bacterium_Proteobacteria
+WP_057851642.1-Bradyrhizobium_valentinum@Proteobacteria -> WP_057851642.1-Bradyrhizobium_valentinum_Proteobacteria
+WP_027568791.1-Bradyrhizobium_sp._URHA0013@Proteobacteria -> WP_027568791.1-Bradyrhizobium_sp._URHA0013_Proteobacteria
+WP_130580234.1-Bradyrhizobium_sp._Leo170@Proteobacteria -> WP_130580234.1-Bradyrhizobium_sp._Leo170_Proteobacteria
+WP_148775460.1-Bradyrhizobium_rifense@Proteobacteria -> WP_148775460.1-Bradyrhizobium_rifense_Proteobacteria
+WP_027516639.1-Bradyrhizobium_sp._WSM1417@Proteobacteria -> WP_027516639.1-Bradyrhizobium_sp._WSM1417_Proteobacteria
+WP_085395770.1-Bradyrhizobium_canariense@Proteobacteria -> WP_085395770.1-Bradyrhizobium_canariense_Proteobacteria
+WP_182248855.1-Pseudomonas_sp._5Ae-yellow@Proteobacteria -> WP_182248855.1-Pseudomonas_sp._5Ae-yellow_Proteobacteria
+TKW79521.1-Bradyrhizobium_icense@Proteobacteria -> TKW79521.1-Bradyrhizobium_icense_Proteobacteria
+WP_136868902.1-Pseudomonas_bauzanensis@Proteobacteria -> WP_136868902.1-Pseudomonas_bauzanensis_Proteobacteria
+WP_061878281.1-Bradyrhizobium_liaoningense@Proteobacteria -> WP_061878281.1-Bradyrhizobium_liaoningense_Proteobacteria
+WP_135167913.1-Bradyrhizobium_frederickii@Proteobacteria -> WP_135167913.1-Bradyrhizobium_frederickii_Proteobacteria
+NVN85223.1-Rhodopseudomonas_sp.@Proteobacteria -> NVN85223.1-Rhodopseudomonas_sp._Proteobacteria
+WP_106942729.1-Bradyrhizobium_sp._MOS002@Proteobacteria -> WP_106942729.1-Bradyrhizobium_sp._MOS002_Proteobacteria
+WP_182869822.1-Bradyrhizobium_diazoefficiens@Proteobacteria -> WP_182869822.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+WP_126256569.1-Bradyrhizobium_sp._LVM_105@Proteobacteria -> WP_126256569.1-Bradyrhizobium_sp._LVM_105_Proteobacteria
+WP_172134110.1-Bradyrhizobium_sp._81013@Proteobacteria -> WP_172134110.1-Bradyrhizobium_sp._81013_Proteobacteria
+WP_166350707.1-Bradyrhizobium_sp._323S2@Proteobacteria -> WP_166350707.1-Bradyrhizobium_sp._323S2_Proteobacteria
+WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298@Proteobacteria -> WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298_Proteobacteria
+WP_100419024.1-Bradyrhizobium_lablabi@Proteobacteria -> WP_100419024.1-Bradyrhizobium_lablabi_Proteobacteria
+WP_172180802.1-Bradyrhizobium_sp._83002@Proteobacteria -> WP_172180802.1-Bradyrhizobium_sp._83002_Proteobacteria
+CCD98599.1-Bradyrhizobium_sp._STM_3809@Proteobacteria -> CCD98599.1-Bradyrhizobium_sp._STM_3809_Proteobacteria
+WP_085352090.1-Bradyrhizobium_canariense@Proteobacteria -> WP_085352090.1-Bradyrhizobium_canariense_Proteobacteria
+WP_140980779.1-Bradyrhizobium_guangdongense@Proteobacteria -> WP_140980779.1-Bradyrhizobium_guangdongense_Proteobacteria
+WP_150987011.1-Cupriavidus_basilensis@Proteobacteria -> WP_150987011.1-Cupriavidus_basilensis_Proteobacteria
+WP_091965654.1-Bradyrhizobium_shewense@Proteobacteria -> WP_091965654.1-Bradyrhizobium_shewense_Proteobacteria
+WP_083726556.1-Pseudomonas_pachastrellae@Proteobacteria -> WP_083726556.1-Pseudomonas_pachastrellae_Proteobacteria
+EZQ18937.1-Pseudomonas_bauzanensis@Proteobacteria -> EZQ18937.1-Pseudomonas_bauzanensis_Proteobacteria
+WP_024511517.1-Bradyrhizobium_sp._ARR65@Proteobacteria -> WP_024511517.1-Bradyrhizobium_sp._ARR65_Proteobacteria
+WP_116319445.1-Cupriavidus_sp._P-10@Proteobacteria -> WP_116319445.1-Cupriavidus_sp._P-10_Proteobacteria
+THD60673.1-Bradyrhizobium_sp.@Proteobacteria -> THD60673.1-Bradyrhizobium_sp._Proteobacteria
+WP_185267007.1-Pseudomonas_xiamenensis@Proteobacteria -> WP_185267007.1-Pseudomonas_xiamenensis_Proteobacteria
+WP_168167890.1-Bradyrhizobium_sp._BTAi1@Proteobacteria -> WP_168167890.1-Bradyrhizobium_sp._BTAi1_Proteobacteria
+OJY09878.1-Rhizobiales_bacterium_62-47@Proteobacteria -> OJY09878.1-Rhizobiales_bacterium_62-47_Proteobacteria
+WP_183237909.1-Bradyrhizobium_sp._CIR18@Proteobacteria -> WP_183237909.1-Bradyrhizobium_sp._CIR18_Proteobacteria
+WP_018322728.1-Bradyrhizobium_sp._WSM2793@Proteobacteria -> WP_018322728.1-Bradyrhizobium_sp._WSM2793_Proteobacteria
+WP_172111906.1-Bradyrhizobium_sp._83012@Proteobacteria -> WP_172111906.1-Bradyrhizobium_sp._83012_Proteobacteria
+WP_151642895.1-Bradyrhizobium_betae@Proteobacteria -> WP_151642895.1-Bradyrhizobium_betae_Proteobacteria
+WP_015687718.1-Bradyrhizobium_cosmicum@Proteobacteria -> WP_015687718.1-Bradyrhizobium_cosmicum_Proteobacteria
+WP_183035411.1-Cupriavidus_sp._UME77@Proteobacteria -> WP_183035411.1-Cupriavidus_sp._UME77_Proteobacteria
+WP_128939625.1-Bradyrhizobium_zhanjiangense@Proteobacteria -> WP_128939625.1-Bradyrhizobium_zhanjiangense_Proteobacteria
+WP_092029312.1-Bradyrhizobium_sp._OK095@Proteobacteria -> WP_092029312.1-Bradyrhizobium_sp._OK095_Proteobacteria
+WP_035674808.1-Bradyrhizobium_liaoningense@Proteobacteria -> WP_035674808.1-Bradyrhizobium_liaoningense_Proteobacteria
+PYN32128.1-Candidatus_Rokubacteria_bacterium@Candidatus -> PYN32128.1-Candidatus_Rokubacteria_bacterium_Candidatus
+MBB1634382.1-Cupriavidus_sp._UME77@Proteobacteria -> MBB1634382.1-Cupriavidus_sp._UME77_Proteobacteria
+WP_028179375.1-Bradyrhizobium_japonicum@Proteobacteria -> WP_028179375.1-Bradyrhizobium_japonicum_Proteobacteria
+WP_148744709.1-Bradyrhizobium_hipponense@Proteobacteria -> WP_148744709.1-Bradyrhizobium_hipponense_Proteobacteria
+WP_061999991.1-Burkholderia_sp._PAMC_28687@Proteobacteria -> WP_061999991.1-Burkholderia_sp._PAMC_28687_Proteobacteria
+WP_069276965.1-Bradyrhizobium_elkanii@Proteobacteria -> WP_069276965.1-Bradyrhizobium_elkanii_Proteobacteria
+WP_027526029.1-Bradyrhizobium_sp._Ec3.3@Proteobacteria -> WP_027526029.1-Bradyrhizobium_sp._Ec3.3_Proteobacteria
+WP_083842450.1-Bradyrhizobium_sp._ORS_375@Proteobacteria -> WP_083842450.1-Bradyrhizobium_sp._ORS_375_Proteobacteria
+WP_061021165.1-Bradyrhizobium_sp._CCH5-F6@Proteobacteria -> WP_061021165.1-Bradyrhizobium_sp._CCH5-F6_Proteobacteria
+WP_025586346.1-Cupriavidus_taiwanensis@Proteobacteria -> WP_025586346.1-Cupriavidus_taiwanensis_Proteobacteria
+WP_093476299.1-Pseudomonas_yangmingensis@Proteobacteria -> WP_093476299.1-Pseudomonas_yangmingensis_Proteobacteria
+WP_104462928.1-Bradyrhizobium_sp._AC87j1@Proteobacteria -> WP_104462928.1-Bradyrhizobium_sp._AC87j1_Proteobacteria
+WP_183258594.1-Bradyrhizobium_sp._CIR48@Proteobacteria -> WP_183258594.1-Bradyrhizobium_sp._CIR48_Proteobacteria
+PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11@Proteobacteria -> PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11_Proteobacteria
+WP_011439962.1-Rhodopseudomonas_palustris@Proteobacteria -> WP_011439962.1-Rhodopseudomonas_palustris_Proteobacteria
+WP_128955323.1-Bradyrhizobium_zhanjiangense@Proteobacteria -> WP_128955323.1-Bradyrhizobium_zhanjiangense_Proteobacteria
+WP_018457146.1-Bradyrhizobium_sp._WSM4349@Proteobacteria -> WP_018457146.1-Bradyrhizobium_sp._WSM4349_Proteobacteria
+WP_038931390.1-Bradyrhizobium_japonicum@Proteobacteria -> WP_038931390.1-Bradyrhizobium_japonicum_Proteobacteria
+WP_135162274.1-Bradyrhizobium_frederickii@Proteobacteria -> WP_135162274.1-Bradyrhizobium_frederickii_Proteobacteria
+WP_092214970.1-Bradyrhizobium_arachidis@Proteobacteria -> WP_092214970.1-Bradyrhizobium_arachidis_Proteobacteria
+WP_100175831.1-Bradyrhizobium_nitroreducens@Proteobacteria -> WP_100175831.1-Bradyrhizobium_nitroreducens_Proteobacteria
+WP_092594144.1-Ralstonia_sp._25mfcol4.1@Proteobacteria -> WP_092594144.1-Ralstonia_sp._25mfcol4.1_Proteobacteria
+WP_039157276.1-Bradyrhizobium_japonicum@Proteobacteria -> WP_039157276.1-Bradyrhizobium_japonicum_Proteobacteria
+WP_116388232.1-Cupriavidus_taiwanensis@Proteobacteria -> WP_116388232.1-Cupriavidus_taiwanensis_Proteobacteria
+GAJ33771.1-Bradyrhizobium_sp._DOA9@Proteobacteria -> GAJ33771.1-Bradyrhizobium_sp._DOA9_Proteobacteria
+WP_092259760.1-Bradyrhizobium_sp._Rc3b@Proteobacteria -> WP_092259760.1-Bradyrhizobium_sp._Rc3b_Proteobacteria
+WP_142250055.1-Bradyrhizobium_sp._UNPF46@Proteobacteria -> WP_142250055.1-Bradyrhizobium_sp._UNPF46_Proteobacteria
+WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015@Proteobacteria -> WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015_Proteobacteria
+WP_116377884.1-Cupriavidus_taiwanensis@Proteobacteria -> WP_116377884.1-Cupriavidus_taiwanensis_Proteobacteria
+WP_152103320.1-Bradyrhizobium_sp._TM102@Proteobacteria -> WP_152103320.1-Bradyrhizobium_sp._TM102_Proteobacteria
+WP_116320039.1-Cupriavidus_sp._P-10@Proteobacteria -> WP_116320039.1-Cupriavidus_sp._P-10_Proteobacteria
+WP_183231495.1-Bradyrhizobium_sp._SBR1B@Proteobacteria -> WP_183231495.1-Bradyrhizobium_sp._SBR1B_Proteobacteria
+WP_062795892.1-Cupriavidus_nantongensis@Proteobacteria -> WP_062795892.1-Cupriavidus_nantongensis_Proteobacteria
+WP_130222300.1-Bradyrhizobium_sp._Leo121@Proteobacteria -> WP_130222300.1-Bradyrhizobium_sp._Leo121_Proteobacteria
+TMK06221.1-Alphaproteobacteria_bacterium@Proteobacteria -> TMK06221.1-Alphaproteobacteria_bacterium_Proteobacteria
+WP_081889718.1-Caballeronia_sordidicola@Proteobacteria -> WP_081889718.1-Caballeronia_sordidicola_Proteobacteria
+WP_062170184.1-Burkholderia_sp._PAMC_26561@Proteobacteria -> WP_062170184.1-Burkholderia_sp._PAMC_26561_Proteobacteria
+MBA4036164.1-Bradyrhizobium_sp.@Proteobacteria -> MBA4036164.1-Bradyrhizobium_sp._Proteobacteria
+WP_129271949.1-Bradyrhizobium_betae@Proteobacteria -> WP_129271949.1-Bradyrhizobium_betae_Proteobacteria
+
+                                                                                    Gap/Ambiguity  Composition  p-value
+   1  QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina                                    0.32%    passed     27.06%
+   2  WP_007837899.1-Variovorax_sp._CF313_Proteobacteria                                    0.00%    passed     91.46%
+   3  WP_093241869.1-Variovorax_sp._EL159_Proteobacteria                                    0.00%    passed     67.62%
+   4  WP_132801781.1-Variovorax_sp._BK370_Proteobacteria                                    0.00%    passed     95.07%
+   5  WP_184638849.1-Variovorax_guangxiensis_Proteobacteria                                 0.00%    passed     97.39%
+   6  WP_184605932.1-Variovorax_sp._BK613_Proteobacteria                                    0.00%    passed     96.70%
+   7  WP_145759386.1-Variovorax_sp._1180_Proteobacteria                                     0.00%    passed     94.55%
+   8  WP_093435402.1-Variovorax_sp._770b2_Proteobacteria                                    0.00%    passed     86.84%
+   9  WP_176665552.1-Variovorax_sp._SG517_Proteobacteria                                    0.00%    passed     97.53%
+  10  WP_097197469.1-Variovorax_sp._YR752_Proteobacteria                                    0.00%    passed     93.29%
+  11  WP_093195641.1-Variovorax_sp._YR750_Proteobacteria                                    0.00%    passed     91.03%
+  12  WP_119556153.1-Acidovorax_cavernicola_Proteobacteria                                  0.00%    passed     64.43%
+  13  WP_093174861.1-Variovorax_sp._YR266_Proteobacteria                                    0.00%    passed     92.47%
+  14  WP_126020505.1-Variovorax_guangxiensis_Proteobacteria                                 0.00%    passed     97.89%
+  15  WP_093076613.1-Variovorax_sp._OV084_Proteobacteria                                    0.00%    passed     94.12%
+  16  WP_081267376.1-Variovorax_paradoxus_Proteobacteria                                    0.00%    passed     89.75%
+  17  WP_132755990.1-Variovorax_sp._BK151_Proteobacteria                                    0.00%    passed     94.35%
+  18  TAJ61793.1-Variovorax_sp._Proteobacteria                                              0.00%    passed     96.27%
+  19  WP_126183471.1-Variovorax_sp._369_Proteobacteria                                      0.00%    passed     93.94%
+  20  WP_130421160.1-Variovorax_sp._BK460_Proteobacteria                                    0.00%    passed     98.27%
+  21  ODU15846.1-Variovorax_sp._SCN_67-85_Proteobacteria                                    0.00%    passed     90.71%
+  22  WP_153281245.1-Variovorax_paradoxus_Proteobacteria                                    0.00%    passed     82.70%
+  23  WP_013538622.1-Variovorax_paradoxus_Proteobacteria                                    0.00%    passed     71.84%
+  24  WP_093057006.1-Variovorax_sp._YR634_Proteobacteria                                    0.00%    passed     94.73%
+  25  WP_052810747.1-Variovorax_paradoxus_Proteobacteria                                    0.00%    passed     93.55%
+  26  WP_124458460.1-Variovorax_sp._KBW07_Proteobacteria                                    0.00%    passed     83.22%
+  27  WP_062470459.1-Variovorax_boronicumulans_Proteobacteria                               0.00%    passed     66.80%
+  28  WP_139703542.1-Variovorax_sp._KBS0712_Proteobacteria                                  0.00%    passed     69.83%
+  29  WP_099794476.1-Variovorax_sp._54_Proteobacteria                                       0.00%    passed     66.58%
+  30  WP_056574498.1-Variovorax_sp._Root473_Proteobacteria                                  0.00%    passed     80.77%
+  31  WP_101490554.1-Variovorax_sp._RO1_Proteobacteria                                      0.00%    passed     70.50%
+  32  WP_126472589.1-Variovorax_gossypii_Proteobacteria                                     0.00%    passed     92.79%
+  33  WP_070061350.1-Variovorax_boronicumulans_Proteobacteria                               0.00%    passed     72.93%
+  34  WP_095948515.1-Variovorax_boronicumulans_Proteobacteria                               0.00%    passed     68.05%
+  35  WP_159274326.1-Variovorax_boronicumulans_Proteobacteria                               0.00%    passed     63.84%
+  36  WP_187113215.1-Variovorax_sp._PAMC26660_Proteobacteria                                0.00%    passed     80.68%
+  37  WP_095743122.1-Variovorax_boronicumulans_Proteobacteria                               0.00%    passed     82.75%
+  38  WP_159278964.1-Variovorax_boronicumulans_Proteobacteria                               0.00%    passed     64.43%
+  39  WP_172705422.1-Variovorax_paradoxus_Proteobacteria                                    0.16%    passed     94.83%
+  40  KPU98577.1-Variovorax_paradoxus_Proteobacteria                                        0.00%    passed     96.05%
+  41  WP_176660984.1-Variovorax_sp._SG533_Proteobacteria                                    0.00%    passed     97.02%
+  42  WP_093343818.1-Variovorax_sp._PDC80_Proteobacteria                                    0.00%    passed     95.41%
+  43  WP_145738683.1-Variovorax_beijingensis_Proteobacteria                                 0.00%    passed     99.65%
+  44  XP_002555886.1-Lachancea_thermotolerans_Saccharomycotina                              0.32%    failed      0.04%
+  45  WP_020722993.1-Variovorax_paradoxus_Proteobacteria                                    0.00%    passed     97.73%
+  46  SCW03834.1-Lachancea_fermentati_Saccharomycotina                                      0.32%    failed      0.00%
+  47  XP_018221989.1-Saccharomyces_eubayanus_Saccharomycotina                               0.16%    passed     65.66%
+  48  MBS76598.1-Variovorax_sp._Proteobacteria                                              1.75%    passed     91.89%
+  49  QID88192.1-Saccharomyces_pastorianus_Saccharomycotina                                 0.16%    passed     56.96%
+  50  WP_093131647.1-Variovorax_sp._OK605_Proteobacteria                                    0.00%    passed     96.39%
+  51  KAF1061273.1-Variovorax_sp._Proteobacteria                                            6.84%    passed     98.19%
+  52  OQW56345.1-Proteobacteria_bacterium_SG_bin9_Proteobacteria                            0.00%    passed     55.93%
+  53  WP_092831606.1-Rhodospirillales_bacterium_URHD0017_Proteobacteria                     0.16%    passed     88.67%
+  54  WP_175367589.1-Tardiphaga_robiniae_Proteobacteria                                     0.00%    passed     49.25%
+  55  WP_184513838.1-Tardiphaga_robiniae_Proteobacteria                                     0.00%    passed     59.27%
+  56  WP_089261759.1-Tardiphaga_sp._OK246_Proteobacteria                                    0.00%    passed     58.55%
+  57  WP_120288614.1-Tardiphaga_sp._YR296_Proteobacteria                                    0.00%    passed     64.31%
+  58  WP_092138970.1-Bradyrhizobium_sp._NFR13_Proteobacteria                                0.00%    passed     81.63%
+  59  WP_146690165.1-Bradyrhizobium_canariense_Proteobacteria                               0.00%    passed     94.58%
+  60  WP_100386102.1-Afipia_broomeae_Proteobacteria                                         0.00%    passed     94.40%
+  61  WP_057659955.1-Pseudoxanthomonas_dokdonensis_Proteobacteria                           0.00%    passed     31.15%
+  62  WP_115033941.1-Tardiphaga_sp._CF115_Proteobacteria                                    0.00%    passed     62.02%
+  63  WP_149531854.1-Tardiphaga_sp._P9-11_Proteobacteria                                    0.00%    passed     88.52%
+  64  OJY11205.1-Rhizobiales_bacterium_62-47_Proteobacteria                                 0.00%    passed     72.84%
+  65  WP_077034059.1-Pelomonas_sp._KK5_Proteobacteria                                       0.16%    passed     18.12%
+  66  WP_062313220.1-Bradyrhizobium_sp._CCH10-C7_Proteobacteria                             0.00%    passed     57.34%
+  67  NVN87899.1-Rhodopseudomonas_sp._Proteobacteria                                        0.00%    passed     77.55%
+  68  WP_011665574.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     70.47%
+  69  MBB5054515.1-Afipia_massiliensis_Proteobacteria                                       0.00%    passed     15.66%
+  70  WP_184089169.1-Afipia_massiliensis_Proteobacteria                                     0.00%    passed     21.42%
+  71  TXJ10197.1-Afipia_sp._Proteobacteria                                                  0.00%    passed     53.88%
+  72  WP_046827511.1-Afipia_massiliensis_Proteobacteria                                     0.00%    passed     49.75%
+  73  HBR43714.1-Afipia_sp._Proteobacteria                                                  0.00%    passed     61.33%
+  74  ABD08837.1-Rhodopseudomonas_palustris_Proteobacteria                                  0.00%    passed     48.29%
+  75  WP_041798938.1-Rhodopseudomonas_palustris_Proteobacteria                              0.32%    passed     40.19%
+  76  WP_006021976.1-Afipia_broomeae_Proteobacteria                                         0.00%    passed     57.73%
+  77  WP_110782500.1-Rhodopseudomonas_faecalis_Proteobacteria                               0.00%    passed     79.62%
+  78  RTL81632.1-Bradyrhizobiaceae_bacterium_Proteobacteria                                 0.00%    passed     67.65%
+  79  HAQ93654.1-Afipia_sp._Proteobacteria                                                  0.00%    passed     54.05%
+  80  TAH64925.1-Rhodopseudomonas_palustris_Proteobacteria                                  0.00%    passed     77.38%
+  81  WP_027475679.1-Curvibacter_gracilis_Proteobacteria                                    0.00%    passed     62.69%
+  82  NGX94573.1-Candidatus_Afipia_apatlaquensis_Proteobacteria                             0.00%    passed     76.55%
+  83  WP_027276359.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     77.13%
+  84  WP_164571151.1-Rhodopseudomonas_sp._BR0C11_Proteobacteria                             0.00%    passed     62.24%
+  85  WP_164638651.1-Rhodopseudomonas_sp._BR0G17_Proteobacteria                             0.00%    passed     61.21%
+  86  WP_107345917.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     57.71%
+  87  WP_163259863.1-Caulobacter_sp._17J65-9_Proteobacteria                                 0.00%    passed     20.83%
+  88  WP_107356882.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     53.38%
+  89  WP_136963313.1-Phreatobacter_stygius_Proteobacteria                                   0.16%    passed     88.61%
+  90  RUP23521.1-Curvibacter_sp._Proteobacteria                                             0.00%    passed     51.96%
+  91  WP_011159875.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     51.45%
+  92  WP_157443435.1-Curvibacter_lanceolatus_Proteobacteria                                 0.00%    passed     46.79%
+  93  WP_012497548.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     66.93%
+  94  WP_002713184.1-Afipia_clevelandensis_Proteobacteria                                   0.00%    passed     70.75%
+  95  WP_013504207.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     82.24%
+  96  WP_008968903.1-Bradyrhizobium_sp._STM_3843_Proteobacteria                             0.16%    passed     95.95%
+  97  KAB2911669.1-Hyphomicrobiaceae_bacterium_Proteobacteria                               0.00%    passed     88.33%
+  98  WP_119019080.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     58.34%
+  99  WP_022722993.1-Rhodopseudomonas_sp._B29_Proteobacteria                                0.32%    passed     41.86%
+ 100  WP_047308756.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     84.09%
+ 101  WP_164630935.1-Rhodopseudomonas_sp._WA056_Proteobacteria                              0.00%    passed     82.77%
+ 102  WP_187448402.1-Caulobacter_sp._17J80-11_Proteobacteria                                0.00%    passed     32.16%
+ 103  GBU15266.1-Polaromonas_sp._Proteobacteria                                             0.00%    passed     11.26%
+ 104  WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria                       0.00%    passed     68.07%
+ 105  WP_151072822.1-Cupriavidus_oxalaticus_Proteobacteria                                  0.16%    passed     78.97%
+ 106  WP_108104178.1-Pseudomonas_mangrovi_Proteobacteria                                    0.16%    passed     87.92%
+ 107  WP_119858943.1-Rhodopseudomonas_palustris_Proteobacteria                              0.32%    passed     67.03%
+ 108  WP_017937932.1-Pseudomonas_thermotolerans_Proteobacteria                              0.16%    passed     44.76%
+ 109  WP_142883484.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     92.19%
+ 110  WP_089945766.1-Candidatus_Entotheonella_palauensis_Candidatus                         0.00%    passed     16.56%
+ 111  WP_084803943.1-Bradyrhizobium_sp._NAS80.1_Proteobacteria                              0.00%    passed     99.75%
+ 112  OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22_Candidatus     0.00%    failed      0.02%
+ 113  WP_074117602.1-Bradyrhizobium_sp._AS23.2_Proteobacteria                               0.00%    passed     99.44%
+ 114  WP_046828790.1-Afipia_massiliensis_Proteobacteria                                     0.00%    passed     95.10%
+ 115  WP_065748757.1-Bradyrhizobium_sp._LMTR_3_Proteobacteria                               0.00%    passed     98.87%
+ 116  WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011_Proteobacteria                         0.00%    passed     98.19%
+ 117  WP_057833547.1-Bradyrhizobium_jicamae_Proteobacteria                                  0.00%    passed     99.64%
+ 118  WP_089717141.1-Candidatus_Entotheonella_palauensis_Candidatus                         0.00%    passed     39.73%
+ 119  WP_171577827.1-Bradyrhizobium_australiense_Proteobacteria                             0.00%    passed     89.54%
+ 120  WP_079601315.1-Bradyrhizobium_erythrophlei_Proteobacteria                             0.00%    passed     96.20%
+ 121  EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria                           0.00%    passed     95.95%
+ 122  WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria                       0.00%    passed     95.95%
+ 123  WP_155805222.1-Bradyrhizobium_sp._URHA0002_Proteobacteria                             0.00%    passed     99.76%
+ 124  WP_065756637.1-Bradyrhizobium_paxllaeri_Proteobacteria                                0.00%    passed     99.51%
+ 125  WP_002714592.1-Afipia_clevelandensis_Proteobacteria                                   0.00%    passed     97.11%
+ 126  WP_092515866.1-Afipia_sp._GAS231_Proteobacteria                                       0.00%    passed     99.59%
+ 127  WP_128961978.1-Bradyrhizobium_guangzhouense_Proteobacteria                            0.00%    passed     98.45%
+ 128  WP_128953098.1-Bradyrhizobium_guangzhouense_Proteobacteria                            0.00%    passed     97.39%
+ 129  SDP08864.1-Afipia_sp._GAS231_Proteobacteria                                           0.00%    passed     99.70%
+ 130  WP_071915975.1-Bradyrhizobium_japonicum_Proteobacteria                                0.00%    passed     99.36%
+ 131  WP_057859318.1-Bradyrhizobium_lablabi_Proteobacteria                                  0.00%    passed     99.74%
+ 132  WP_065730813.1-Bradyrhizobium_icense_Proteobacteria                                   0.00%    passed     98.17%
+ 133  WP_079586579.1-Bradyrhizobium_lablabi_Proteobacteria                                  0.00%    passed     99.94%
+ 134  WP_063680948.1-Bradyrhizobium_neotropicale_Proteobacteria                             0.00%    passed     99.22%
+ 135  WP_155709830.1-Massilia_dura_Proteobacteria                                           0.00%    passed     47.63%
+ 136  WP_028347371.1-Bradyrhizobium_murdochi_Proteobacteria                                 0.00%    passed     98.87%
+ 137  PYN74367.1-Candidatus_Rokubacteria_bacterium_Candidatus                               0.32%    failed      1.31%
+ 138  WP_092295676.1-Bradyrhizobium_sp._Ghvi_Proteobacteria                                 0.00%    passed     99.00%
+ 139  WP_108514566.1-Bradyrhizobium_algeriense_Proteobacteria                               0.00%    passed     94.91%
+ 140  TMJ47098.1-Alphaproteobacteria_bacterium_Proteobacteria                               0.00%    passed     99.43%
+ 141  WP_063984832.1-Bradyrhizobium_sp._Proteobacteria                                      0.00%    passed     98.95%
+ 142  WP_027528936.1-Bradyrhizobium_sp._WSM3983_Proteobacteria                              0.00%    passed     79.67%
+ 143  WP_024518537.1-Bradyrhizobium_sp._Tv2a-2_Proteobacteria                               0.00%    passed     98.87%
+ 144  WP_145664020.1-Bradyrhizobium_stylosanthis_Proteobacteria                             0.00%    passed     97.41%
+ 145  WP_028156991.1-Bradyrhizobium_japonicum_Proteobacteria                                0.00%    passed     99.39%
+ 146  WP_066731373.1-Cupriavidus_sp._D384_Proteobacteria                                    0.00%    passed     13.27%
+ 147  WP_100380578.1-Afipia_broomeae_Proteobacteria                                         0.00%    passed     98.38%
+ 148  PYM96198.1-Candidatus_Rokubacteria_bacterium_Candidatus                               0.32%    failed      4.14%
+ 149  WP_071072555.1-Cupriavidus_malaysiensis_Proteobacteria                                0.00%    passed     10.51%
+ 150  WP_071038742.1-Cupriavidus_sp._USMAA2-4_Proteobacteria                                0.00%    passed     10.43%
+ 151  WP_007594037.1-Bradyrhizobium_sp._WSM1253_Proteobacteria                              0.00%    passed     98.64%
+ 152  WP_143206068.1-Bradyrhizobium_erythrophlei_Proteobacteria                             0.00%    passed     99.66%
+ 153  WP_071018820.1-Cupriavidus_sp._USMAHM13_Proteobacteria                                0.00%    passed     10.35%
+ 154  WP_146687675.1-Bradyrhizobium_canariense_Proteobacteria                               0.00%    passed     98.15%
+ 155  WP_148749019.1-Bradyrhizobium_cytisi_Proteobacteria                                   0.00%    passed     97.97%
+ 156  WP_011085536.1-Bradyrhizobium_diazoefficiens_Proteobacteria                           0.00%    passed     95.59%
+ 157  WP_038965832.1-Bradyrhizobium_diazoefficiens_Proteobacteria                           0.00%    passed     95.59%
+ 158  QHP72204.1-Bradyrhizobium_sp._LCT2_Proteobacteria                                     0.00%    passed     96.72%
+ 159  WP_161535945.1-Bradyrhizobium_sp._LCT2_Proteobacteria                                 0.00%    passed     96.72%
+ 160  PYN46404.1-Candidatus_Rokubacteria_bacterium_Candidatus                               0.00%    failed      0.33%
+ 161  RZL87373.1-Variovorax_sp._Proteobacteria                                              0.00%    passed     73.28%
+ 162  WP_063691485.1-Bradyrhizobium_stylosanthis_Proteobacteria                             0.00%    passed     97.84%
+ 163  WP_063993269.1-Bradyrhizobium_sp._Proteobacteria                                      0.00%    passed     98.72%
+ 164  WP_060912981.1-Bradyrhizobium_diazoefficiens_Proteobacteria                           0.00%    passed     98.46%
+ 165  WP_079544782.1-Bradyrhizobium_lablabi_Proteobacteria                                  0.00%    passed     99.73%
+ 166  WP_063705824.1-Bradyrhizobium_centrolobii_Proteobacteria                              0.48%    passed     97.65%
+ 167  BAR59885.1-Bradyrhizobium_diazoefficiens_Proteobacteria                               0.00%    passed     98.46%
+ 168  KGJ68294.1-Bradyrhizobium_diazoefficiens_Proteobacteria                               0.00%    passed     98.52%
+ 169  PZW26129.1-Thermosporothrix_hazakensis_Chloroflexi                                    0.16%    passed     65.39%
+ 170  WP_111324427.1-Thermosporothrix_hazakensis_Chloroflexi                                0.16%    passed     65.39%
+ 171  WP_028174753.1-Bradyrhizobium_diazoefficiens_Proteobacteria                           0.00%    passed     98.52%
+ 172  WP_076861029.1-Bradyrhizobium_mercantei_Proteobacteria                                0.16%    passed     92.00%
+ 173  MAB24835.1-Pseudomonadales_bacterium_Proteobacteria                                   0.64%    passed     20.16%
+ 174  WP_041955910.1-Bradyrhizobium_japonicum_Proteobacteria                                0.00%    passed     99.01%
+ 175  MBA2399293.1-Bradyrhizobium_sp._Proteobacteria                                        0.00%    passed     99.90%
+ 176  WP_166089364.1-Bradyrhizobium_sp._1S5_Proteobacteria                                  0.00%    passed     98.88%
+ 177  WP_054162298.1-Rhodopseudomonas_sp._AAP120_Proteobacteria                             0.32%    passed     85.65%
+ 178  MBC9878718.1-Bradyrhizobium_campsiandrae_Proteobacteria                               0.32%    passed     94.62%
+ 179  WP_008138438.1-Bradyrhizobium_sp._YR681_Proteobacteria                                0.00%    passed     99.40%
+ 180  WP_158669522.1-Bradyrhizobium_guangdongense_Proteobacteria                            0.00%    passed     97.68%
+ 181  TMK39387.1-Alphaproteobacteria_bacterium_Proteobacteria                               0.00%    passed     99.14%
+ 182  WP_128967591.1-Bradyrhizobium_guangdongense_Proteobacteria                            0.00%    passed     90.84%
+ 183  WP_057753835.1-Bradyrhizobium_manausense_Proteobacteria                               0.00%    passed     90.93%
+ 184  WP_028135100.1-Bradyrhizobium_japonicum_Proteobacteria                                0.00%    passed     99.43%
+ 185  WP_057900995.1-Bradyrhizobium_valentinum_Proteobacteria                               0.00%    passed     99.99%
+ 186  WP_035655465.1-Bradyrhizobium_sp._STM_3809_Proteobacteria                             0.00%    passed     77.77%
+ 187  WP_027550185.1-Bradyrhizobium_sp._Cp5.3_Proteobacteria                                0.00%    passed     99.69%
+ 188  WP_057843198.1-Bradyrhizobium_retamae_Proteobacteria                                  0.16%    passed     96.71%
+ 189  RTM13090.1-Bradyrhizobiaceae_bacterium_Proteobacteria                                 0.00%    passed     98.61%
+ 190  WP_057851642.1-Bradyrhizobium_valentinum_Proteobacteria                               0.00%    passed     99.99%
+ 191  WP_027568791.1-Bradyrhizobium_sp._URHA0013_Proteobacteria                             0.00%    passed     97.00%
+ 192  WP_130580234.1-Bradyrhizobium_sp._Leo170_Proteobacteria                               0.00%    passed     94.55%
+ 193  WP_148775460.1-Bradyrhizobium_rifense_Proteobacteria                                  0.00%    passed     98.80%
+ 194  WP_027516639.1-Bradyrhizobium_sp._WSM1417_Proteobacteria                              0.00%    passed     98.59%
+ 195  WP_085395770.1-Bradyrhizobium_canariense_Proteobacteria                               0.00%    passed     98.92%
+ 196  WP_182248855.1-Pseudomonas_sp._5Ae-yellow_Proteobacteria                              0.16%    passed     53.83%
+ 197  TKW79521.1-Bradyrhizobium_icense_Proteobacteria                                       0.00%    passed     99.25%
+ 198  WP_136868902.1-Pseudomonas_bauzanensis_Proteobacteria                                 0.32%    passed     42.91%
+ 199  WP_061878281.1-Bradyrhizobium_liaoningense_Proteobacteria                             0.00%    passed     98.92%
+ 200  WP_135167913.1-Bradyrhizobium_frederickii_Proteobacteria                              0.00%    passed     99.29%
+ 201  NVN85223.1-Rhodopseudomonas_sp._Proteobacteria                                        0.00%    passed     94.94%
+ 202  WP_106942729.1-Bradyrhizobium_sp._MOS002_Proteobacteria                               0.00%    passed     99.52%
+ 203  WP_182869822.1-Bradyrhizobium_diazoefficiens_Proteobacteria                           0.00%    passed     94.88%
+ 204  WP_126256569.1-Bradyrhizobium_sp._LVM_105_Proteobacteria                              0.00%    passed     99.12%
+ 205  WP_172134110.1-Bradyrhizobium_sp._81013_Proteobacteria                                0.00%    passed     94.89%
+ 206  WP_166350707.1-Bradyrhizobium_sp._323S2_Proteobacteria                                0.00%    passed     98.69%
+ 207  WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298_Proteobacteria                          0.00%    passed     93.80%
+ 208  WP_100419024.1-Bradyrhizobium_lablabi_Proteobacteria                                  0.00%    passed     99.78%
+ 209  WP_172180802.1-Bradyrhizobium_sp._83002_Proteobacteria                                0.00%    passed     91.74%
+ 210  CCD98599.1-Bradyrhizobium_sp._STM_3809_Proteobacteria                                 2.54%    passed     65.06%
+ 211  WP_085352090.1-Bradyrhizobium_canariense_Proteobacteria                               0.00%    passed     99.13%
+ 212  WP_140980779.1-Bradyrhizobium_guangdongense_Proteobacteria                            0.00%    passed     99.93%
+ 213  WP_150987011.1-Cupriavidus_basilensis_Proteobacteria                                  0.32%    passed     17.29%
+ 214  WP_091965654.1-Bradyrhizobium_shewense_Proteobacteria                                 0.00%    passed     99.66%
+ 215  WP_083726556.1-Pseudomonas_pachastrellae_Proteobacteria                               0.16%    passed     30.18%
+ 216  EZQ18937.1-Pseudomonas_bauzanensis_Proteobacteria                                     0.32%    passed     34.54%
+ 217  WP_024511517.1-Bradyrhizobium_sp._ARR65_Proteobacteria                                0.00%    passed     98.94%
+ 218  WP_116319445.1-Cupriavidus_sp._P-10_Proteobacteria                                    0.00%    passed     53.10%
+ 219  THD60673.1-Bradyrhizobium_sp._Proteobacteria                                          0.00%    passed     87.51%
+ 220  WP_185267007.1-Pseudomonas_xiamenensis_Proteobacteria                                 0.16%    passed      7.39%
+ 221  WP_168167890.1-Bradyrhizobium_sp._BTAi1_Proteobacteria                                0.00%    passed     85.75%
+ 222  OJY09878.1-Rhizobiales_bacterium_62-47_Proteobacteria                                 0.00%    passed     98.05%
+ 223  WP_183237909.1-Bradyrhizobium_sp._CIR18_Proteobacteria                                0.00%    passed     99.34%
+ 224  WP_018322728.1-Bradyrhizobium_sp._WSM2793_Proteobacteria                              0.00%    passed     99.50%
+ 225  WP_172111906.1-Bradyrhizobium_sp._83012_Proteobacteria                                0.00%    passed     93.71%
+ 226  WP_151642895.1-Bradyrhizobium_betae_Proteobacteria                                    0.00%    passed     99.57%
+ 227  WP_015687718.1-Bradyrhizobium_cosmicum_Proteobacteria                                 0.00%    passed     99.08%
+ 228  WP_183035411.1-Cupriavidus_sp._UME77_Proteobacteria                                   0.32%    passed     11.33%
+ 229  WP_128939625.1-Bradyrhizobium_zhanjiangense_Proteobacteria                            0.00%    passed     99.09%
+ 230  WP_092029312.1-Bradyrhizobium_sp._OK095_Proteobacteria                                0.00%    passed     99.54%
+ 231  WP_035674808.1-Bradyrhizobium_liaoningense_Proteobacteria                             0.00%    passed     95.48%
+ 232  PYN32128.1-Candidatus_Rokubacteria_bacterium_Candidatus                               0.00%    passed      7.02%
+ 233  MBB1634382.1-Cupriavidus_sp._UME77_Proteobacteria                                     0.64%    passed      9.41%
+ 234  WP_028179375.1-Bradyrhizobium_japonicum_Proteobacteria                                0.00%    passed     93.49%
+ 235  WP_148744709.1-Bradyrhizobium_hipponense_Proteobacteria                               0.00%    passed     89.44%
+ 236  WP_061999991.1-Burkholderia_sp._PAMC_28687_Proteobacteria                             0.95%    passed      5.66%
+ 237  WP_069276965.1-Bradyrhizobium_elkanii_Proteobacteria                                  0.16%    passed     99.61%
+ 238  WP_027526029.1-Bradyrhizobium_sp._Ec3.3_Proteobacteria                                0.00%    passed     98.79%
+ 239  WP_083842450.1-Bradyrhizobium_sp._ORS_375_Proteobacteria                              0.00%    passed     86.21%
+ 240  WP_061021165.1-Bradyrhizobium_sp._CCH5-F6_Proteobacteria                              0.00%    passed     99.00%
+ 241  WP_025586346.1-Cupriavidus_taiwanensis_Proteobacteria                                 0.32%    passed     71.92%
+ 242  WP_093476299.1-Pseudomonas_yangmingensis_Proteobacteria                               0.16%    failed      2.46%
+ 243  WP_104462928.1-Bradyrhizobium_sp._AC87j1_Proteobacteria                               0.00%    passed     99.12%
+ 244  WP_183258594.1-Bradyrhizobium_sp._CIR48_Proteobacteria                                0.00%    passed     99.20%
+ 245  PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11_Proteobacteria    0.16%    passed     50.18%
+ 246  WP_011439962.1-Rhodopseudomonas_palustris_Proteobacteria                              0.00%    passed     91.18%
+ 247  WP_128955323.1-Bradyrhizobium_zhanjiangense_Proteobacteria                            0.00%    passed     99.42%
+ 248  WP_018457146.1-Bradyrhizobium_sp._WSM4349_Proteobacteria                              0.00%    passed     92.31%
+ 249  WP_038931390.1-Bradyrhizobium_japonicum_Proteobacteria                                0.00%    passed     99.45%
+ 250  WP_135162274.1-Bradyrhizobium_frederickii_Proteobacteria                              0.00%    passed     92.11%
+ 251  WP_092214970.1-Bradyrhizobium_arachidis_Proteobacteria                                0.16%    passed     98.50%
+ 252  WP_100175831.1-Bradyrhizobium_nitroreducens_Proteobacteria                            0.00%    passed     99.12%
+ 253  WP_092594144.1-Ralstonia_sp._25mfcol4.1_Proteobacteria                                0.00%    passed     32.62%
+ 254  WP_039157276.1-Bradyrhizobium_japonicum_Proteobacteria                                0.00%    passed     99.41%
+ 255  WP_116388232.1-Cupriavidus_taiwanensis_Proteobacteria                                 0.32%    passed     71.88%
+ 256  GAJ33771.1-Bradyrhizobium_sp._DOA9_Proteobacteria                                     0.00%    passed     92.95%
+ 257  WP_092259760.1-Bradyrhizobium_sp._Rc3b_Proteobacteria                                 0.00%    passed     99.16%
+ 258  WP_142250055.1-Bradyrhizobium_sp._UNPF46_Proteobacteria                               0.00%    passed     99.02%
+ 259  WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015_Proteobacteria                 0.00%    passed     70.47%
+ 260  WP_116377884.1-Cupriavidus_taiwanensis_Proteobacteria                                 0.32%    passed     76.05%
+ 261  WP_152103320.1-Bradyrhizobium_sp._TM102_Proteobacteria                                0.00%    passed     99.04%
+ 262  WP_116320039.1-Cupriavidus_sp._P-10_Proteobacteria                                    0.00%    passed     77.77%
+ 263  WP_183231495.1-Bradyrhizobium_sp._SBR1B_Proteobacteria                                0.00%    passed     99.38%
+ 264  WP_062795892.1-Cupriavidus_nantongensis_Proteobacteria                                0.32%    passed     79.26%
+ 265  WP_130222300.1-Bradyrhizobium_sp._Leo121_Proteobacteria                               0.00%    passed     98.52%
+ 266  TMK06221.1-Alphaproteobacteria_bacterium_Proteobacteria                               0.00%    passed     98.71%
+ 267  WP_081889718.1-Caballeronia_sordidicola_Proteobacteria                                0.95%    passed      7.60%
+ 268  WP_062170184.1-Burkholderia_sp._PAMC_26561_Proteobacteria                             1.27%    failed      3.45%
+ 269  MBA4036164.1-Bradyrhizobium_sp._Proteobacteria                                        0.00%    passed     98.76%
+ 270  WP_129271949.1-Bradyrhizobium_betae_Proteobacteria                                    0.00%    passed     99.97%
+ 271  QUERY_Saccharomyces_cerevisiae_YOL164W                                                0.32%    failed      0.47%
+****  TOTAL                                                                                 0.09%  9 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.156 seconds
+NOTE: ModelFinder requires 102 MB RAM!
+ModelFinder will test 42 protein models (sample size: 629) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  Dayhoff+G4    56173.920    540 113427.841   120067.386   115827.671
+  2  Dayhoff+F+G4  56011.827    559 113141.653   122215.276   115625.923
+  3  mtMAM+G4      61433.743    540 123947.487   130587.032   126347.318
+  4  mtMAM+F+G4    58957.146    559 119032.293   128105.916   121516.562
+  5  JTT+G4        55920.392    540 112920.783   119560.329   115320.614
+  6  JTT+F+G4      55814.968    559 112747.935   121821.558   115232.205
+  7  WAG+G4        55912.527    540 112905.055   119544.600   115304.886
+  8  WAG+F+G4      55764.135    559 112646.271   121719.894   115130.540
+  9  cpREV+G4      56608.490    540 114296.981   120936.526   116696.812
+ 10  cpREV+F+G4    56067.960    559 113253.920   122327.543   115738.189
+ 11  mtREV+G4      59772.135    540 120624.269   127263.815   123024.100
+ 12  mtREV+F+G4    57351.596    559 115821.193   124894.816   118305.462
+ 13  rtREV+G4      56618.887    540 114317.774   120957.319   116717.605
+ 14  rtREV+F+G4    55909.171    559 112936.341   122009.964   115420.610
+ 15  mtART+G4      61001.716    540 123083.433   129722.978   125483.264
+ 16  mtART+F+G4    58193.258    559 117504.516   126578.139   119988.785
+ 17  mtZOA+G4      58743.896    540 118567.792   125207.337   120967.622
+ 18  mtZOA+F+G4    56868.856    559 114855.713   123929.336   117339.982
+ 19  VT+G4         56331.692    540 113743.383   120382.929   116143.214
+ 20  VT+F+G4       56166.556    559 113451.113   122524.736   115935.382
+ 21  LG+G4         55698.918    540 112477.836   119117.381   114877.667
+ 22  LG+F+G4       55411.262    559 111940.524   121014.148   114424.794
+ 23  DCMut+G4      56182.276    540 113444.552   120084.098   115844.383
+ 24  DCMut+F+G4    56019.478    559 113156.955   122230.579   115641.225
+ 25  PMB+G4        57088.493    540 115256.986   121896.532   117656.817
+ 26  PMB+F+G4      56816.978    559 114751.956   123825.579   117236.226
+ 27  HIVb+G4       57681.234    540 116442.468   123082.013   118842.299
+ 28  HIVb+F+G4     57253.522    559 115625.045   124698.668   118109.314
+ 29  HIVw+G4       60517.539    540 122115.078   128754.624   124514.909
+ 30  HIVw+F+G4     59300.420    559 119718.841   128792.464   122203.110
+ 31  JTTDCMut+G4   55913.390    540 112906.780   119546.326   115306.611
+ 32  JTTDCMut+F+G4 55799.466    559 112716.932   121790.555   115201.201
+ 33  FLU+G4        57356.476    540 115792.953   122432.498   118192.784
+ 34  FLU+F+G4      56574.796    559 114267.592   123341.215   116751.861
+ 35  Blosum62+G4   57120.029    540 115320.057   121959.602   117719.888
+ 36  Blosum62+F+G4 56775.101    559 114668.201   123741.824   117152.470
+ 37  mtMet+G4      59963.340    540 121006.679   127646.225   123406.510
+ 38  mtMet+F+G4    57232.538    559 115583.076   124656.699   118067.345
+ 39  mtVer+G4      60210.478    540 121500.955   128140.501   123900.786
+ 40  mtVer+F+G4    58062.487    559 117242.975   126316.598   119727.244
+ 41  mtInv+G4      60197.314    540 121474.628   128114.174   123874.459
+ 42  mtInv+F+G4    56595.145    559 114308.290   123381.913   116792.560
+Akaike Information Criterion:           LG+F+G4
+Corrected Akaike Information Criterion: LG+G4
+Bayesian Information Criterion:         LG+F+G4
+Best-fit model: LG+F+G4 chosen according to BIC
+
+All model information printed to ../fasta/YOL164W/YOL164W.model.gz
+CPU time for ModelFinder: 217.071 seconds (0h:3m:37s)
+Wall-clock time for ModelFinder: 36.857 seconds (0h:0m:36s)
+Generating 1000 samples for ultrafast bootstrap (seed: 659541)...
+
+NOTE: 102 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -55452.554
+2. Current log-likelihood: -55411.730
+3. Current log-likelihood: -55411.271
+Optimal log-likelihood: -55411.260
+Gamma shape alpha: 0.755
+Parameters optimization took 3 rounds (0.815 sec)
+Computing ML distances based on estimated model parameters... 22.631 sec
+Computing BIONJ tree...
+0.068 seconds
+Log-likelihood of BIONJ tree: -55607.561
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 15.876 second
+Computing log-likelihood of 98 initial trees ... 15.001 seconds
+Current best score: -55330.144
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -55250.010
+Iteration 10 / LogL: -55250.725 / Time: 0h:0m:50s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 18: -55243.870
+Iteration 20 / LogL: -55267.225 / Time: 0h:1m:5s
+Finish initializing candidate tree set (20)
+Current best tree score: -55243.870 / CPU time: 60.028
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -55237.816
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -55236.660
+Iteration 30 / LogL: -55239.895 / Time: 0h:1m:26s (0h:4m:52s left)
+Iteration 40 / LogL: -55272.507 / Time: 0h:1m:46s (0h:4m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 42: -55228.429
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 45: -55217.596
+Iteration 50 / LogL: -55229.900 / Time: 0h:2m:8s (0h:4m:8s left)
+Log-likelihood cutoff on original alignment: -55322.507
+Iteration 60 / LogL: -55237.151 / Time: 0h:2m:29s (0h:3m:34s left)
+Iteration 70 / LogL: -55421.925 / Time: 0h:2m:48s (0h:3m:3s left)
+Iteration 80 / LogL: -55239.569 / Time: 0h:3m:8s (0h:2m:35s left)
+Iteration 90 / LogL: -55251.731 / Time: 0h:3m:28s (0h:2m:9s left)
+Iteration 100 / LogL: -55220.451 / Time: 0h:3m:48s (0h:1m:43s left)
+Log-likelihood cutoff on original alignment: -55322.507
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 108: -55217.056
+Iteration 110 / LogL: -55217.815 / Time: 0h:4m:9s (0h:3m:44s left)
+Iteration 120 / LogL: -55243.194 / Time: 0h:4m:30s (0h:3m:19s left)
+Iteration 130 / LogL: -55238.720 / Time: 0h:4m:50s (0h:2m:55s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 135: -55216.267
+Iteration 140 / LogL: -55223.994 / Time: 0h:5m:11s (0h:3m:33s left)
+Iteration 150 / LogL: -55229.038 / Time: 0h:5m:31s (0h:3m:9s left)
+Log-likelihood cutoff on original alignment: -55322.507
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 157: -55212.877
+Iteration 160 / LogL: -55247.235 / Time: 0h:5m:53s (0h:3m:35s left)
+Iteration 170 / LogL: -55223.073 / Time: 0h:6m:14s (0h:3m:12s left)
+Iteration 180 / LogL: -55223.610 / Time: 0h:6m:34s (0h:2m:49s left)
+Iteration 190 / LogL: -55223.601 / Time: 0h:6m:54s (0h:2m:27s left)
+Iteration 200 / LogL: -55229.433 / Time: 0h:7m:15s (0h:2m:4s left)
+Log-likelihood cutoff on original alignment: -55322.507
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Iteration 210 / LogL: -55215.475 / Time: 0h:7m:36s (0h:3m:16s left)
+Iteration 220 / LogL: -55251.231 / Time: 0h:7m:56s (0h:2m:54s left)
+Iteration 230 / LogL: -55244.794 / Time: 0h:8m:16s (0h:2m:31s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 233: -55212.649
+Iteration 240 / LogL: -55225.849 / Time: 0h:8m:36s (0h:3m:21s left)
+Iteration 250 / LogL: -55231.754 / Time: 0h:8m:56s (0h:2m:58s left)
+Log-likelihood cutoff on original alignment: -55322.507
+Iteration 260 / LogL: -55222.409 / Time: 0h:9m:18s (0h:2m:37s left)
+Iteration 270 / LogL: -55223.844 / Time: 0h:9m:38s (0h:2m:15s left)
+Iteration 280 / LogL: -55255.041 / Time: 0h:9m:58s (0h:1m:53s left)
+Iteration 290 / LogL: -55231.839 / Time: 0h:10m:19s (0h:1m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 299: -55212.537
+Iteration 300 / LogL: -55223.469 / Time: 0h:10m:39s (0h:3m:31s left)
+Log-likelihood cutoff on original alignment: -55322.507
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 310 / LogL: -55224.652 / Time: 0h:11m:0s (0h:3m:12s left)
+Iteration 320 / LogL: -55257.355 / Time: 0h:11m:20s (0h:2m:50s left)
+Iteration 330 / LogL: -55243.507 / Time: 0h:11m:40s (0h:2m:29s left)
+Iteration 340 / LogL: -55215.028 / Time: 0h:12m:0s (0h:2m:7s left)
+Iteration 350 / LogL: -55237.454 / Time: 0h:12m:21s (0h:1m:46s left)
+Log-likelihood cutoff on original alignment: -55322.507
+Iteration 360 / LogL: -55243.572 / Time: 0h:12m:42s (0h:1m:24s left)
+Iteration 370 / LogL: -55270.630 / Time: 0h:13m:2s (0h:1m:3s left)
+Iteration 380 / LogL: -55219.937 / Time: 0h:13m:23s (0h:0m:42s left)
+Iteration 390 / LogL: -55213.351 / Time: 0h:13m:43s (0h:0m:21s left)
+Iteration 400 / LogL: -55261.422 / Time: 0h:14m:4s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -55322.507
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 400 ITERATIONS / Time: 0h:14m:4s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -55212.537
+Optimal log-likelihood: -55212.537
+Gamma shape alpha: 0.746
+Parameters optimization took 1 rounds (0.198 sec)
+BEST SCORE FOUND : -55212.537
+Creating bootstrap support values...
+Split supports printed to NEXUS file ../fasta/YOL164W/YOL164W.splits.nex
+Total tree length: 22.794
+
+Total number of iterations: 400
+CPU time used for tree search: 4880.528 sec (1h:21m:20s)
+Wall-clock time used for tree search: 839.455 sec (0h:13m:59s)
+Total CPU time used: 4914.853 sec (1h:21m:54s)
+Total wall-clock time used: 845.998 sec (0h:14m:5s)
+
+Computing bootstrap consensus tree...
+Reading input file ../fasta/YOL164W/YOL164W.splits.nex...
+271 taxa and 1230 splits.
+Consensus tree written to ../fasta/YOL164W/YOL164W.contree
+Reading input trees file ../fasta/YOL164W/YOL164W.contree
+Log-likelihood of consensus tree: -55213.801
+
+Analysis results written to: 
+  IQ-TREE report:                ../fasta/YOL164W/YOL164W.iqtree
+  Maximum-likelihood tree:       ../fasta/YOL164W/YOL164W.treefile
+  Likelihood distances:          ../fasta/YOL164W/YOL164W.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ../fasta/YOL164W/YOL164W.splits.nex
+  Consensus tree:                ../fasta/YOL164W/YOL164W.contree
+  Screen log file:               ../fasta/YOL164W/YOL164W.log
+
+Date and Time: Tue Sep 28 12:38:28 2021

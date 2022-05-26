@@ -1,0 +1,1265 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Input file name: ../fasta/YOL164W/YOL164W_aln_trimmed.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 659541
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 271 sequences with 629 amino-acid sites
+Number of constant sites: 70 (= 11.1288% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 70 (= 11.1288% of all sites)
+Number of parsimony informative sites: 524
+Number of distinct site patterns: 577
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+F+G4
+
+List of models sorted by BIC scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+LG+F+G4         -55411.2622 111940.5244 + 1.0000 121014.1476 - 0.0000 114424.7938 + 1.0000
+LG+G4           -55698.9179 112477.8359 - 0.0000 119117.3813 + 1.0000 114877.6668 - 0.0000
+WAG+F+G4        -55764.1355 112646.2710 - 0.0000 121719.8941 - 0.0000 115130.5403 - 0.0000
+JTTDCMut+F+G4   -55799.4658 112716.9315 - 0.0000 121790.5547 - 0.0000 115201.2009 - 0.0000
+JTT+F+G4        -55814.9676 112747.9353 - 0.0000 121821.5585 - 0.0000 115232.2047 - 0.0000
+WAG+G4          -55912.5275 112905.0549 - 0.0000 119544.6004 - 0.0000 115304.8858 - 0.0000
+JTTDCMut+G4     -55913.3901 112906.7801 - 0.0000 119546.3256 - 0.0000 115306.6110 - 0.0000
+JTT+G4          -55920.3917 112920.7833 - 0.0000 119560.3288 - 0.0000 115320.6142 - 0.0000
+rtREV+F+G4      -55909.1705 112936.3410 - 0.0000 122009.9642 - 0.0000 115420.6104 - 0.0000
+Dayhoff+F+G4    -56011.8266 113141.6532 - 0.0000 122215.2764 - 0.0000 115625.9226 - 0.0000
+DCMut+F+G4      -56019.4777 113156.9555 - 0.0000 122230.5787 - 0.0000 115641.2249 - 0.0000
+cpREV+F+G4      -56067.9598 113253.9195 - 0.0000 122327.5427 - 0.0000 115738.1889 - 0.0000
+Dayhoff+G4      -56173.9203 113427.8405 - 0.0000 120067.3860 - 0.0000 115827.6714 - 0.0000
+DCMut+G4        -56182.2762 113444.5524 - 0.0000 120084.0978 - 0.0000 115844.3832 - 0.0000
+VT+F+G4         -56166.5564 113451.1128 - 0.0000 122524.7360 - 0.0000 115935.3822 - 0.0000
+VT+G4           -56331.6917 113743.3835 - 0.0000 120382.9289 - 0.0000 116143.2143 - 0.0000
+cpREV+G4        -56608.4904 114296.9807 - 0.0000 120936.5262 - 0.0000 116696.8116 - 0.0000
+rtREV+G4        -56618.8869 114317.7738 - 0.0000 120957.3193 - 0.0000 116717.6047 - 0.0000
+FLU+F+G4        -56574.7960 114267.5921 - 0.0000 123341.2153 - 0.0000 116751.8615 - 0.0000
+mtInv+F+G4      -56595.1451 114308.2903 - 0.0000 123381.9134 - 0.0000 116792.5596 - 0.0000
+Blosum62+F+G4   -56775.1005 114668.2010 - 0.0000 123741.8242 - 0.0000 117152.4704 - 0.0000
+PMB+F+G4        -56816.9781 114751.9562 - 0.0000 123825.5794 - 0.0000 117236.2256 - 0.0000
+mtZOA+F+G4      -56868.8564 114855.7127 - 0.0000 123929.3359 - 0.0000 117339.9821 - 0.0000
+PMB+G4          -57088.4932 115256.9865 - 0.0000 121896.5319 - 0.0000 117656.8173 - 0.0000
+Blosum62+G4     -57120.0285 115320.0570 - 0.0000 121959.6025 - 0.0000 117719.8879 - 0.0000
+mtMet+F+G4      -57232.5380 115583.0760 - 0.0000 124656.6992 - 0.0000 118067.3454 - 0.0000
+HIVb+F+G4       -57253.5224 115625.0449 - 0.0000 124698.6681 - 0.0000 118109.3143 - 0.0000
+FLU+G4          -57356.4764 115792.9528 - 0.0000 122432.4983 - 0.0000 118192.7837 - 0.0000
+mtREV+F+G4      -57351.5963 115821.1926 - 0.0000 124894.8158 - 0.0000 118305.4620 - 0.0000
+HIVb+G4         -57681.2340 116442.4680 - 0.0000 123082.0134 - 0.0000 118842.2988 - 0.0000
+mtVer+F+G4      -58062.4875 117242.9750 - 0.0000 126316.5982 - 0.0000 119727.2444 - 0.0000
+mtART+F+G4      -58193.2579 117504.5157 - 0.0000 126578.1389 - 0.0000 119988.7851 - 0.0000
+mtZOA+G4        -58743.8958 118567.7915 - 0.0000 125207.3370 - 0.0000 120967.6224 - 0.0000
+mtMAM+F+G4      -58957.1464 119032.2927 - 0.0000 128105.9159 - 0.0000 121516.5621 - 0.0000
+HIVw+F+G4       -59300.4203 119718.8406 - 0.0000 128792.4638 - 0.0000 122203.1100 - 0.0000
+mtREV+G4        -59772.1347 120624.2694 - 0.0000 127263.8149 - 0.0000 123024.1003 - 0.0000
+mtMet+G4        -59963.3396 121006.6792 - 0.0000 127646.2247 - 0.0000 123406.5101 - 0.0000
+mtInv+G4        -60197.3142 121474.6283 - 0.0000 128114.1738 - 0.0000 123874.4592 - 0.0000
+mtVer+G4        -60210.4777 121500.9554 - 0.0000 128140.5008 - 0.0000 123900.7862 - 0.0000
+HIVw+G4         -60517.5392 122115.0784 - 0.0000 128754.6238 - 0.0000 124514.9092 - 0.0000
+mtART+G4        -61001.7164 123083.4327 - 0.0000 129722.9782 - 0.0000 125483.2636 - 0.0000
+mtMAM+G4        -61433.7434 123947.4869 - 0.0000 130587.0323 - 0.0000 126347.3178 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+F+G4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.1244
+  pi(R) = 0.0621
+  pi(N) = 0.0411
+  pi(D) = 0.0577
+  pi(C) = 0.0030
+  pi(Q) = 0.0393
+  pi(E) = 0.0580
+  pi(G) = 0.0789
+  pi(H) = 0.0264
+  pi(I) = 0.0419
+  pi(L) = 0.0972
+  pi(K) = 0.0378
+  pi(M) = 0.0280
+  pi(F) = 0.0400
+  pi(P) = 0.0532
+  pi(S) = 0.0409
+  pi(T) = 0.0553
+  pi(W) = 0.0173
+  pi(Y) = 0.0323
+  pi(V) = 0.0653
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.7457
+
+ Category  Relative_rate  Proportion
+  1         0.0840         0.2500
+  2         0.3843         0.2500
+  3         0.9407         0.2500
+  4         2.5910         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -55212.5371 (s.e. 1837.4615)
+Unconstrained log-likelihood (without tree): -3936.9837
+Number of free parameters (#branches + #model parameters): 559
+Akaike information criterion (AIC) score: 111543.0742
+Corrected Akaike information criterion (AICc) score: 120616.6974
+Bayesian information criterion (BIC) score: 114027.3436
+
+Total tree length (sum of branch lengths): 22.7937
+Sum of internal branch lengths: 10.5998 (46.5031% of tree length)
+
+WARNING: 10 near-zero internal branches (<0.0016) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina
+|
+|                               +--WP_007837899.1-Variovorax_sp._CF313_Proteobacteria
+|                            +--| (48)
+|                            |  |  +--WP_130421160.1-Variovorax_sp._BK460_Proteobacteria
+|                            |  +--| (71)
+|                            |     +------WP_093131647.1-Variovorax_sp._OK605_Proteobacteria
+|                         +--| (48)
+|                         |  |                 +**WP_132801781.1-Variovorax_sp._BK370_Proteobacteria
+|                         |  |              +--| (100)
+|                         |  |              |  |  +--WP_184605932.1-Variovorax_sp._BK613_Proteobacteria
+|                         |  |              |  +--| (100)
+|                         |  |              |     |     +**WP_145759386.1-Variovorax_sp._1180_Proteobacteria
+|                         |  |              |     |  +--| (100)
+|                         |  |              |     |  |  +--WP_126183471.1-Variovorax_sp._369_Proteobacteria
+|                         |  |              |     +**| (99)
+|                         |  |              |        +--WP_020722993.1-Variovorax_paradoxus_Proteobacteria
+|                         |  |           +--| (100)
+|                         |  |           |  +--WP_132755990.1-Variovorax_sp._BK151_Proteobacteria
+|                         |  |        +--| (99)
+|                         |  |        |  +--WP_176665552.1-Variovorax_sp._SG517_Proteobacteria
+|                         |  |     +--| (100)
+|                         |  |     |  |  +--WP_184638849.1-Variovorax_guangxiensis_Proteobacteria
+|                         |  |     |  +--| (100)
+|                         |  |     |     +--WP_126020505.1-Variovorax_guangxiensis_Proteobacteria
+|                         |  |  +--| (100)
+|                         |  |  |  |  +--WP_093195641.1-Variovorax_sp._YR750_Proteobacteria
+|                         |  |  |  +--| (100)
+|                         |  |  |     +--WP_126472589.1-Variovorax_gossypii_Proteobacteria
+|                         |  +--| (90)
+|                         |     |        +--WP_097197469.1-Variovorax_sp._YR752_Proteobacteria
+|                         |     |     +--| (100)
+|                         |     |     |  +**WP_093174861.1-Variovorax_sp._YR266_Proteobacteria
+|                         |     |  +**| (99)
+|                         |     |  |  +--WP_093076613.1-Variovorax_sp._OV084_Proteobacteria
+|                         |     +--| (100)
+|                         |        +--WP_093057006.1-Variovorax_sp._YR634_Proteobacteria
+|                      +--| (68)
+|                      |  |  +--WP_081267376.1-Variovorax_paradoxus_Proteobacteria
+|                      |  +--| (100)
+|                      |     +--ODU15846.1-Variovorax_sp._SCN_67-85_Proteobacteria
+|                   +--| (73)
+|                   |  |  +--TAJ61793.1-Variovorax_sp._Proteobacteria
+|                   |  +--| (100)
+|                   |     |           +**WP_172705422.1-Variovorax_paradoxus_Proteobacteria
+|                   |     |        +--| (100)
+|                   |     |        |  +**KPU98577.1-Variovorax_paradoxus_Proteobacteria
+|                   |     |     +--| (100)
+|                   |     |     |  +**MBS76598.1-Variovorax_sp._Proteobacteria
+|                   |     |  +**| (83)
+|                   |     |  |  +--WP_093343818.1-Variovorax_sp._PDC80_Proteobacteria
+|                   |     +--| (88)
+|                   |        +--KAF1061273.1-Variovorax_sp._Proteobacteria
+|                +--| (72)
+|                |  |        +--WP_093435402.1-Variovorax_sp._770b2_Proteobacteria
+|                |  |     +--| (100)
+|                |  |     |  +--WP_052810747.1-Variovorax_paradoxus_Proteobacteria
+|                |  |  +--| (73)
+|                |  |  |  +--WP_013538622.1-Variovorax_paradoxus_Proteobacteria
+|                |  +--| (61)
+|                |     +--WP_176660984.1-Variovorax_sp._SG533_Proteobacteria
+|             +--| (71)
+|             |  +--WP_145738683.1-Variovorax_beijingensis_Proteobacteria
+|          +--| (99)
+|          |  |        +--WP_093241869.1-Variovorax_sp._EL159_Proteobacteria
+|          |  |     +--| (100)
+|          |  |     |  +--WP_187113215.1-Variovorax_sp._PAMC26660_Proteobacteria
+|          |  |  +--| (42)
+|          |  |  |  +--WP_124458460.1-Variovorax_sp._KBW07_Proteobacteria
+|          |  +--| (95)
+|          |     |  +--WP_119556153.1-Acidovorax_cavernicola_Proteobacteria
+|          |     +--| (97)
+|          |        |        +--WP_153281245.1-Variovorax_paradoxus_Proteobacteria
+|          |        |     +--| (88)
+|          |        |     |  |  +--WP_099794476.1-Variovorax_sp._54_Proteobacteria
+|          |        |     |  +**| (98)
+|          |        |     |     +--WP_101490554.1-Variovorax_sp._RO1_Proteobacteria
+|          |        |  +--| (81)
+|          |        |  |  |              +--WP_062470459.1-Variovorax_boronicumulans_Proteobacteria
+|          |        |  |  |           +--| (72)
+|          |        |  |  |           |  +**WP_095948515.1-Variovorax_boronicumulans_Proteobacteria
+|          |        |  |  |        +--| (88)
+|          |        |  |  |        |  +--WP_159278964.1-Variovorax_boronicumulans_Proteobacteria
+|          |        |  |  |     +--| (54)
+|          |        |  |  |     |  +--WP_159274326.1-Variovorax_boronicumulans_Proteobacteria
+|          |        |  |  |  +--| (90)
+|          |        |  |  |  |  |  +--WP_070061350.1-Variovorax_boronicumulans_Proteobacteria
+|          |        |  |  |  |  +**| (61)
+|          |        |  |  |  |     +--WP_095743122.1-Variovorax_boronicumulans_Proteobacteria
+|          |        |  |  +--| (96)
+|          |        |  |     +**WP_139703542.1-Variovorax_sp._KBS0712_Proteobacteria
+|          |        +--| (36)
+|          |           +--WP_056574498.1-Variovorax_sp._Root473_Proteobacteria
+|       +--| (100)
+|       |  |             +----OQW56345.1-Proteobacteria_bacterium_SG_bin9_Proteobacteria
+|       |  |         +---| (100)
+|       |  |         |   |                             +--WP_175367589.1-Tardiphaga_robiniae_Proteobacteria
+|       |  |         |   |                          +--| (93)
+|       |  |         |   |                          |  +--WP_120288614.1-Tardiphaga_sp._YR296_Proteobacteria
+|       |  |         |   |                       +--| (92)
+|       |  |         |   |                       |  +--WP_184513838.1-Tardiphaga_robiniae_Proteobacteria
+|       |  |         |   |                    +--| (100)
+|       |  |         |   |                    |  +--WP_089261759.1-Tardiphaga_sp._OK246_Proteobacteria
+|       |  |         |   |                 +--| (91)
+|       |  |         |   |                 |  +--WP_092138970.1-Bradyrhizobium_sp._NFR13_Proteobacteria
+|       |  |         |   |              +--| (100)
+|       |  |         |   |              |  +--WP_115033941.1-Tardiphaga_sp._CF115_Proteobacteria
+|       |  |         |   |           +--| (99)
+|       |  |         |   |           |  |           +--WP_062313220.1-Bradyrhizobium_sp._CCH10-C7_Proteobacteria
+|       |  |         |   |           |  |        +--| (82)
+|       |  |         |   |           |  |        |  |     +--MBB5054515.1-Afipia_massiliensis_Proteobacteria
+|       |  |         |   |           |  |        |  |  +--| (100)
+|       |  |         |   |           |  |        |  |  |  +**WP_184089169.1-Afipia_massiliensis_Proteobacteria
+|       |  |         |   |           |  |        |  +--| (99)
+|       |  |         |   |           |  |        |     +--WP_046827511.1-Afipia_massiliensis_Proteobacteria
+|       |  |         |   |           |  |     +--| (94)
+|       |  |         |   |           |  |     |  |     +--HBR43714.1-Afipia_sp._Proteobacteria
+|       |  |         |   |           |  |     |  |  +--| (100)
+|       |  |         |   |           |  |     |  |  |  +--HAQ93654.1-Afipia_sp._Proteobacteria
+|       |  |         |   |           |  |     |  +--| (100)
+|       |  |         |   |           |  |     |     |  +--WP_006021976.1-Afipia_broomeae_Proteobacteria
+|       |  |         |   |           |  |     |     +--| (100)
+|       |  |         |   |           |  |     |        +--RTL81632.1-Bradyrhizobiaceae_bacterium_Proteobacteria
+|       |  |         |   |           |  |  +--| (50)
+|       |  |         |   |           |  |  |  +--TXJ10197.1-Afipia_sp._Proteobacteria
+|       |  |         |   |           |  +--| (100)
+|       |  |         |   |           |     |  +--NGX94573.1-Candidatus_Afipia_apatlaquensis_Proteobacteria
+|       |  |         |   |           |     +--| (91)
+|       |  |         |   |           |        |  +--WP_002713184.1-Afipia_clevelandensis_Proteobacteria
+|       |  |         |   |           |        +--| (100)
+|       |  |         |   |           |           +--WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+|       |  |         |   |        +--| (73)
+|       |  |         |   |        |  +--WP_149531854.1-Tardiphaga_sp._P9-11_Proteobacteria
+|       |  |         |   |     +--| (94)
+|       |  |         |   |     |  +---OJY11205.1-Rhizobiales_bacterium_62-47_Proteobacteria
+|       |  |         |   |  +--| (96)
+|       |  |         |   |  |  |     +--WP_146690165.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |         |   |  |  |  +--| (100)
+|       |  |         |   |  |  |  |  +--WP_100386102.1-Afipia_broomeae_Proteobacteria
+|       |  |         |   |  |  +--| (99)
+|       |  |         |   |  |     +------WP_008968903.1-Bradyrhizobium_sp._STM_3843_Proteobacteria
+|       |  |         |   +--| (98)
+|       |  |         |      |  +--NVN87899.1-Rhodopseudomonas_sp._Proteobacteria
+|       |  |         |      +--| (100)
+|       |  |         |         |     +--WP_011665574.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  +--| (100)
+|       |  |         |         |  |  |        +--WP_110782500.1-Rhodopseudomonas_faecalis_Proteobacteria
+|       |  |         |         |  |  |     +--| (99)
+|       |  |         |         |  |  |     |  +--WP_027276359.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |  |  +--| (100)
+|       |  |         |         |  |  |  |  +--TAH64925.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |  +--| (99)
+|       |  |         |         |  |     |                 +**WP_164571151.1-Rhodopseudomonas_sp._BR0C11_Proteobacteria
+|       |  |         |         |  |     |              +--| (95)
+|       |  |         |         |  |     |              |  +--WP_107345917.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |           +**| (90)
+|       |  |         |         |  |     |           |  +--WP_164638651.1-Rhodopseudomonas_sp._BR0G17_Proteobacteria
+|       |  |         |         |  |     |        +--| (97)
+|       |  |         |         |  |     |        |  +--WP_107356882.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |     +--| (100)
+|       |  |         |         |  |     |     |  |     +--WP_011159875.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |     |  |  +**| (84)
+|       |  |         |         |  |     |     |  |  |  +--WP_012497548.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |     |  +--| (100)
+|       |  |         |         |  |     |     |     +--WP_119019080.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  +--| (88)
+|       |  |         |         |  |     |  |  |        +--WP_013504207.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  |  |     +--| (99)
+|       |  |         |         |  |     |  |  |     |  +**WP_047308756.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  |  |  +--| (100)
+|       |  |         |         |  |     |  |  |  |  +**WP_164630935.1-Rhodopseudomonas_sp._WA056_Proteobacteria
+|       |  |         |         |  |     |  |  +--| (87)
+|       |  |         |         |  |     |  |     |  +---WP_119858943.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  |     +--| (85)
+|       |  |         |         |  |     |  |        +--WP_142883484.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     +--| (100)
+|       |  |         |         |  |        |  +--WP_022722993.1-Rhodopseudomonas_sp._B29_Proteobacteria
+|       |  |         |         |  |        +--| (83)
+|       |  |         |         |  |           +--WP_054162298.1-Rhodopseudomonas_sp._AAP120_Proteobacteria
+|       |  |         |         +--| (100)
+|       |  |         |            |  +**ABD08837.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |            +--| (100)
+|       |  |         |               +**WP_041798938.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |      +--| (100)
+|       |  |      |  +---------WP_136963313.1-Phreatobacter_stygius_Proteobacteria
+|       |  |  +---| (100)
+|       |  |  |   |           +-------WP_057659955.1-Pseudoxanthomonas_dokdonensis_Proteobacteria
+|       |  |  |   |        +--| (100)
+|       |  |  |   |        |  +---------WP_077034059.1-Pelomonas_sp._KK5_Proteobacteria
+|       |  |  |   |     +--| (99)
+|       |  |  |   |     |  |          +---WP_108104178.1-Pseudomonas_mangrovi_Proteobacteria
+|       |  |  |   |     |  |      +---| (100)
+|       |  |  |   |     |  |      |   +----WP_017937932.1-Pseudomonas_thermotolerans_Proteobacteria
+|       |  |  |   |     |  |   +--| (100)
+|       |  |  |   |     |  |   |  |          +--WP_136868902.1-Pseudomonas_bauzanensis_Proteobacteria
+|       |  |  |   |     |  |   |  |       +--| (100)
+|       |  |  |   |     |  |   |  |       |  +**EZQ18937.1-Pseudomonas_bauzanensis_Proteobacteria
+|       |  |  |   |     |  |   |  |  +----| (100)
+|       |  |  |   |     |  |   |  |  |    +---WP_185267007.1-Pseudomonas_xiamenensis_Proteobacteria
+|       |  |  |   |     |  |   |  +--| (100)
+|       |  |  |   |     |  |   |     +-------WP_093476299.1-Pseudomonas_yangmingensis_Proteobacteria
+|       |  |  |   |     |  +---| (100)
+|       |  |  |   |     |      |             +--MAB24835.1-Pseudomonadales_bacterium_Proteobacteria
+|       |  |  |   |     |      |          +--| (100)
+|       |  |  |   |     |      |          |  +--WP_182248855.1-Pseudomonas_sp._5Ae-yellow_Proteobacteria
+|       |  |  |   |     |      |      +---| (100)
+|       |  |  |   |     |      |      |   +--WP_083726556.1-Pseudomonas_pachastrellae_Proteobacteria
+|       |  |  |   |     |      +------| (100)
+|       |  |  |   |     |             +----PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11_Proteobacteria
+|       |  |  |   |  +--| (77)
+|       |  |  |   |  |  +--------------WP_151072822.1-Cupriavidus_oxalaticus_Proteobacteria
+|       |  |  |   +--| (67)
+|       |  |  |      |                                +--WP_027475679.1-Curvibacter_gracilis_Proteobacteria
+|       |  |  |      |                             +--| (100)
+|       |  |  |      |                             |  +--WP_157443435.1-Curvibacter_lanceolatus_Proteobacteria
+|       |  |  |      |                  +----------| (100)
+|       |  |  |      |                  |          +--RUP23521.1-Curvibacter_sp._Proteobacteria
+|       |  |  |      |              +---| (100)
+|       |  |  |      |              |   +---------GBU15266.1-Polaromonas_sp._Proteobacteria
+|       |  |  |      |           +--| (90)
+|       |  |  |      |           |  |            +-----KAB2911669.1-Hyphomicrobiaceae_bacterium_Proteobacteria
+|       |  |  |      |           |  |         +--| (87)
+|       |  |  |      |           |  |         |  |        +--WP_089945766.1-Candidatus_Entotheonella_palauensis_Candidatus
+|       |  |  |      |           |  |         |  +--------| (100)
+|       |  |  |      |           |  |         |           +--WP_089717141.1-Candidatus_Entotheonella_palauensis_Candidatus
+|       |  |  |      |           |  |  +------| (100)
+|       |  |  |      |           |  |  |      |     +----OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22_Candidatus
+|       |  |  |      |           |  |  |      |  +--| (98)
+|       |  |  |      |           |  |  |      |  |  |  +--PYN74367.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  |  |      |  |  +--| (100)
+|       |  |  |      |           |  |  |      |  |     +--PYM96198.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  |  |      +--| (100)
+|       |  |  |      |           |  |  |         |  +--PYN46404.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  |  |         +--| (100)
+|       |  |  |      |           |  |  |            +--PYN32128.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  +--| (84)
+|       |  |  |      |           |     |                                                +--WP_084803943.1-Bradyrhizobium_sp._NAS80.1_Proteobacteria
+|       |  |  |      |           |     |                                             +--| (100)
+|       |  |  |      |           |     |                                             |  +--WP_074117602.1-Bradyrhizobium_sp._AS23.2_Proteobacteria
+|       |  |  |      |           |     |                                          +--| (91)
+|       |  |  |      |           |     |                                          |  |                       +--WP_128961978.1-Bradyrhizobium_guangzhouense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |                    +--| (100)
+|       |  |  |      |           |     |                                          |  |                    |  +--WP_128953098.1-Bradyrhizobium_guangzhouense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |                 +--| (95)
+|       |  |  |      |           |     |                                          |  |                 |  +--WP_057753835.1-Bradyrhizobium_manausense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |              +--| (52)
+|       |  |  |      |           |     |                                          |  |              |  +--MBC9878718.1-Bradyrhizobium_campsiandrae_Proteobacteria
+|       |  |  |      |           |     |                                          |  |           +--| (100)
+|       |  |  |      |           |     |                                          |  |           |  |  +--WP_092295676.1-Bradyrhizobium_sp._Ghvi_Proteobacteria
+|       |  |  |      |           |     |                                          |  |           |  +--| (91)
+|       |  |  |      |           |     |                                          |  |           |     +--WP_128967591.1-Bradyrhizobium_guangdongense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |        +--| (66)
+|       |  |  |      |           |     |                                          |  |        |  |  +--WP_027528936.1-Bradyrhizobium_sp._WSM3983_Proteobacteria
+|       |  |  |      |           |     |                                          |  |        |  +--| (95)
+|       |  |  |      |           |     |                                          |  |        |     +--WP_148775460.1-Bradyrhizobium_rifense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |     +--| (100)
+|       |  |  |      |           |     |                                          |  |     |  +--WP_148749019.1-Bradyrhizobium_cytisi_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  +--| (24)
+|       |  |  |      |           |     |                                          |  |  |  |           +--WP_145664020.1-Bradyrhizobium_stylosanthis_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |        +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |        |  +--WP_063691485.1-Bradyrhizobium_stylosanthis_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     +--| (83)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |                    +--WP_158669522.1-Bradyrhizobium_guangdongense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |                 +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |                 |  +--WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              +--| (97)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |  |  +--WP_061878281.1-Bradyrhizobium_liaoningense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |  +--| (97)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     |     +**WP_035674808.1-Bradyrhizobium_liaoningense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     |  |  +--WP_028179375.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |        |  +--WP_061021165.1-Bradyrhizobium_sp._CCH5-F6_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |        +--| (72)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |           +--GAJ33771.1-Bradyrhizobium_sp._DOA9_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           +--| (53)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |  |  +--RTM13090.1-Bradyrhizobiaceae_bacterium_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |  +--| (95)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |     |  +--WP_100175831.1-Bradyrhizobium_nitroreducens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |        +**WP_142250055.1-Bradyrhizobium_sp._UNPF46_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        +--| (78)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        |  |  +--WP_128939625.1-Bradyrhizobium_zhanjiangense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        |     +--WP_128955323.1-Bradyrhizobium_zhanjiangense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     +--| (73)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  |     +--WP_091965654.1-Bradyrhizobium_shewense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  |  +--| (99)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  |  |  +--WP_104462928.1-Bradyrhizobium_sp._AC87j1_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  +--| (86)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |     +--WP_183237909.1-Bradyrhizobium_sp._CIR18_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |  |  +--WP_018322728.1-Bradyrhizobium_sp._WSM2793_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |  +--| (82)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     |     +**WP_183258594.1-Bradyrhizobium_sp._CIR48_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     |  +**| (60)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     |  |  +--WP_183231495.1-Bradyrhizobium_sp._SBR1B_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |        +--WP_092259760.1-Bradyrhizobium_sp._Rc3b_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     +--| (98)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |        +--WP_152103320.1-Bradyrhizobium_sp._TM102_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  +--| (30)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |  |  +--WP_028135100.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |  +--| (93)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |     |     +**WP_135167913.1-Bradyrhizobium_frederickii_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |     |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |     |  |  +--WP_126256569.1-Bradyrhizobium_sp._LVM_105_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |     +--| (34)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |        +--WP_135162274.1-Bradyrhizobium_frederickii_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  +--| (42)
+|       |  |  |      |           |     |                                          |  |  |  |     |     |  +--WP_151642895.1-Bradyrhizobium_betae_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |        +--WP_015687718.1-Bradyrhizobium_cosmicum_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  +--| (65)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |              +--WP_007594037.1-Bradyrhizobium_sp._WSM1253_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |           +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |           |  +--WP_027516639.1-Bradyrhizobium_sp._WSM1417_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |        +--| (90)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |        |  +--WP_027568791.1-Bradyrhizobium_sp._URHA0013_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     +--| (75)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |  |  +--WP_063993269.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |  +--| (74)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |     |  +--WP_085395770.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |        +**WP_085352090.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |  +--| (97)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |  |  +--WP_018457146.1-Bradyrhizobium_sp._WSM4349_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |  |     +--WP_106942729.1-Bradyrhizobium_sp._MOS002_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  +--| (37)
+|       |  |  |      |           |     |                                          |  |  |     |              +**WP_011085536.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |           +**| (61)
+|       |  |  |      |           |     |                                          |  |  |     |           |  +**WP_038965832.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |        +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |        |  +--WP_182869822.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |     |  |  +**QHP72204.1-Bradyrhizobium_sp._LCT2_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |     |  +--| (99)
+|       |  |  |      |           |     |                                          |  |  |     |     |     +**WP_161535945.1-Bradyrhizobium_sp._LCT2_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |  |     +**WP_060912981.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  |  |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |  |  |  +**BAR59885.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |     |  +**KGJ68294.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |        +**WP_028174753.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     +--| (38)
+|       |  |  |      |           |     |                                          |  |  |        +--WP_148744709.1-Bradyrhizobium_hipponense_Proteobacteria
+|       |  |  |      |           |     |                                          |  +--| (65)
+|       |  |  |      |           |     |                                          |     |        +--WP_008138438.1-Bradyrhizobium_sp._YR681_Proteobacteria
+|       |  |  |      |           |     |                                          |     |     +--| (97)
+|       |  |  |      |           |     |                                          |     |     |  +--WP_129271949.1-Bradyrhizobium_betae_Proteobacteria
+|       |  |  |      |           |     |                                          |     |  +--| (100)
+|       |  |  |      |           |     |                                          |     |  |  +--WP_092029312.1-Bradyrhizobium_sp._OK095_Proteobacteria
+|       |  |  |      |           |     |                                          |     +--| (88)
+|       |  |  |      |           |     |                                          |        +--WP_092214970.1-Bradyrhizobium_arachidis_Proteobacteria
+|       |  |  |      |           |     |                                       +--| (99)
+|       |  |  |      |           |     |                                       |  |              +--WP_071915975.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |  |           +--| (100)
+|       |  |  |      |           |     |                                       |  |           |  +--WP_063984832.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                                       |  |        +--| (100)
+|       |  |  |      |           |     |                                       |  |        |  +--WP_166089364.1-Bradyrhizobium_sp._1S5_Proteobacteria
+|       |  |  |      |           |     |                                       |  |     +--| (100)
+|       |  |  |      |           |     |                                       |  |     |  +--WP_166350707.1-Bradyrhizobium_sp._323S2_Proteobacteria
+|       |  |  |      |           |     |                                       |  |  +--| (98)
+|       |  |  |      |           |     |                                       |  |  |  |  +--WP_038931390.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |  |  |  +**| (100)
+|       |  |  |      |           |     |                                       |  |  |     +--WP_039157276.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |  +--| (100)
+|       |  |  |      |           |     |                                       |     |  +--WP_028156991.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |     +--| (100)
+|       |  |  |      |           |     |                                       |        +**WP_041955910.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                    +--| (91)
+|       |  |  |      |           |     |                                    |  |     +--WP_063680948.1-Bradyrhizobium_neotropicale_Proteobacteria
+|       |  |  |      |           |     |                                    |  |  +--| (100)
+|       |  |  |      |           |     |                                    |  |  |  +--WP_027550185.1-Bradyrhizobium_sp._Cp5.3_Proteobacteria
+|       |  |  |      |           |     |                                    |  +--| (77)
+|       |  |  |      |           |     |                                    |     +--WP_063705824.1-Bradyrhizobium_centrolobii_Proteobacteria
+|       |  |  |      |           |     |                                 +--| (100)
+|       |  |  |      |           |     |                                 |  +--WP_027526029.1-Bradyrhizobium_sp._Ec3.3_Proteobacteria
+|       |  |  |      |           |     |                              +--| (100)
+|       |  |  |      |           |     |                              |  +--WP_140980779.1-Bradyrhizobium_guangdongense_Proteobacteria
+|       |  |  |      |           |     |                           +--| (71)
+|       |  |  |      |           |     |                           |  |                             +--WP_065748757.1-Bradyrhizobium_sp._LMTR_3_Proteobacteria
+|       |  |  |      |           |     |                           |  |                          +--| (73)
+|       |  |  |      |           |     |                           |  |                          |  |  +--WP_028347371.1-Bradyrhizobium_murdochi_Proteobacteria
+|       |  |  |      |           |     |                           |  |                          |  +--| (100)
+|       |  |  |      |           |     |                           |  |                          |     +--WP_057843198.1-Bradyrhizobium_retamae_Proteobacteria
+|       |  |  |      |           |     |                           |  |                       +--| (100)
+|       |  |  |      |           |     |                           |  |                       |  +--WP_171577827.1-Bradyrhizobium_australiense_Proteobacteria
+|       |  |  |      |           |     |                           |  |                    +--| (100)
+|       |  |  |      |           |     |                           |  |                    |  +--WP_065730813.1-Bradyrhizobium_icense_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 +--| (100)
+|       |  |  |      |           |     |                           |  |                 |  |     +--WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 |  |  +--| (100)
+|       |  |  |      |           |     |                           |  |                 |  |  |  |  +--WP_065756637.1-Bradyrhizobium_paxllaeri_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 |  |  |  +--| (100)
+|       |  |  |      |           |     |                           |  |                 |  |  |     +--WP_057859318.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 |  +--| (100)
+|       |  |  |      |           |     |                           |  |                 |     +--WP_057833547.1-Bradyrhizobium_jicamae_Proteobacteria
+|       |  |  |      |           |     |                           |  |              +--| (82)
+|       |  |  |      |           |     |                           |  |              |  +--WP_108514566.1-Bradyrhizobium_algeriense_Proteobacteria
+|       |  |  |      |           |     |                           |  |           +--| (93)
+|       |  |  |      |           |     |                           |  |           |  |  +**WP_057900995.1-Bradyrhizobium_valentinum_Proteobacteria
+|       |  |  |      |           |     |                           |  |           |  +--| (100)
+|       |  |  |      |           |     |                           |  |           |     +--WP_057851642.1-Bradyrhizobium_valentinum_Proteobacteria
+|       |  |  |      |           |     |                           |  |        +--| (65)
+|       |  |  |      |           |     |                           |  |        |  |        +--WP_155805222.1-Bradyrhizobium_sp._URHA0002_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  |     +--| (100)
+|       |  |  |      |           |     |                           |  |        |  |     |  |  +--WP_092515866.1-Afipia_sp._GAS231_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  |     |  +--| (100)
+|       |  |  |      |           |     |                           |  |        |  |     |     +**SDP08864.1-Afipia_sp._GAS231_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  |  +--| (99)
+|       |  |  |      |           |     |                           |  |        |  |  |  +--WP_079586579.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  +--| (74)
+|       |  |  |      |           |     |                           |  |        |     |     +--WP_143206068.1-Bradyrhizobium_erythrophlei_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |     |  +--| (81)
+|       |  |  |      |           |     |                           |  |        |     |  |  |  +--TKW79521.1-Bradyrhizobium_icense_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |     |  |  +--| (92)
+|       |  |  |      |           |     |                           |  |        |     |  |     +--WP_100419024.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |     +--| (71)
+|       |  |  |      |           |     |                           |  |        |        +--MBA2399293.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                           |  |     +--| (81)
+|       |  |  |      |           |     |                           |  |     |  +--MBA4036164.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                           |  |  +--| (97)
+|       |  |  |      |           |     |                           |  |  |  +--WP_069276965.1-Bradyrhizobium_elkanii_Proteobacteria
+|       |  |  |      |           |     |                           |  +--| (65)
+|       |  |  |      |           |     |                           |     |  +--WP_130580234.1-Bradyrhizobium_sp._Leo170_Proteobacteria
+|       |  |  |      |           |     |                           |     +--| (100)
+|       |  |  |      |           |     |                           |        +--WP_130222300.1-Bradyrhizobium_sp._Leo121_Proteobacteria
+|       |  |  |      |           |     |                        +--| (77)
+|       |  |  |      |           |     |                        |  |     +--WP_079601315.1-Bradyrhizobium_erythrophlei_Proteobacteria
+|       |  |  |      |           |     |                        |  |  +--| (74)
+|       |  |  |      |           |     |                        |  |  |  |        +--WP_100380578.1-Afipia_broomeae_Proteobacteria
+|       |  |  |      |           |     |                        |  |  |  |     +--| (100)
+|       |  |  |      |           |     |                        |  |  |  |     |  +--WP_146687675.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |  |      |           |     |                        |  |  |  |  +--| (78)
+|       |  |  |      |           |     |                        |  |  |  |  |  +--TMK06221.1-Alphaproteobacteria_bacterium_Proteobacteria
+|       |  |  |      |           |     |                        |  |  |  +--| (80)
+|       |  |  |      |           |     |                        |  |  |     +--THD60673.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                        |  +--| (75)
+|       |  |  |      |           |     |                        |     +--WP_079544782.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                     +--| (94)
+|       |  |  |      |           |     |                     |  |  +--WP_024518537.1-Bradyrhizobium_sp._Tv2a-2_Proteobacteria
+|       |  |  |      |           |     |                     |  +--| (99)
+|       |  |  |      |           |     |                     |     +--WP_024511517.1-Bradyrhizobium_sp._ARR65_Proteobacteria
+|       |  |  |      |           |     |                  +--| (99)
+|       |  |  |      |           |     |                  |  |  +--TMJ47098.1-Alphaproteobacteria_bacterium_Proteobacteria
+|       |  |  |      |           |     |                  |  +--| (100)
+|       |  |  |      |           |     |                  |     +--TMK39387.1-Alphaproteobacteria_bacterium_Proteobacteria
+|       |  |  |      |           |     |            +-----| (100)
+|       |  |  |      |           |     |            |     |           +**WP_035655465.1-Bradyrhizobium_sp._STM_3809_Proteobacteria
+|       |  |  |      |           |     |            |     |        +--| (100)
+|       |  |  |      |           |     |            |     |        |  +**CCD98599.1-Bradyrhizobium_sp._STM_3809_Proteobacteria
+|       |  |  |      |           |     |            |     |     +--| (99)
+|       |  |  |      |           |     |            |     |     |  |        +**WP_172134110.1-Bradyrhizobium_sp._81013_Proteobacteria
+|       |  |  |      |           |     |            |     |     |  |     +--| (100)
+|       |  |  |      |           |     |            |     |     |  |     |  +--WP_172111906.1-Bradyrhizobium_sp._83012_Proteobacteria
+|       |  |  |      |           |     |            |     |     |  |  +--| (100)
+|       |  |  |      |           |     |            |     |     |  |  |  +--WP_172180802.1-Bradyrhizobium_sp._83002_Proteobacteria
+|       |  |  |      |           |     |            |     |     |  +--| (100)
+|       |  |  |      |           |     |            |     |     |     +--WP_083842450.1-Bradyrhizobium_sp._ORS_375_Proteobacteria
+|       |  |  |      |           |     |            |     |  +--| (100)
+|       |  |  |      |           |     |            |     |  |  +--WP_168167890.1-Bradyrhizobium_sp._BTAi1_Proteobacteria
+|       |  |  |      |           |     |            |     +--| (84)
+|       |  |  |      |           |     |            |        |  +--NVN85223.1-Rhodopseudomonas_sp._Proteobacteria
+|       |  |  |      |           |     |            |        +--| (100)
+|       |  |  |      |           |     |            |           +--WP_011439962.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |  |      |           |     |      +-----| (100)
+|       |  |  |      |           |     |      |     |     +--WP_046828790.1-Afipia_massiliensis_Proteobacteria
+|       |  |  |      |           |     |      |     +-----| (100)
+|       |  |  |      |           |     |      |           |     +**EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+|       |  |  |      |           |     |      |           |  +--| (100)
+|       |  |  |      |           |     |      |           |  |  +**WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+|       |  |  |      |           |     |      |           +--| (100)
+|       |  |  |      |           |     |      |              +--WP_002714592.1-Afipia_clevelandensis_Proteobacteria
+|       |  |  |      |           |     |   +--| (100)
+|       |  |  |      |           |     |   |  +-----------WP_076861029.1-Bradyrhizobium_mercantei_Proteobacteria
+|       |  |  |      |           |     +---| (100)
+|       |  |  |      |           |         +-----------OJY09878.1-Rhizobiales_bacterium_62-47_Proteobacteria
+|       |  |  |      |        +--| (83)
+|       |  |  |      |        |  |  +------------------WP_155709830.1-Massilia_dura_Proteobacteria
+|       |  |  |      |        |  +--| (100)
+|       |  |  |      |        |     +------------RZL87373.1-Variovorax_sp._Proteobacteria
+|       |  |  |      |     +--| (86)
+|       |  |  |      |     |  |                    +---WP_066731373.1-Cupriavidus_sp._D384_Proteobacteria
+|       |  |  |      |     |  |                 +--| (99)
+|       |  |  |      |     |  |                 |  |     +**WP_071072555.1-Cupriavidus_malaysiensis_Proteobacteria
+|       |  |  |      |     |  |                 |  |  +--| (100)
+|       |  |  |      |     |  |                 |  |  |  +--WP_071038742.1-Cupriavidus_sp._USMAA2-4_Proteobacteria
+|       |  |  |      |     |  |                 |  +--| (100)
+|       |  |  |      |     |  |                 |     +**WP_071018820.1-Cupriavidus_sp._USMAHM13_Proteobacteria
+|       |  |  |      |     |  |              +--| (100)
+|       |  |  |      |     |  |              |  +--WP_116319445.1-Cupriavidus_sp._P-10_Proteobacteria
+|       |  |  |      |     |  |        +-----| (100)
+|       |  |  |      |     |  |        |     |             +**WP_025586346.1-Cupriavidus_taiwanensis_Proteobacteria
+|       |  |  |      |     |  |        |     |          +--| (100)
+|       |  |  |      |     |  |        |     |          |  +--WP_116388232.1-Cupriavidus_taiwanensis_Proteobacteria
+|       |  |  |      |     |  |        |     |       +--| (99)
+|       |  |  |      |     |  |        |     |       |  +--WP_116377884.1-Cupriavidus_taiwanensis_Proteobacteria
+|       |  |  |      |     |  |        |     |    +--| (100)
+|       |  |  |      |     |  |        |     |    |  +--WP_062795892.1-Cupriavidus_nantongensis_Proteobacteria
+|       |  |  |      |     |  |        |     +----| (100)
+|       |  |  |      |     |  |        |          +--WP_116320039.1-Cupriavidus_sp._P-10_Proteobacteria
+|       |  |  |      |     |  |     +--| (99)
+|       |  |  |      |     |  |     |  |                 +--WP_061999991.1-Burkholderia_sp._PAMC_28687_Proteobacteria
+|       |  |  |      |     |  |     |  |              +--| (100)
+|       |  |  |      |     |  |     |  |              |  +--WP_062170184.1-Burkholderia_sp._PAMC_26561_Proteobacteria
+|       |  |  |      |     |  |     |  +--------------| (100)
+|       |  |  |      |     |  |     |                 +--WP_081889718.1-Caballeronia_sordidicola_Proteobacteria
+|       |  |  |      |     |  |  +--| (100)
+|       |  |  |      |     |  |  |  |             +**PZW26129.1-Thermosporothrix_hazakensis_Chloroflexi
+|       |  |  |      |     |  |  |  +-------------| (100)
+|       |  |  |      |     |  |  |                +**WP_111324427.1-Thermosporothrix_hazakensis_Chloroflexi
+|       |  |  |      |     |  +--| (98)
+|       |  |  |      |     |     |             +--WP_150987011.1-Cupriavidus_basilensis_Proteobacteria
+|       |  |  |      |     |     |          +--| (100)
+|       |  |  |      |     |     |          |  |  +**WP_183035411.1-Cupriavidus_sp._UME77_Proteobacteria
+|       |  |  |      |     |     |          |  +--| (100)
+|       |  |  |      |     |     |          |     +**MBB1634382.1-Cupriavidus_sp._UME77_Proteobacteria
+|       |  |  |      |     |     +----------| (100)
+|       |  |  |      |     |                +-----WP_092594144.1-Ralstonia_sp._25mfcol4.1_Proteobacteria
+|       |  |  |      |  +--| (88)
+|       |  |  |      |  |  +----------------WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015_Proteobacteria
+|       |  |  |      +--| (94)
+|       |  |  |         |             +--WP_163259863.1-Caulobacter_sp._17J65-9_Proteobacteria
+|       |  |  |         +-------------| (100)
+|       |  |  |                       +--WP_187448402.1-Caulobacter_sp._17J80-11_Proteobacteria
+|       |  +--| (100)
+|       |     +---------WP_092831606.1-Rhodospirillales_bacterium_URHD0017_Proteobacteria
+|   +---| (100)
+|   |   |      +**XP_018221989.1-Saccharomyces_eubayanus_Saccharomycotina
+|   |   +------| (100)
+|   |          +--QID88192.1-Saccharomyces_pastorianus_Saccharomycotina
++---| (100)
+|   |       +---XP_002555886.1-Lachancea_thermotolerans_Saccharomycotina
+|   +-------| (100)
+|           +----SCW03834.1-Lachancea_fermentati_Saccharomycotina
+|
++----QUERY_Saccharomyces_cerevisiae_YOL164W
+
+Tree in newick format:
+
+(QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina:0.1410169193,((((((((((WP_007837899.1-Variovorax_sp._CF313_Proteobacteria:0.0152241582,(WP_130421160.1-Variovorax_sp._BK460_Proteobacteria:0.0284286767,WP_093131647.1-Variovorax_sp._OK605_Proteobacteria:0.2080303908)71:0.0363867290)48:0.0181505344,((((((WP_132801781.1-Variovorax_sp._BK370_Proteobacteria:0.0000025902,(WP_184605932.1-Variovorax_sp._BK613_Proteobacteria:0.0017867393,((WP_145759386.1-Variovorax_sp._1180_Proteobacteria:0.0000025529,WP_126183471.1-Variovorax_sp._369_Proteobacteria:0.0035560491)100:0.0035575277,WP_020722993.1-Variovorax_paradoxus_Proteobacteria:0.0035596580)99:0.0000028573)100:0.0017778488)100:0.0017773413,WP_132755990.1-Variovorax_sp._BK151_Proteobacteria:0.0035706853)100:0.0104871553,WP_176665552.1-Variovorax_sp._SG517_Proteobacteria:0.0131240078)99:0.0055691785,(WP_184638849.1-Variovorax_guangxiensis_Proteobacteria:0.0020296942,WP_126020505.1-Variovorax_guangxiensis_Proteobacteria:0.0032976925)100:0.0218177694)100:0.0190596629,(WP_093195641.1-Variovorax_sp._YR750_Proteobacteria:0.0070754256,WP_126472589.1-Variovorax_gossypii_Proteobacteria:0.0071366605)100:0.0057998940)100:0.0123966964,(((WP_097197469.1-Variovorax_sp._YR752_Proteobacteria:0.0035487301,WP_093174861.1-Variovorax_sp._YR266_Proteobacteria:0.0000027141)100:0.0017804944,WP_093076613.1-Variovorax_sp._OV084_Proteobacteria:0.0017718643)99:0.0015431797,WP_093057006.1-Variovorax_sp._YR634_Proteobacteria:0.0037590032)100:0.0310962981)90:0.0149565902)48:0.0156223618,(WP_081267376.1-Variovorax_paradoxus_Proteobacteria:0.0269652371,ODU15846.1-Variovorax_sp._SCN_67-85_Proteobacteria:0.0233850795)100:0.0325716889)68:0.0188985374,(TAJ61793.1-Variovorax_sp._Proteobacteria:0.0044458578,((((WP_172705422.1-Variovorax_paradoxus_Proteobacteria:0.0000025529,KPU98577.1-Variovorax_paradoxus_Proteobacteria:0.0000025529)100:0.0041970861,MBS76598.1-Variovorax_sp._Proteobacteria:0.0000027864)100:0.0084655208,WP_093343818.1-Variovorax_sp._PDC80_Proteobacteria:0.0035828750)83:0.0000029532,KAF1061273.1-Variovorax_sp._Proteobacteria:0.0078040894)88:0.0027320220)100:0.0749097892)73:0.0319422853,(((WP_093435402.1-Variovorax_sp._770b2_Proteobacteria:0.0206586646,WP_052810747.1-Variovorax_paradoxus_Proteobacteria:0.0165659413)100:0.0134437057,WP_013538622.1-Variovorax_paradoxus_Proteobacteria:0.0302286410)73:0.0150777259,WP_176660984.1-Variovorax_sp._SG533_Proteobacteria:0.0453283197)61:0.0068646733)72:0.0244211033,WP_145738683.1-Variovorax_beijingensis_Proteobacteria:0.0610257482)71:0.0106834520,(((WP_093241869.1-Variovorax_sp._EL159_Proteobacteria:0.0125800125,WP_187113215.1-Variovorax_sp._PAMC26660_Proteobacteria:0.0317758982)100:0.0327409585,WP_124458460.1-Variovorax_sp._KBW07_Proteobacteria:0.0418875545)42:0.0093686014,(WP_119556153.1-Acidovorax_cavernicola_Proteobacteria:0.0490619443,(((WP_153281245.1-Variovorax_paradoxus_Proteobacteria:0.0069603947,(WP_099794476.1-Variovorax_sp._54_Proteobacteria:0.0034785224,WP_101490554.1-Variovorax_sp._RO1_Proteobacteria:0.0052145746)98:0.0000026612)88:0.0046318009,(((((WP_062470459.1-Variovorax_boronicumulans_Proteobacteria:0.0052289264,WP_095948515.1-Variovorax_boronicumulans_Proteobacteria:0.0000027198)72:0.0034849056,WP_159278964.1-Variovorax_boronicumulans_Proteobacteria:0.0034724572)88:0.0017543454,WP_159274326.1-Variovorax_boronicumulans_Proteobacteria:0.0034861997)54:0.0017462506,(WP_070061350.1-Variovorax_boronicumulans_Proteobacteria:0.0035059980,WP_095743122.1-Variovorax_boronicumulans_Proteobacteria:0.0017468574)61:0.0000023233)90:0.0034887664,WP_139703542.1-Variovorax_sp._KBS0712_Proteobacteria:0.0000021316)96:0.0040951815)81:0.0077788031,WP_056574498.1-Variovorax_sp._Root473_Proteobacteria:0.0239051762)36:0.0112620334)97:0.0295236989)95:0.0196208468)99:0.0487542445,((((OQW56345.1-Proteobacteria_bacterium_SG_bin9_Proteobacteria:0.1627514055,((((((((((WP_175367589.1-Tardiphaga_robiniae_Proteobacteria:0.0017119630,WP_120288614.1-Tardiphaga_sp._YR296_Proteobacteria:0.0104363849)93:0.0028198655,WP_184513838.1-Tardiphaga_robiniae_Proteobacteria:0.0040792062)92:0.0055540338,WP_089261759.1-Tardiphaga_sp._OK246_Proteobacteria:0.0089400208)100:0.0315266400,WP_092138970.1-Bradyrhizobium_sp._NFR13_Proteobacteria:0.0243423553)91:0.0267856795,WP_115033941.1-Tardiphaga_sp._CF115_Proteobacteria:0.0231530893)100:0.0632464649,((((WP_062313220.1-Bradyrhizobium_sp._CCH10-C7_Proteobacteria:0.0230233757,((MBB5054515.1-Afipia_massiliensis_Proteobacteria:0.0017197135,WP_184089169.1-Afipia_massiliensis_Proteobacteria:0.0000025529)100:0.0314135181,WP_046827511.1-Afipia_massiliensis_Proteobacteria:0.0149053090)99:0.0174094539)82:0.0117145910,((HBR43714.1-Afipia_sp._Proteobacteria:0.0017509222,HAQ93654.1-Afipia_sp._Proteobacteria:0.0035151475)100:0.0065335192,(WP_006021976.1-Afipia_broomeae_Proteobacteria:0.0062396749,RTL81632.1-Bradyrhizobiaceae_bacterium_Proteobacteria:0.0026357283)100:0.0052222606)100:0.0181037867)94:0.0212267008,TXJ10197.1-Afipia_sp._Proteobacteria:0.0292958900)50:0.0056894676,(NGX94573.1-Candidatus_Afipia_apatlaquensis_Proteobacteria:0.0171396871,(WP_002713184.1-Afipia_clevelandensis_Proteobacteria:0.0017891004,WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria:0.0034891952)100:0.0437309542)91:0.0086653250)100:0.0437018874)99:0.0415066233,WP_149531854.1-Tardiphaga_sp._P9-11_Proteobacteria:0.0881091436)73:0.0088712198,OJY11205.1-Rhizobiales_bacterium_62-47_Proteobacteria:0.1273140682)94:0.0148344939,((WP_146690165.1-Bradyrhizobium_canariense_Proteobacteria:0.0159482323,WP_100386102.1-Afipia_broomeae_Proteobacteria:0.0183759330)100:0.0674281139,WP_008968903.1-Bradyrhizobium_sp._STM_3843_Proteobacteria:0.2060846665)99:0.0501990048)96:0.0275586162,(NVN87899.1-Rhodopseudomonas_sp._Proteobacteria:0.0651288182,((WP_011665574.1-Rhodopseudomonas_palustris_Proteobacteria:0.0823318557,(((WP_110782500.1-Rhodopseudomonas_faecalis_Proteobacteria:0.0017607029,WP_027276359.1-Rhodopseudomonas_palustris_Proteobacteria:0.0053158928)99:0.0030356045,TAH64925.1-Rhodopseudomonas_palustris_Proteobacteria:0.0040660973)100:0.1041741088,((((((WP_164571151.1-Rhodopseudomonas_sp._BR0C11_Proteobacteria:0.0000023187,WP_107345917.1-Rhodopseudomonas_palustris_Proteobacteria:0.0088440300)95:0.0017611222,WP_164638651.1-Rhodopseudomonas_sp._BR0G17_Proteobacteria:0.0052823308)90:0.0000020387,WP_107356882.1-Rhodopseudomonas_palustris_Proteobacteria:0.0088534594)97:0.0037241441,((WP_011159875.1-Rhodopseudomonas_palustris_Proteobacteria:0.0017529273,WP_012497548.1-Rhodopseudomonas_palustris_Proteobacteria:0.0070691097)84:0.0000027550,WP_119019080.1-Rhodopseudomonas_palustris_Proteobacteria:0.0035293205)100:0.0122156440)100:0.0462323059,(((WP_013504207.1-Rhodopseudomonas_palustris_Proteobacteria:0.0071875903,WP_047308756.1-Rhodopseudomonas_palustris_Proteobacteria:0.0000027695)99:0.0018000779,WP_164630935.1-Rhodopseudomonas_sp._WA056_Proteobacteria:0.0000027591)100:0.0116720240,(WP_119858943.1-Rhodopseudomonas_palustris_Proteobacteria:0.1271337401,WP_142883484.1-Rhodopseudomonas_palustris_Proteobacteria:0.0144498440)85:0.0235940513)87:0.0391549717)88:0.0317456345,(WP_022722993.1-Rhodopseudomonas_sp._B29_Proteobacteria:0.0599943554,WP_054162298.1-Rhodopseudomonas_sp._AAP120_Proteobacteria:0.0931292521)83:0.0155072260)100:0.0588381775)99:0.0362728913)100:0.0337734339,(ABD08837.1-Rhodopseudomonas_palustris_Proteobacteria:0.0000029645,WP_041798938.1-Rhodopseudomonas_palustris_Proteobacteria:0.0000028130)100:0.0682149503)100:0.0515612765)100:0.1129293073)98:0.0445752282)100:0.1430315180,WP_136963313.1-Phreatobacter_stygius_Proteobacteria:0.3112306934)100:0.0917386658,((((WP_057659955.1-Pseudoxanthomonas_dokdonensis_Proteobacteria:0.2504443031,WP_077034059.1-Pelomonas_sp._KK5_Proteobacteria:0.2907394190)100:0.0897688060,(((WP_108104178.1-Pseudomonas_mangrovi_Proteobacteria:0.1439069358,WP_017937932.1-Pseudomonas_thermotolerans_Proteobacteria:0.1463690630)100:0.1327273239,(((WP_136868902.1-Pseudomonas_bauzanensis_Proteobacteria:0.0070222852,EZQ18937.1-Pseudomonas_bauzanensis_Proteobacteria:0.0000025529)100:0.1117169072,WP_185267007.1-Pseudomonas_xiamenensis_Proteobacteria:0.1297154818)100:0.1555098580,WP_093476299.1-Pseudomonas_yangmingensis_Proteobacteria:0.2420063289)100:0.0524687662)100:0.1002360458,(((MAB24835.1-Pseudomonadales_bacterium_Proteobacteria:0.0190952035,WP_182248855.1-Pseudomonas_sp._5Ae-yellow_Proteobacteria:0.0166167239)100:0.1055173487,WP_083726556.1-Pseudomonas_pachastrellae_Proteobacteria:0.1003605968)100:0.1239403048,PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11_Proteobacteria:0.1694559589)100:0.2031845527)100:0.1243949737)99:0.0853947488,WP_151072822.1-Cupriavidus_oxalaticus_Proteobacteria:0.4488612335)77:0.0385260750,((((((((WP_027475679.1-Curvibacter_gracilis_Proteobacteria:0.0152875513,WP_157443435.1-Curvibacter_lanceolatus_Proteobacteria:0.0139609041)100:0.0290103111,RUP23521.1-Curvibacter_sp._Proteobacteria:0.0268788572)100:0.3270352857,GBU15266.1-Polaromonas_sp._Proteobacteria:0.3005515697)100:0.1430077918,(((KAB2911669.1-Hyphomicrobiaceae_bacterium_Proteobacteria:0.1877779584,(WP_089945766.1-Candidatus_Entotheonella_palauensis_Candidatus:0.0634081638,WP_089717141.1-Candidatus_Entotheonella_palauensis_Candidatus:0.0517030520)100:0.2748929147)87:0.0444202423,((OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22_Candidatus:0.1487536663,(PYN74367.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0963975720,PYM96198.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0929122334)100:0.0778495930)98:0.0164241468,(PYN46404.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0914615522,PYN32128.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0892436852)100:0.0653428037)100:0.0991123782)100:0.2069049165,((((((((((((((WP_084803943.1-Bradyrhizobium_sp._NAS80.1_Proteobacteria:0.0149844591,WP_074117602.1-Bradyrhizobium_sp._AS23.2_Proteobacteria:0.0033342140)100:0.0283194369,((((((((WP_128961978.1-Bradyrhizobium_guangzhouense_Proteobacteria:0.0026345468,WP_128953098.1-Bradyrhizobium_guangzhouense_Proteobacteria:0.0065109029)100:0.0157546955,WP_057753835.1-Bradyrhizobium_manausense_Proteobacteria:0.0340958176)95:0.0076722371,MBC9878718.1-Bradyrhizobium_campsiandrae_Proteobacteria:0.0312913750)52:0.0018945738,(WP_092295676.1-Bradyrhizobium_sp._Ghvi_Proteobacteria:0.0098555247,WP_128967591.1-Bradyrhizobium_guangdongense_Proteobacteria:0.0238608958)91:0.0036217164)100:0.0100196952,(WP_027528936.1-Bradyrhizobium_sp._WSM3983_Proteobacteria:0.0485879635,WP_148775460.1-Bradyrhizobium_rifense_Proteobacteria:0.0183509323)95:0.0058442356)66:0.0037800916,WP_148749019.1-Bradyrhizobium_cytisi_Proteobacteria:0.0178881925)100:0.0154749267,((((WP_145664020.1-Bradyrhizobium_stylosanthis_Proteobacteria:0.0098409043,WP_063691485.1-Bradyrhizobium_stylosanthis_Proteobacteria:0.0048258408)100:0.0314832002,(((((((WP_158669522.1-Bradyrhizobium_guangdongense_Proteobacteria:0.0066286662,WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298_Proteobacteria:0.0082831082)100:0.0374301231,(WP_061878281.1-Bradyrhizobium_liaoningense_Proteobacteria:0.0199479778,((WP_035674808.1-Bradyrhizobium_liaoningense_Proteobacteria:0.0000022155,WP_028179375.1-Bradyrhizobium_japonicum_Proteobacteria:0.0017797377)100:0.0179304412,(WP_061021165.1-Bradyrhizobium_sp._CCH5-F6_Proteobacteria:0.0125745769,GAJ33771.1-Bradyrhizobium_sp._DOA9_Proteobacteria:0.0508912984)72:0.0057388355)100:0.0078690472)97:0.0122683098)97:0.0042958524,(RTM13090.1-Bradyrhizobiaceae_bacterium_Proteobacteria:0.0262086825,(WP_100175831.1-Bradyrhizobium_nitroreducens_Proteobacteria:0.0018063311,WP_142250055.1-Bradyrhizobium_sp._UNPF46_Proteobacteria:0.0000028028)100:0.0127794736)95:0.0130149000)53:0.0017468173,(WP_128939625.1-Bradyrhizobium_zhanjiangense_Proteobacteria:0.0054097422,WP_128955323.1-Bradyrhizobium_zhanjiangense_Proteobacteria:0.0053458512)100:0.0493678310)78:0.0057988703,((WP_091965654.1-Bradyrhizobium_shewense_Proteobacteria:0.0072224938,WP_104462928.1-Bradyrhizobium_sp._AC87j1_Proteobacteria:0.0090696580)99:0.0083892132,((WP_183237909.1-Bradyrhizobium_sp._CIR18_Proteobacteria:0.0019159112,(WP_018322728.1-Bradyrhizobium_sp._WSM2793_Proteobacteria:0.0018858093,((WP_183258594.1-Bradyrhizobium_sp._CIR48_Proteobacteria:0.0000025529,WP_183231495.1-Bradyrhizobium_sp._SBR1B_Proteobacteria:0.0017861289)60:0.0000025357,WP_092259760.1-Bradyrhizobium_sp._Rc3b_Proteobacteria:0.0017882982)100:0.0125735681)82:0.0036214222)100:0.0114585433,WP_152103320.1-Bradyrhizobium_sp._TM102_Proteobacteria:0.0195235625)98:0.0018180517)86:0.0041309862)73:0.0020372151,(WP_028135100.1-Bradyrhizobium_japonicum_Proteobacteria:0.0374352864,((WP_135167913.1-Bradyrhizobium_frederickii_Proteobacteria:0.0000025529,WP_126256569.1-Bradyrhizobium_sp._LVM_105_Proteobacteria:0.0018064077)100:0.0162631319,WP_135162274.1-Bradyrhizobium_frederickii_Proteobacteria:0.0227703366)34:0.0030593777)93:0.0101627351)30:0.0050541709,(WP_151642895.1-Bradyrhizobium_betae_Proteobacteria:0.0144774369,WP_015687718.1-Bradyrhizobium_cosmicum_Proteobacteria:0.0217250045)100:0.0085910137)42:0.0071084918)83:0.0025209961,(((((WP_007594037.1-Bradyrhizobium_sp._WSM1253_Proteobacteria:0.0166251524,WP_027516639.1-Bradyrhizobium_sp._WSM1417_Proteobacteria:0.0086777562)100:0.0053207306,WP_027568791.1-Bradyrhizobium_sp._URHA0013_Proteobacteria:0.0177663228)90:0.0021525708,(WP_063993269.1-Bradyrhizobium_sp._Proteobacteria:0.0163270933,(WP_085395770.1-Bradyrhizobium_canariense_Proteobacteria:0.0017816263,WP_085352090.1-Bradyrhizobium_canariense_Proteobacteria:0.0000025529)100:0.0108947434)74:0.0018358254)75:0.0035935900,WP_018457146.1-Bradyrhizobium_sp._WSM4349_Proteobacteria:0.0110766552)97:0.0054074038,WP_106942729.1-Bradyrhizobium_sp._MOS002_Proteobacteria:0.0179900111)100:0.0164018318)65:0.0060738807,(((((WP_011085536.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529,WP_038965832.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000020678)61:0.0000027037,WP_182869822.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0036093652)100:0.0073149382,(QHP72204.1-Bradyrhizobium_sp._LCT2_Proteobacteria:0.0000023416,WP_161535945.1-Bradyrhizobium_sp._LCT2_Proteobacteria:0.0000023124)99:0.0018085972)100:0.0018381733,((WP_060912981.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529,BAR59885.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529)100:0.0018143049,(KGJ68294.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529,WP_028174753.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529)100:0.0018168824)100:0.0036101900)100:0.0190720633,WP_148744709.1-Bradyrhizobium_hipponense_Proteobacteria:0.0581515546)38:0.0045507008)37:0.0047666318)24:0.0028471437,(((WP_008138438.1-Bradyrhizobium_sp._YR681_Proteobacteria:0.0194807595,WP_129271949.1-Bradyrhizobium_betae_Proteobacteria:0.0231931663)97:0.0017684549,WP_092029312.1-Bradyrhizobium_sp._OK095_Proteobacteria:0.0149217060)100:0.0081846157,WP_092214970.1-Bradyrhizobium_arachidis_Proteobacteria:0.0295808162)88:0.0090227487)65:0.0097156734)91:0.0071301977,(((((WP_071915975.1-Bradyrhizobium_japonicum_Proteobacteria:0.0035973092,WP_063984832.1-Bradyrhizobium_sp._Proteobacteria:0.0054384548)100:0.0024664171,WP_166089364.1-Bradyrhizobium_sp._1S5_Proteobacteria:0.0140715444)100:0.0091350433,WP_166350707.1-Bradyrhizobium_sp._323S2_Proteobacteria:0.0097146584)100:0.0137446887,(WP_038931390.1-Bradyrhizobium_japonicum_Proteobacteria:0.0017967916,WP_039157276.1-Bradyrhizobium_japonicum_Proteobacteria:0.0018008347)100:0.0007230983)98:0.0030745842,(WP_028156991.1-Bradyrhizobium_japonicum_Proteobacteria:0.0090137277,WP_041955910.1-Bradyrhizobium_japonicum_Proteobacteria:0.0000024434)100:0.0035572034)100:0.0158009222)99:0.0152288989,((WP_063680948.1-Bradyrhizobium_neotropicale_Proteobacteria:0.0196342599,WP_027550185.1-Bradyrhizobium_sp._Cp5.3_Proteobacteria:0.0095048442)100:0.0234775456,WP_063705824.1-Bradyrhizobium_centrolobii_Proteobacteria:0.0156907727)77:0.0066796844)91:0.0107026319,WP_027526029.1-Bradyrhizobium_sp._Ec3.3_Proteobacteria:0.0556339320)100:0.0150153633,WP_140980779.1-Bradyrhizobium_guangdongense_Proteobacteria:0.0384437846)100:0.0338028844,((((((((((WP_065748757.1-Bradyrhizobium_sp._LMTR_3_Proteobacteria:0.0300597239,(WP_028347371.1-Bradyrhizobium_murdochi_Proteobacteria:0.0192907318,WP_057843198.1-Bradyrhizobium_retamae_Proteobacteria:0.0177910559)100:0.0062281679)73:0.0022151630,WP_171577827.1-Bradyrhizobium_australiense_Proteobacteria:0.0263946208)100:0.0051995689,WP_065730813.1-Bradyrhizobium_icense_Proteobacteria:0.0247657613)100:0.0170491396,((WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011_Proteobacteria:0.0288880490,(WP_065756637.1-Bradyrhizobium_paxllaeri_Proteobacteria:0.0216503159,WP_057859318.1-Bradyrhizobium_lablabi_Proteobacteria:0.0091366884)100:0.0073879009)100:0.0046301725,WP_057833547.1-Bradyrhizobium_jicamae_Proteobacteria:0.0178178765)100:0.0097361233)100:0.0134191777,WP_108514566.1-Bradyrhizobium_algeriense_Proteobacteria:0.0328737630)82:0.0069744356,(WP_057900995.1-Bradyrhizobium_valentinum_Proteobacteria:0.0000025529,WP_057851642.1-Bradyrhizobium_valentinum_Proteobacteria:0.0017897692)100:0.0550459293)93:0.0110724346,(((WP_155805222.1-Bradyrhizobium_sp._URHA0002_Proteobacteria:0.0355431287,(WP_092515866.1-Afipia_sp._GAS231_Proteobacteria:0.0018019864,SDP08864.1-Afipia_sp._GAS231_Proteobacteria:0.0000028835)100:0.0215708847)100:0.0055145948,WP_079586579.1-Bradyrhizobium_lablabi_Proteobacteria:0.0319040136)99:0.0103619859,((WP_143206068.1-Bradyrhizobium_erythrophlei_Proteobacteria:0.0361139511,(TKW79521.1-Bradyrhizobium_icense_Proteobacteria:0.0608690494,WP_100419024.1-Bradyrhizobium_lablabi_Proteobacteria:0.0515946924)92:0.0202090948)81:0.0104463810,MBA2399293.1-Bradyrhizobium_sp._Proteobacteria:0.0364554366)71:0.0066879051)74:0.0055647529)65:0.0061542187,MBA4036164.1-Bradyrhizobium_sp._Proteobacteria:0.0405283343)81:0.0227043355,WP_069276965.1-Bradyrhizobium_elkanii_Proteobacteria:0.0722275078)97:0.0164613475,(WP_130580234.1-Bradyrhizobium_sp._Leo170_Proteobacteria:0.0274574027,WP_130222300.1-Bradyrhizobium_sp._Leo121_Proteobacteria:0.0492842417)100:0.0546819528)65:0.0166751451)71:0.0145592668,((WP_079601315.1-Bradyrhizobium_erythrophlei_Proteobacteria:0.0483522052,(((WP_100380578.1-Afipia_broomeae_Proteobacteria:0.0177911776,WP_146687675.1-Bradyrhizobium_canariense_Proteobacteria:0.0021310859)100:0.0360374357,TMK06221.1-Alphaproteobacteria_bacterium_Proteobacteria:0.0636638288)78:0.0181483378,THD60673.1-Bradyrhizobium_sp._Proteobacteria:0.0652871755)80:0.0216840148)74:0.0197372016,WP_079544782.1-Bradyrhizobium_lablabi_Proteobacteria:0.0720034094)75:0.0173912185)77:0.0111860198,(WP_024518537.1-Bradyrhizobium_sp._Tv2a-2_Proteobacteria:0.0667884073,WP_024511517.1-Bradyrhizobium_sp._ARR65_Proteobacteria:0.0783727102)99:0.0359617054)94:0.0125244480,(TMJ47098.1-Alphaproteobacteria_bacterium_Proteobacteria:0.0340033028,TMK39387.1-Alphaproteobacteria_bacterium_Proteobacteria:0.0121410077)100:0.0494829005)99:0.0276614213,((((WP_035655465.1-Bradyrhizobium_sp._STM_3809_Proteobacteria:0.0000025547,CCD98599.1-Bradyrhizobium_sp._STM_3809_Proteobacteria:0.0000025529)100:0.0380780498,(((WP_172134110.1-Bradyrhizobium_sp._81013_Proteobacteria:0.0000025529,WP_172111906.1-Bradyrhizobium_sp._83012_Proteobacteria:0.0035471731)100:0.0021326774,WP_172180802.1-Bradyrhizobium_sp._83002_Proteobacteria:0.0050059425)100:0.0307800772,WP_083842450.1-Bradyrhizobium_sp._ORS_375_Proteobacteria:0.0301196020)100:0.0111131521)99:0.0256677348,WP_168167890.1-Bradyrhizobium_sp._BTAi1_Proteobacteria:0.0563145085)100:0.0959843621,(NVN85223.1-Rhodopseudomonas_sp._Proteobacteria:0.0665542815,WP_011439962.1-Rhodopseudomonas_palustris_Proteobacteria:0.1114647753)100:0.0416817415)84:0.0068793984)100:0.1892107471,(WP_046828790.1-Afipia_massiliensis_Proteobacteria:0.0543554175,((EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria:0.0000025529,WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria:0.0000025529)100:0.0056514111,WP_002714592.1-Afipia_clevelandensis_Proteobacteria:0.0066726172)100:0.0435592295)100:0.1754935655)100:0.1763423894,WP_076861029.1-Bradyrhizobium_mercantei_Proteobacteria:0.3530543936)100:0.1056086523,OJY09878.1-Rhizobiales_bacterium_62-47_Proteobacteria:0.3726719779)100:0.1228057174)84:0.0698636387)90:0.0451901483,(WP_155709830.1-Massilia_dura_Proteobacteria:0.5557661566,RZL87373.1-Variovorax_sp._Proteobacteria:0.3945588924)100:0.0736976779)83:0.0239109759,((((((WP_066731373.1-Cupriavidus_sp._D384_Proteobacteria:0.1244621502,((WP_071072555.1-Cupriavidus_malaysiensis_Proteobacteria:0.0000024404,WP_071038742.1-Cupriavidus_sp._USMAA2-4_Proteobacteria:0.0018049159)100:0.0018075780,WP_071018820.1-Cupriavidus_sp._USMAHM13_Proteobacteria:0.0000026140)100:0.1086010247)99:0.0424841488,WP_116319445.1-Cupriavidus_sp._P-10_Proteobacteria:0.1027967862)100:0.0837115318,((((WP_025586346.1-Cupriavidus_taiwanensis_Proteobacteria:0.0000025529,WP_116388232.1-Cupriavidus_taiwanensis_Proteobacteria:0.0036557088)100:0.0316799251,WP_116377884.1-Cupriavidus_taiwanensis_Proteobacteria:0.0302374199)99:0.0150639375,WP_062795892.1-Cupriavidus_nantongensis_Proteobacteria:0.0148732888)100:0.0624658383,WP_116320039.1-Cupriavidus_sp._P-10_Proteobacteria:0.0839847297)100:0.1462076246)100:0.1899307557,((WP_061999991.1-Burkholderia_sp._PAMC_28687_Proteobacteria:0.0087254950,WP_062170184.1-Burkholderia_sp._PAMC_26561_Proteobacteria:0.0025040922)100:0.0260404307,WP_081889718.1-Caballeronia_sordidicola_Proteobacteria:0.0277042159)100:0.4391644299)99:0.0726843554,(PZW26129.1-Thermosporothrix_hazakensis_Chloroflexi:0.0000025529,WP_111324427.1-Thermosporothrix_hazakensis_Chloroflexi:0.0000025529)100:0.4278181864)100:0.0982174834,((WP_150987011.1-Cupriavidus_basilensis_Proteobacteria:0.0061662550,(WP_183035411.1-Cupriavidus_sp._UME77_Proteobacteria:0.0000025529,MBB1634382.1-Cupriavidus_sp._UME77_Proteobacteria:0.0000024494)100:0.0121357022)100:0.1044846317,WP_092594144.1-Ralstonia_sp._25mfcol4.1_Proteobacteria:0.1855041654)100:0.3460007168)98:0.0688633008)86:0.0421557676,WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015_Proteobacteria:0.5054381725)88:0.0483121127,(WP_163259863.1-Caulobacter_sp._17J65-9_Proteobacteria:0.0359889329,WP_187448402.1-Caulobacter_sp._17J80-11_Proteobacteria:0.0560016928)100:0.4106137649)94:0.0539909156)67:0.0266595912)100:0.1389205692,WP_092831606.1-Rhodospirillales_bacterium_URHD0017_Proteobacteria:0.2999519574)100:0.0566919932)100:0.0828212463,(XP_018221989.1-Saccharomyces_eubayanus_Saccharomycotina:0.0010209931,QID88192.1-Saccharomyces_pastorianus_Saccharomycotina:0.0059908746)100:0.2282597169)100:0.1326617390,(XP_002555886.1-Lachancea_thermotolerans_Saccharomycotina:0.1333561401,SCW03834.1-Lachancea_fermentati_Saccharomycotina:0.1492720700)100:0.2396795606)100:0.1389922433,QUERY_Saccharomyces_cerevisiae_YOL164W:0.1521691852);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -55213.800528
+Robinson-Foulds distance between ML tree and consensus tree: 6
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina
+|
+|                               +--WP_007837899.1-Variovorax_sp._CF313_Proteobacteria
+|                            +--| (48)
+|                            |  |  +--WP_130421160.1-Variovorax_sp._BK460_Proteobacteria
+|                            |  +--| (71)
+|                            |     +------WP_093131647.1-Variovorax_sp._OK605_Proteobacteria
+|                         +--| (48)
+|                         |  |                 +--WP_132801781.1-Variovorax_sp._BK370_Proteobacteria
+|                         |  |              +--| (100)
+|                         |  |              |  |  +--WP_184605932.1-Variovorax_sp._BK613_Proteobacteria
+|                         |  |              |  +--| (100)
+|                         |  |              |     |     +--WP_145759386.1-Variovorax_sp._1180_Proteobacteria
+|                         |  |              |     |  +--| (100)
+|                         |  |              |     |  |  +--WP_126183471.1-Variovorax_sp._369_Proteobacteria
+|                         |  |              |     +--| (99)
+|                         |  |              |        +--WP_020722993.1-Variovorax_paradoxus_Proteobacteria
+|                         |  |           +--| (100)
+|                         |  |           |  +--WP_132755990.1-Variovorax_sp._BK151_Proteobacteria
+|                         |  |        +--| (99)
+|                         |  |        |  +--WP_176665552.1-Variovorax_sp._SG517_Proteobacteria
+|                         |  |     +--| (100)
+|                         |  |     |  |  +--WP_184638849.1-Variovorax_guangxiensis_Proteobacteria
+|                         |  |     |  +--| (100)
+|                         |  |     |     +--WP_126020505.1-Variovorax_guangxiensis_Proteobacteria
+|                         |  |  +--| (100)
+|                         |  |  |  |  +--WP_093195641.1-Variovorax_sp._YR750_Proteobacteria
+|                         |  |  |  +--| (100)
+|                         |  |  |     +--WP_126472589.1-Variovorax_gossypii_Proteobacteria
+|                         |  +--| (90)
+|                         |     |        +--WP_097197469.1-Variovorax_sp._YR752_Proteobacteria
+|                         |     |     +--| (100)
+|                         |     |     |  +--WP_093174861.1-Variovorax_sp._YR266_Proteobacteria
+|                         |     |  +--| (99)
+|                         |     |  |  +--WP_093076613.1-Variovorax_sp._OV084_Proteobacteria
+|                         |     +--| (100)
+|                         |        +--WP_093057006.1-Variovorax_sp._YR634_Proteobacteria
+|                      +--| (68)
+|                      |  |  +--WP_081267376.1-Variovorax_paradoxus_Proteobacteria
+|                      |  +--| (100)
+|                      |     +--ODU15846.1-Variovorax_sp._SCN_67-85_Proteobacteria
+|                   +--| (73)
+|                   |  |  +--TAJ61793.1-Variovorax_sp._Proteobacteria
+|                   |  +--| (100)
+|                   |     |           +--WP_172705422.1-Variovorax_paradoxus_Proteobacteria
+|                   |     |        +--| (100)
+|                   |     |        |  +--KPU98577.1-Variovorax_paradoxus_Proteobacteria
+|                   |     |     +--| (100)
+|                   |     |     |  +--MBS76598.1-Variovorax_sp._Proteobacteria
+|                   |     |  +--| (83)
+|                   |     |  |  +--WP_093343818.1-Variovorax_sp._PDC80_Proteobacteria
+|                   |     +--| (88)
+|                   |        +--KAF1061273.1-Variovorax_sp._Proteobacteria
+|                +--| (72)
+|                |  |        +--WP_093435402.1-Variovorax_sp._770b2_Proteobacteria
+|                |  |     +--| (100)
+|                |  |     |  +--WP_052810747.1-Variovorax_paradoxus_Proteobacteria
+|                |  |  +--| (73)
+|                |  |  |  +--WP_013538622.1-Variovorax_paradoxus_Proteobacteria
+|                |  +--| (61)
+|                |     +--WP_176660984.1-Variovorax_sp._SG533_Proteobacteria
+|             +--| (71)
+|             |  +--WP_145738683.1-Variovorax_beijingensis_Proteobacteria
+|          +--| (99)
+|          |  |        +--WP_093241869.1-Variovorax_sp._EL159_Proteobacteria
+|          |  |     +--| (100)
+|          |  |     |  +--WP_187113215.1-Variovorax_sp._PAMC26660_Proteobacteria
+|          |  |  +--| (58)
+|          |  |  |  |     +--WP_119556153.1-Acidovorax_cavernicola_Proteobacteria
+|          |  |  |  |  +--| (45)
+|          |  |  |  |  |  |     +--WP_153281245.1-Variovorax_paradoxus_Proteobacteria
+|          |  |  |  |  |  |  +--| (88)
+|          |  |  |  |  |  |  |  |  +--WP_099794476.1-Variovorax_sp._54_Proteobacteria
+|          |  |  |  |  |  |  |  +--| (98)
+|          |  |  |  |  |  |  |     +--WP_101490554.1-Variovorax_sp._RO1_Proteobacteria
+|          |  |  |  |  |  +--| (81)
+|          |  |  |  |  |     |              +--WP_062470459.1-Variovorax_boronicumulans_Proteobacteria
+|          |  |  |  |  |     |           +--| (72)
+|          |  |  |  |  |     |           |  +--WP_095948515.1-Variovorax_boronicumulans_Proteobacteria
+|          |  |  |  |  |     |        +--| (88)
+|          |  |  |  |  |     |        |  +--WP_159278964.1-Variovorax_boronicumulans_Proteobacteria
+|          |  |  |  |  |     |     +--| (54)
+|          |  |  |  |  |     |     |  +--WP_159274326.1-Variovorax_boronicumulans_Proteobacteria
+|          |  |  |  |  |     |  +--| (90)
+|          |  |  |  |  |     |  |  |  +--WP_070061350.1-Variovorax_boronicumulans_Proteobacteria
+|          |  |  |  |  |     |  |  +--| (61)
+|          |  |  |  |  |     |  |     +--WP_095743122.1-Variovorax_boronicumulans_Proteobacteria
+|          |  |  |  |  |     +--| (96)
+|          |  |  |  |  |        +--WP_139703542.1-Variovorax_sp._KBS0712_Proteobacteria
+|          |  |  |  +--| (97)
+|          |  |  |     +--WP_056574498.1-Variovorax_sp._Root473_Proteobacteria
+|          |  +--| (95)
+|          |     +--WP_124458460.1-Variovorax_sp._KBW07_Proteobacteria
+|       +--| (100)
+|       |  |             +----OQW56345.1-Proteobacteria_bacterium_SG_bin9_Proteobacteria
+|       |  |         +---| (100)
+|       |  |         |   |                             +--WP_175367589.1-Tardiphaga_robiniae_Proteobacteria
+|       |  |         |   |                          +--| (93)
+|       |  |         |   |                          |  +--WP_120288614.1-Tardiphaga_sp._YR296_Proteobacteria
+|       |  |         |   |                       +--| (92)
+|       |  |         |   |                       |  +--WP_184513838.1-Tardiphaga_robiniae_Proteobacteria
+|       |  |         |   |                    +--| (100)
+|       |  |         |   |                    |  +--WP_089261759.1-Tardiphaga_sp._OK246_Proteobacteria
+|       |  |         |   |                 +--| (91)
+|       |  |         |   |                 |  +--WP_092138970.1-Bradyrhizobium_sp._NFR13_Proteobacteria
+|       |  |         |   |              +--| (100)
+|       |  |         |   |              |  +--WP_115033941.1-Tardiphaga_sp._CF115_Proteobacteria
+|       |  |         |   |           +--| (99)
+|       |  |         |   |           |  |           +--WP_062313220.1-Bradyrhizobium_sp._CCH10-C7_Proteobacteria
+|       |  |         |   |           |  |        +--| (82)
+|       |  |         |   |           |  |        |  |     +--MBB5054515.1-Afipia_massiliensis_Proteobacteria
+|       |  |         |   |           |  |        |  |  +--| (100)
+|       |  |         |   |           |  |        |  |  |  +--WP_184089169.1-Afipia_massiliensis_Proteobacteria
+|       |  |         |   |           |  |        |  +--| (99)
+|       |  |         |   |           |  |        |     +--WP_046827511.1-Afipia_massiliensis_Proteobacteria
+|       |  |         |   |           |  |     +--| (94)
+|       |  |         |   |           |  |     |  |     +--HBR43714.1-Afipia_sp._Proteobacteria
+|       |  |         |   |           |  |     |  |  +--| (100)
+|       |  |         |   |           |  |     |  |  |  +--HAQ93654.1-Afipia_sp._Proteobacteria
+|       |  |         |   |           |  |     |  +--| (100)
+|       |  |         |   |           |  |     |     |  +--WP_006021976.1-Afipia_broomeae_Proteobacteria
+|       |  |         |   |           |  |     |     +--| (100)
+|       |  |         |   |           |  |     |        +--RTL81632.1-Bradyrhizobiaceae_bacterium_Proteobacteria
+|       |  |         |   |           |  |  +--| (50)
+|       |  |         |   |           |  |  |  +--TXJ10197.1-Afipia_sp._Proteobacteria
+|       |  |         |   |           |  +--| (100)
+|       |  |         |   |           |     |  +--NGX94573.1-Candidatus_Afipia_apatlaquensis_Proteobacteria
+|       |  |         |   |           |     +--| (91)
+|       |  |         |   |           |        |  +--WP_002713184.1-Afipia_clevelandensis_Proteobacteria
+|       |  |         |   |           |        +--| (100)
+|       |  |         |   |           |           +--WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+|       |  |         |   |        +--| (73)
+|       |  |         |   |        |  +--WP_149531854.1-Tardiphaga_sp._P9-11_Proteobacteria
+|       |  |         |   |     +--| (94)
+|       |  |         |   |     |  +---OJY11205.1-Rhizobiales_bacterium_62-47_Proteobacteria
+|       |  |         |   |  +--| (96)
+|       |  |         |   |  |  |     +--WP_146690165.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |         |   |  |  |  +--| (100)
+|       |  |         |   |  |  |  |  +--WP_100386102.1-Afipia_broomeae_Proteobacteria
+|       |  |         |   |  |  +--| (99)
+|       |  |         |   |  |     +------WP_008968903.1-Bradyrhizobium_sp._STM_3843_Proteobacteria
+|       |  |         |   +--| (98)
+|       |  |         |      |  +--NVN87899.1-Rhodopseudomonas_sp._Proteobacteria
+|       |  |         |      +--| (100)
+|       |  |         |         |     +--WP_011665574.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  +--| (100)
+|       |  |         |         |  |  |        +--WP_110782500.1-Rhodopseudomonas_faecalis_Proteobacteria
+|       |  |         |         |  |  |     +--| (99)
+|       |  |         |         |  |  |     |  +--WP_027276359.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |  |  +--| (100)
+|       |  |         |         |  |  |  |  +--TAH64925.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |  +--| (99)
+|       |  |         |         |  |     |                 +--WP_164571151.1-Rhodopseudomonas_sp._BR0C11_Proteobacteria
+|       |  |         |         |  |     |              +--| (95)
+|       |  |         |         |  |     |              |  +--WP_107345917.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |           +--| (90)
+|       |  |         |         |  |     |           |  +--WP_164638651.1-Rhodopseudomonas_sp._BR0G17_Proteobacteria
+|       |  |         |         |  |     |        +--| (97)
+|       |  |         |         |  |     |        |  +--WP_107356882.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |     +--| (100)
+|       |  |         |         |  |     |     |  |     +--WP_011159875.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |     |  |  +--| (84)
+|       |  |         |         |  |     |     |  |  |  +--WP_012497548.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |     |  +--| (100)
+|       |  |         |         |  |     |     |     +--WP_119019080.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  +--| (88)
+|       |  |         |         |  |     |  |  |        +--WP_013504207.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  |  |     +--| (99)
+|       |  |         |         |  |     |  |  |     |  +--WP_047308756.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  |  |  +--| (100)
+|       |  |         |         |  |     |  |  |  |  +--WP_164630935.1-Rhodopseudomonas_sp._WA056_Proteobacteria
+|       |  |         |         |  |     |  |  +--| (87)
+|       |  |         |         |  |     |  |     |  +---WP_119858943.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     |  |     +--| (85)
+|       |  |         |         |  |     |  |        +--WP_142883484.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |         |  |     +--| (100)
+|       |  |         |         |  |        |  +--WP_022722993.1-Rhodopseudomonas_sp._B29_Proteobacteria
+|       |  |         |         |  |        +--| (83)
+|       |  |         |         |  |           +--WP_054162298.1-Rhodopseudomonas_sp._AAP120_Proteobacteria
+|       |  |         |         +--| (100)
+|       |  |         |            |  +--ABD08837.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |         |            +--| (100)
+|       |  |         |               +--WP_041798938.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |      +--| (100)
+|       |  |      |  +---------WP_136963313.1-Phreatobacter_stygius_Proteobacteria
+|       |  |  +---| (100)
+|       |  |  |   |           +-------WP_057659955.1-Pseudoxanthomonas_dokdonensis_Proteobacteria
+|       |  |  |   |        +--| (100)
+|       |  |  |   |        |  +---------WP_077034059.1-Pelomonas_sp._KK5_Proteobacteria
+|       |  |  |   |     +--| (99)
+|       |  |  |   |     |  |          +---WP_108104178.1-Pseudomonas_mangrovi_Proteobacteria
+|       |  |  |   |     |  |      +---| (100)
+|       |  |  |   |     |  |      |   +----WP_017937932.1-Pseudomonas_thermotolerans_Proteobacteria
+|       |  |  |   |     |  |   +--| (100)
+|       |  |  |   |     |  |   |  |          +--WP_136868902.1-Pseudomonas_bauzanensis_Proteobacteria
+|       |  |  |   |     |  |   |  |       +--| (100)
+|       |  |  |   |     |  |   |  |       |  +--EZQ18937.1-Pseudomonas_bauzanensis_Proteobacteria
+|       |  |  |   |     |  |   |  |  +----| (100)
+|       |  |  |   |     |  |   |  |  |    +---WP_185267007.1-Pseudomonas_xiamenensis_Proteobacteria
+|       |  |  |   |     |  |   |  +--| (100)
+|       |  |  |   |     |  |   |     +-------WP_093476299.1-Pseudomonas_yangmingensis_Proteobacteria
+|       |  |  |   |     |  +---| (100)
+|       |  |  |   |     |      |             +--MAB24835.1-Pseudomonadales_bacterium_Proteobacteria
+|       |  |  |   |     |      |          +--| (100)
+|       |  |  |   |     |      |          |  +--WP_182248855.1-Pseudomonas_sp._5Ae-yellow_Proteobacteria
+|       |  |  |   |     |      |      +---| (100)
+|       |  |  |   |     |      |      |   +--WP_083726556.1-Pseudomonas_pachastrellae_Proteobacteria
+|       |  |  |   |     |      +------| (100)
+|       |  |  |   |     |             +----PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11_Proteobacteria
+|       |  |  |   |  +--| (77)
+|       |  |  |   |  |  +--------------WP_151072822.1-Cupriavidus_oxalaticus_Proteobacteria
+|       |  |  |   +--| (67)
+|       |  |  |      |                                +--WP_027475679.1-Curvibacter_gracilis_Proteobacteria
+|       |  |  |      |                             +--| (100)
+|       |  |  |      |                             |  +--WP_157443435.1-Curvibacter_lanceolatus_Proteobacteria
+|       |  |  |      |                  +----------| (100)
+|       |  |  |      |                  |          +--RUP23521.1-Curvibacter_sp._Proteobacteria
+|       |  |  |      |              +---| (100)
+|       |  |  |      |              |   +---------GBU15266.1-Polaromonas_sp._Proteobacteria
+|       |  |  |      |           +--| (90)
+|       |  |  |      |           |  |            +-----KAB2911669.1-Hyphomicrobiaceae_bacterium_Proteobacteria
+|       |  |  |      |           |  |         +--| (87)
+|       |  |  |      |           |  |         |  |        +--WP_089945766.1-Candidatus_Entotheonella_palauensis_Candidatus
+|       |  |  |      |           |  |         |  +--------| (100)
+|       |  |  |      |           |  |         |           +--WP_089717141.1-Candidatus_Entotheonella_palauensis_Candidatus
+|       |  |  |      |           |  |  +------| (100)
+|       |  |  |      |           |  |  |      |     +----OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22_Candidatus
+|       |  |  |      |           |  |  |      |  +--| (98)
+|       |  |  |      |           |  |  |      |  |  |  +--PYN74367.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  |  |      |  |  +--| (100)
+|       |  |  |      |           |  |  |      |  |     +--PYM96198.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  |  |      +--| (100)
+|       |  |  |      |           |  |  |         |  +--PYN46404.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  |  |         +--| (100)
+|       |  |  |      |           |  |  |            +--PYN32128.1-Candidatus_Rokubacteria_bacterium_Candidatus
+|       |  |  |      |           |  +--| (84)
+|       |  |  |      |           |     |                                                +--WP_084803943.1-Bradyrhizobium_sp._NAS80.1_Proteobacteria
+|       |  |  |      |           |     |                                             +--| (100)
+|       |  |  |      |           |     |                                             |  +--WP_074117602.1-Bradyrhizobium_sp._AS23.2_Proteobacteria
+|       |  |  |      |           |     |                                          +--| (91)
+|       |  |  |      |           |     |                                          |  |                       +--WP_128961978.1-Bradyrhizobium_guangzhouense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |                    +--| (100)
+|       |  |  |      |           |     |                                          |  |                    |  +--WP_128953098.1-Bradyrhizobium_guangzhouense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |                 +--| (95)
+|       |  |  |      |           |     |                                          |  |                 |  +--WP_057753835.1-Bradyrhizobium_manausense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |              +--| (52)
+|       |  |  |      |           |     |                                          |  |              |  +--MBC9878718.1-Bradyrhizobium_campsiandrae_Proteobacteria
+|       |  |  |      |           |     |                                          |  |           +--| (100)
+|       |  |  |      |           |     |                                          |  |           |  |  +--WP_092295676.1-Bradyrhizobium_sp._Ghvi_Proteobacteria
+|       |  |  |      |           |     |                                          |  |           |  +--| (91)
+|       |  |  |      |           |     |                                          |  |           |     +--WP_128967591.1-Bradyrhizobium_guangdongense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |        +--| (66)
+|       |  |  |      |           |     |                                          |  |        |  |  +--WP_027528936.1-Bradyrhizobium_sp._WSM3983_Proteobacteria
+|       |  |  |      |           |     |                                          |  |        |  +--| (95)
+|       |  |  |      |           |     |                                          |  |        |     +--WP_148775460.1-Bradyrhizobium_rifense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |     +--| (100)
+|       |  |  |      |           |     |                                          |  |     |  +--WP_148749019.1-Bradyrhizobium_cytisi_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  +--| (24)
+|       |  |  |      |           |     |                                          |  |  |  |           +--WP_145664020.1-Bradyrhizobium_stylosanthis_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |        +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |        |  +--WP_063691485.1-Bradyrhizobium_stylosanthis_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     +--| (83)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |                    +--WP_158669522.1-Bradyrhizobium_guangdongense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |                 +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |                 |  +--WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              +--| (97)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |  |  +--WP_061878281.1-Bradyrhizobium_liaoningense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |  +--| (97)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     |     +--WP_035674808.1-Bradyrhizobium_liaoningense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     |  |  +--WP_028179375.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |        |  +--WP_061021165.1-Bradyrhizobium_sp._CCH5-F6_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |        +--| (72)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |              |           +--GAJ33771.1-Bradyrhizobium_sp._DOA9_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           +--| (53)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |  |  +--RTM13090.1-Bradyrhizobiaceae_bacterium_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |  +--| (95)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |     |  +--WP_100175831.1-Bradyrhizobium_nitroreducens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |           |        +--WP_142250055.1-Bradyrhizobium_sp._UNPF46_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        +--| (78)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        |  |  +--WP_128939625.1-Bradyrhizobium_zhanjiangense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |        |     +--WP_128955323.1-Bradyrhizobium_zhanjiangense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     +--| (73)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  |     +--WP_091965654.1-Bradyrhizobium_shewense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  |  +--| (99)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  |  |  +--WP_104462928.1-Bradyrhizobium_sp._AC87j1_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |  +--| (86)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |     +--WP_183237909.1-Bradyrhizobium_sp._CIR18_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |  |  +--WP_018322728.1-Bradyrhizobium_sp._WSM2793_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |  +--| (82)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     |     +--WP_183258594.1-Bradyrhizobium_sp._CIR48_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     |  +--| (60)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     |  |  +--WP_183231495.1-Bradyrhizobium_sp._SBR1B_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     |  |        +--WP_092259760.1-Bradyrhizobium_sp._Rc3b_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |     +--| (98)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |     |        +--WP_152103320.1-Bradyrhizobium_sp._TM102_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  +--| (30)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |  |     +--WP_028135100.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |  |  +--| (48)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |  |  |  +--WP_135162274.1-Bradyrhizobium_frederickii_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |  +--| (93)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |     |  +--WP_135167913.1-Bradyrhizobium_frederickii_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |  |  |        +--WP_126256569.1-Bradyrhizobium_sp._LVM_105_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |  +--| (42)
+|       |  |  |      |           |     |                                          |  |  |  |     |     |  +--WP_151642895.1-Bradyrhizobium_betae_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |     |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |     |        +--WP_015687718.1-Bradyrhizobium_cosmicum_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  +--| (65)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |              +--WP_007594037.1-Bradyrhizobium_sp._WSM1253_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |           +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |           |  +--WP_027516639.1-Bradyrhizobium_sp._WSM1417_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |        +--| (90)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |        |  +--WP_027568791.1-Bradyrhizobium_sp._URHA0013_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     +--| (75)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |  |  +--WP_063993269.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |  +--| (74)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |     |  +--WP_085395770.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |     |        +--WP_085352090.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  |  +--| (97)
+|       |  |  |      |           |     |                                          |  |  |  |  |  |  |  +--WP_018457146.1-Bradyrhizobium_sp._WSM4349_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  |  |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |  |  |     +--WP_106942729.1-Bradyrhizobium_sp._MOS002_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |  +--| (37)
+|       |  |  |      |           |     |                                          |  |  |     |              +--WP_011085536.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |           +--| (61)
+|       |  |  |      |           |     |                                          |  |  |     |           |  +--WP_038965832.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |        +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |        |  +--WP_182869822.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |     |  |  +--QHP72204.1-Bradyrhizobium_sp._LCT2_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |     |  +--| (99)
+|       |  |  |      |           |     |                                          |  |  |     |     |     +--WP_161535945.1-Bradyrhizobium_sp._LCT2_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |  |     +--WP_060912981.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  |  |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |  |  |  +--BAR59885.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  |  +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |     |  +--KGJ68294.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     |  |     +--| (100)
+|       |  |  |      |           |     |                                          |  |  |     |  |        +--WP_028174753.1-Bradyrhizobium_diazoefficiens_Proteobacteria
+|       |  |  |      |           |     |                                          |  |  |     +--| (38)
+|       |  |  |      |           |     |                                          |  |  |        +--WP_148744709.1-Bradyrhizobium_hipponense_Proteobacteria
+|       |  |  |      |           |     |                                          |  +--| (65)
+|       |  |  |      |           |     |                                          |     |        +--WP_008138438.1-Bradyrhizobium_sp._YR681_Proteobacteria
+|       |  |  |      |           |     |                                          |     |     +--| (97)
+|       |  |  |      |           |     |                                          |     |     |  +--WP_129271949.1-Bradyrhizobium_betae_Proteobacteria
+|       |  |  |      |           |     |                                          |     |  +--| (100)
+|       |  |  |      |           |     |                                          |     |  |  +--WP_092029312.1-Bradyrhizobium_sp._OK095_Proteobacteria
+|       |  |  |      |           |     |                                          |     +--| (88)
+|       |  |  |      |           |     |                                          |        +--WP_092214970.1-Bradyrhizobium_arachidis_Proteobacteria
+|       |  |  |      |           |     |                                       +--| (99)
+|       |  |  |      |           |     |                                       |  |              +--WP_071915975.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |  |           +--| (100)
+|       |  |  |      |           |     |                                       |  |           |  +--WP_063984832.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                                       |  |        +--| (100)
+|       |  |  |      |           |     |                                       |  |        |  +--WP_166089364.1-Bradyrhizobium_sp._1S5_Proteobacteria
+|       |  |  |      |           |     |                                       |  |     +--| (100)
+|       |  |  |      |           |     |                                       |  |     |  +--WP_166350707.1-Bradyrhizobium_sp._323S2_Proteobacteria
+|       |  |  |      |           |     |                                       |  |  +--| (98)
+|       |  |  |      |           |     |                                       |  |  |  |  +--WP_038931390.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |  |  |  +--| (100)
+|       |  |  |      |           |     |                                       |  |  |     +--WP_039157276.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |  +--| (100)
+|       |  |  |      |           |     |                                       |     |  +--WP_028156991.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                       |     +--| (100)
+|       |  |  |      |           |     |                                       |        +--WP_041955910.1-Bradyrhizobium_japonicum_Proteobacteria
+|       |  |  |      |           |     |                                    +--| (91)
+|       |  |  |      |           |     |                                    |  |     +--WP_063680948.1-Bradyrhizobium_neotropicale_Proteobacteria
+|       |  |  |      |           |     |                                    |  |  +--| (100)
+|       |  |  |      |           |     |                                    |  |  |  +--WP_027550185.1-Bradyrhizobium_sp._Cp5.3_Proteobacteria
+|       |  |  |      |           |     |                                    |  +--| (77)
+|       |  |  |      |           |     |                                    |     +--WP_063705824.1-Bradyrhizobium_centrolobii_Proteobacteria
+|       |  |  |      |           |     |                                 +--| (100)
+|       |  |  |      |           |     |                                 |  +--WP_027526029.1-Bradyrhizobium_sp._Ec3.3_Proteobacteria
+|       |  |  |      |           |     |                              +--| (100)
+|       |  |  |      |           |     |                              |  +--WP_140980779.1-Bradyrhizobium_guangdongense_Proteobacteria
+|       |  |  |      |           |     |                           +--| (71)
+|       |  |  |      |           |     |                           |  |                             +--WP_065748757.1-Bradyrhizobium_sp._LMTR_3_Proteobacteria
+|       |  |  |      |           |     |                           |  |                          +--| (73)
+|       |  |  |      |           |     |                           |  |                          |  |  +--WP_028347371.1-Bradyrhizobium_murdochi_Proteobacteria
+|       |  |  |      |           |     |                           |  |                          |  +--| (100)
+|       |  |  |      |           |     |                           |  |                          |     +--WP_057843198.1-Bradyrhizobium_retamae_Proteobacteria
+|       |  |  |      |           |     |                           |  |                       +--| (100)
+|       |  |  |      |           |     |                           |  |                       |  +--WP_171577827.1-Bradyrhizobium_australiense_Proteobacteria
+|       |  |  |      |           |     |                           |  |                    +--| (100)
+|       |  |  |      |           |     |                           |  |                    |  +--WP_065730813.1-Bradyrhizobium_icense_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 +--| (100)
+|       |  |  |      |           |     |                           |  |                 |  |     +--WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 |  |  +--| (100)
+|       |  |  |      |           |     |                           |  |                 |  |  |  |  +--WP_065756637.1-Bradyrhizobium_paxllaeri_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 |  |  |  +--| (100)
+|       |  |  |      |           |     |                           |  |                 |  |  |     +--WP_057859318.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                           |  |                 |  +--| (100)
+|       |  |  |      |           |     |                           |  |                 |     +--WP_057833547.1-Bradyrhizobium_jicamae_Proteobacteria
+|       |  |  |      |           |     |                           |  |              +--| (82)
+|       |  |  |      |           |     |                           |  |              |  +--WP_108514566.1-Bradyrhizobium_algeriense_Proteobacteria
+|       |  |  |      |           |     |                           |  |           +--| (93)
+|       |  |  |      |           |     |                           |  |           |  |  +--WP_057900995.1-Bradyrhizobium_valentinum_Proteobacteria
+|       |  |  |      |           |     |                           |  |           |  +--| (100)
+|       |  |  |      |           |     |                           |  |           |     +--WP_057851642.1-Bradyrhizobium_valentinum_Proteobacteria
+|       |  |  |      |           |     |                           |  |        +--| (65)
+|       |  |  |      |           |     |                           |  |        |  |        +--WP_155805222.1-Bradyrhizobium_sp._URHA0002_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  |     +--| (100)
+|       |  |  |      |           |     |                           |  |        |  |     |  |  +--WP_092515866.1-Afipia_sp._GAS231_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  |     |  +--| (100)
+|       |  |  |      |           |     |                           |  |        |  |     |     +--SDP08864.1-Afipia_sp._GAS231_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  |  +--| (99)
+|       |  |  |      |           |     |                           |  |        |  |  |  +--WP_079586579.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |  +--| (74)
+|       |  |  |      |           |     |                           |  |        |     |     +--WP_143206068.1-Bradyrhizobium_erythrophlei_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |     |  +--| (81)
+|       |  |  |      |           |     |                           |  |        |     |  |  |  +--TKW79521.1-Bradyrhizobium_icense_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |     |  |  +--| (92)
+|       |  |  |      |           |     |                           |  |        |     |  |     +--WP_100419024.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                           |  |        |     +--| (71)
+|       |  |  |      |           |     |                           |  |        |        +--MBA2399293.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                           |  |     +--| (81)
+|       |  |  |      |           |     |                           |  |     |  +--MBA4036164.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                           |  |  +--| (97)
+|       |  |  |      |           |     |                           |  |  |  +--WP_069276965.1-Bradyrhizobium_elkanii_Proteobacteria
+|       |  |  |      |           |     |                           |  +--| (65)
+|       |  |  |      |           |     |                           |     |  +--WP_130580234.1-Bradyrhizobium_sp._Leo170_Proteobacteria
+|       |  |  |      |           |     |                           |     +--| (100)
+|       |  |  |      |           |     |                           |        +--WP_130222300.1-Bradyrhizobium_sp._Leo121_Proteobacteria
+|       |  |  |      |           |     |                        +--| (77)
+|       |  |  |      |           |     |                        |  |     +--WP_079601315.1-Bradyrhizobium_erythrophlei_Proteobacteria
+|       |  |  |      |           |     |                        |  |  +--| (74)
+|       |  |  |      |           |     |                        |  |  |  |        +--WP_100380578.1-Afipia_broomeae_Proteobacteria
+|       |  |  |      |           |     |                        |  |  |  |     +--| (100)
+|       |  |  |      |           |     |                        |  |  |  |     |  +--WP_146687675.1-Bradyrhizobium_canariense_Proteobacteria
+|       |  |  |      |           |     |                        |  |  |  |  +--| (78)
+|       |  |  |      |           |     |                        |  |  |  |  |  +--TMK06221.1-Alphaproteobacteria_bacterium_Proteobacteria
+|       |  |  |      |           |     |                        |  |  |  +--| (80)
+|       |  |  |      |           |     |                        |  |  |     +--THD60673.1-Bradyrhizobium_sp._Proteobacteria
+|       |  |  |      |           |     |                        |  +--| (75)
+|       |  |  |      |           |     |                        |     +--WP_079544782.1-Bradyrhizobium_lablabi_Proteobacteria
+|       |  |  |      |           |     |                     +--| (94)
+|       |  |  |      |           |     |                     |  |  +--WP_024518537.1-Bradyrhizobium_sp._Tv2a-2_Proteobacteria
+|       |  |  |      |           |     |                     |  +--| (99)
+|       |  |  |      |           |     |                     |     +--WP_024511517.1-Bradyrhizobium_sp._ARR65_Proteobacteria
+|       |  |  |      |           |     |                  +--| (99)
+|       |  |  |      |           |     |                  |  |  +--TMJ47098.1-Alphaproteobacteria_bacterium_Proteobacteria
+|       |  |  |      |           |     |                  |  +--| (100)
+|       |  |  |      |           |     |                  |     +--TMK39387.1-Alphaproteobacteria_bacterium_Proteobacteria
+|       |  |  |      |           |     |            +-----| (100)
+|       |  |  |      |           |     |            |     |           +--WP_035655465.1-Bradyrhizobium_sp._STM_3809_Proteobacteria
+|       |  |  |      |           |     |            |     |        +--| (100)
+|       |  |  |      |           |     |            |     |        |  +--CCD98599.1-Bradyrhizobium_sp._STM_3809_Proteobacteria
+|       |  |  |      |           |     |            |     |     +--| (99)
+|       |  |  |      |           |     |            |     |     |  |        +--WP_172134110.1-Bradyrhizobium_sp._81013_Proteobacteria
+|       |  |  |      |           |     |            |     |     |  |     +--| (100)
+|       |  |  |      |           |     |            |     |     |  |     |  +--WP_172111906.1-Bradyrhizobium_sp._83012_Proteobacteria
+|       |  |  |      |           |     |            |     |     |  |  +--| (100)
+|       |  |  |      |           |     |            |     |     |  |  |  +--WP_172180802.1-Bradyrhizobium_sp._83002_Proteobacteria
+|       |  |  |      |           |     |            |     |     |  +--| (100)
+|       |  |  |      |           |     |            |     |     |     +--WP_083842450.1-Bradyrhizobium_sp._ORS_375_Proteobacteria
+|       |  |  |      |           |     |            |     |  +--| (100)
+|       |  |  |      |           |     |            |     |  |  +--WP_168167890.1-Bradyrhizobium_sp._BTAi1_Proteobacteria
+|       |  |  |      |           |     |            |     +--| (84)
+|       |  |  |      |           |     |            |        |  +--NVN85223.1-Rhodopseudomonas_sp._Proteobacteria
+|       |  |  |      |           |     |            |        +--| (100)
+|       |  |  |      |           |     |            |           +--WP_011439962.1-Rhodopseudomonas_palustris_Proteobacteria
+|       |  |  |      |           |     |      +-----| (100)
+|       |  |  |      |           |     |      |     |     +--WP_046828790.1-Afipia_massiliensis_Proteobacteria
+|       |  |  |      |           |     |      |     +-----| (100)
+|       |  |  |      |           |     |      |           |     +--EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+|       |  |  |      |           |     |      |           |  +--| (100)
+|       |  |  |      |           |     |      |           |  |  +--WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria
+|       |  |  |      |           |     |      |           +--| (100)
+|       |  |  |      |           |     |      |              +--WP_002714592.1-Afipia_clevelandensis_Proteobacteria
+|       |  |  |      |           |     |   +--| (100)
+|       |  |  |      |           |     |   |  +-----------WP_076861029.1-Bradyrhizobium_mercantei_Proteobacteria
+|       |  |  |      |           |     +---| (100)
+|       |  |  |      |           |         +-----------OJY09878.1-Rhizobiales_bacterium_62-47_Proteobacteria
+|       |  |  |      |        +--| (83)
+|       |  |  |      |        |  |  +------------------WP_155709830.1-Massilia_dura_Proteobacteria
+|       |  |  |      |        |  +--| (100)
+|       |  |  |      |        |     +------------RZL87373.1-Variovorax_sp._Proteobacteria
+|       |  |  |      |     +--| (86)
+|       |  |  |      |     |  |                    +---WP_066731373.1-Cupriavidus_sp._D384_Proteobacteria
+|       |  |  |      |     |  |                 +--| (99)
+|       |  |  |      |     |  |                 |  |     +--WP_071072555.1-Cupriavidus_malaysiensis_Proteobacteria
+|       |  |  |      |     |  |                 |  |  +--| (100)
+|       |  |  |      |     |  |                 |  |  |  +--WP_071038742.1-Cupriavidus_sp._USMAA2-4_Proteobacteria
+|       |  |  |      |     |  |                 |  +--| (100)
+|       |  |  |      |     |  |                 |     +--WP_071018820.1-Cupriavidus_sp._USMAHM13_Proteobacteria
+|       |  |  |      |     |  |              +--| (100)
+|       |  |  |      |     |  |              |  +--WP_116319445.1-Cupriavidus_sp._P-10_Proteobacteria
+|       |  |  |      |     |  |        +-----| (100)
+|       |  |  |      |     |  |        |     |             +--WP_025586346.1-Cupriavidus_taiwanensis_Proteobacteria
+|       |  |  |      |     |  |        |     |          +--| (100)
+|       |  |  |      |     |  |        |     |          |  +--WP_116388232.1-Cupriavidus_taiwanensis_Proteobacteria
+|       |  |  |      |     |  |        |     |       +--| (99)
+|       |  |  |      |     |  |        |     |       |  +--WP_116377884.1-Cupriavidus_taiwanensis_Proteobacteria
+|       |  |  |      |     |  |        |     |    +--| (100)
+|       |  |  |      |     |  |        |     |    |  +--WP_062795892.1-Cupriavidus_nantongensis_Proteobacteria
+|       |  |  |      |     |  |        |     +----| (100)
+|       |  |  |      |     |  |        |          +--WP_116320039.1-Cupriavidus_sp._P-10_Proteobacteria
+|       |  |  |      |     |  |     +--| (99)
+|       |  |  |      |     |  |     |  |                 +--WP_061999991.1-Burkholderia_sp._PAMC_28687_Proteobacteria
+|       |  |  |      |     |  |     |  |              +--| (100)
+|       |  |  |      |     |  |     |  |              |  +--WP_062170184.1-Burkholderia_sp._PAMC_26561_Proteobacteria
+|       |  |  |      |     |  |     |  +--------------| (100)
+|       |  |  |      |     |  |     |                 +--WP_081889718.1-Caballeronia_sordidicola_Proteobacteria
+|       |  |  |      |     |  |  +--| (100)
+|       |  |  |      |     |  |  |  |             +--PZW26129.1-Thermosporothrix_hazakensis_Chloroflexi
+|       |  |  |      |     |  |  |  +-------------| (100)
+|       |  |  |      |     |  |  |                +--WP_111324427.1-Thermosporothrix_hazakensis_Chloroflexi
+|       |  |  |      |     |  +--| (98)
+|       |  |  |      |     |     |             +--WP_150987011.1-Cupriavidus_basilensis_Proteobacteria
+|       |  |  |      |     |     |          +--| (100)
+|       |  |  |      |     |     |          |  |  +--WP_183035411.1-Cupriavidus_sp._UME77_Proteobacteria
+|       |  |  |      |     |     |          |  +--| (100)
+|       |  |  |      |     |     |          |     +--MBB1634382.1-Cupriavidus_sp._UME77_Proteobacteria
+|       |  |  |      |     |     +----------| (100)
+|       |  |  |      |     |                +-----WP_092594144.1-Ralstonia_sp._25mfcol4.1_Proteobacteria
+|       |  |  |      |  +--| (88)
+|       |  |  |      |  |  +----------------WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015_Proteobacteria
+|       |  |  |      +--| (94)
+|       |  |  |         |             +--WP_163259863.1-Caulobacter_sp._17J65-9_Proteobacteria
+|       |  |  |         +-------------| (100)
+|       |  |  |                       +--WP_187448402.1-Caulobacter_sp._17J80-11_Proteobacteria
+|       |  +--| (100)
+|       |     +---------WP_092831606.1-Rhodospirillales_bacterium_URHD0017_Proteobacteria
+|   +---| (100)
+|   |   |      +--XP_018221989.1-Saccharomyces_eubayanus_Saccharomycotina
+|   |   +------| (100)
+|   |          +--QID88192.1-Saccharomyces_pastorianus_Saccharomycotina
++---| (100)
+|   |       +---XP_002555886.1-Lachancea_thermotolerans_Saccharomycotina
+|   +-------| (100)
+|           +----SCW03834.1-Lachancea_fermentati_Saccharomycotina
+|
++----QUERY_Saccharomyces_cerevisiae_YOL164W
+
+
+Consensus tree in newick format: 
+
+(QLG72306.1-Zygotorulaspora_mrakii_Saccharomycotina:0.1419700496,((((((((((WP_007837899.1-Variovorax_sp._CF313_Proteobacteria:0.0151690912,(WP_130421160.1-Variovorax_sp._BK460_Proteobacteria:0.0284531116,WP_093131647.1-Variovorax_sp._OK605_Proteobacteria:0.2077748676)71:0.0362866797)48:0.0180645347,((((((WP_132801781.1-Variovorax_sp._BK370_Proteobacteria:0.0000025529,(WP_184605932.1-Variovorax_sp._BK613_Proteobacteria:0.0017862471,((WP_145759386.1-Variovorax_sp._1180_Proteobacteria:0.0000025529,WP_126183471.1-Variovorax_sp._369_Proteobacteria:0.0035540546)100:0.0035555321,WP_020722993.1-Variovorax_paradoxus_Proteobacteria:0.0035576599)99:0.0000025529)100:0.0017773616)100:0.0017770506,WP_132755990.1-Variovorax_sp._BK151_Proteobacteria:0.0035688847)100:0.0104799343,WP_176665552.1-Variovorax_sp._SG517_Proteobacteria:0.0131157333)99:0.0055621019,(WP_184638849.1-Variovorax_guangxiensis_Proteobacteria:0.0020274175,WP_126020505.1-Variovorax_guangxiensis_Proteobacteria:0.0032959768)100:0.0218044199)100:0.0190495155,(WP_093195641.1-Variovorax_sp._YR750_Proteobacteria:0.0070684416,WP_126472589.1-Variovorax_gossypii_Proteobacteria:0.0071333422)100:0.0057923219)100:0.0123758464,(((WP_097197469.1-Variovorax_sp._YR752_Proteobacteria:0.0035469408,WP_093174861.1-Variovorax_sp._YR266_Proteobacteria:0.0000025529)100:0.0017801316,WP_093076613.1-Variovorax_sp._OV084_Proteobacteria:0.0017715048)99:0.0015509454,WP_093057006.1-Variovorax_sp._YR634_Proteobacteria:0.0037490386)100:0.0310630957)90:0.0151340282)48:0.0158120978,(WP_081267376.1-Variovorax_paradoxus_Proteobacteria:0.0267237068,ODU15846.1-Variovorax_sp._SCN_67-85_Proteobacteria:0.0235074842)100:0.0324435784)68:0.0176119332,(TAJ61793.1-Variovorax_sp._Proteobacteria:0.0044418597,((((WP_172705422.1-Variovorax_paradoxus_Proteobacteria:0.0000025529,KPU98577.1-Variovorax_paradoxus_Proteobacteria:0.0000025529)100:0.0041944357,MBS76598.1-Variovorax_sp._Proteobacteria:0.0000025529)100:0.0084588242,WP_093343818.1-Variovorax_sp._PDC80_Proteobacteria:0.0035807296)83:0.0000025529,KAF1061273.1-Variovorax_sp._Proteobacteria:0.0077982365)88:0.0027306660)100:0.0758075801)73:0.0309906417,(((WP_093435402.1-Variovorax_sp._770b2_Proteobacteria:0.0207105354,WP_052810747.1-Variovorax_paradoxus_Proteobacteria:0.0164627857)100:0.0140191965,WP_013538622.1-Variovorax_paradoxus_Proteobacteria:0.0298219181)73:0.0134383093,WP_176660984.1-Variovorax_sp._SG533_Proteobacteria:0.0471575115)61:0.0073315630)72:0.0251669330,WP_145738683.1-Variovorax_beijingensis_Proteobacteria:0.0592966181)71:0.0104317779,(((WP_093241869.1-Variovorax_sp._EL159_Proteobacteria:0.0104207249,WP_187113215.1-Variovorax_sp._PAMC26660_Proteobacteria:0.0337793653)100:0.0294551563,((WP_119556153.1-Acidovorax_cavernicola_Proteobacteria:0.0586978641,((WP_153281245.1-Variovorax_paradoxus_Proteobacteria:0.0069548006,(WP_099794476.1-Variovorax_sp._54_Proteobacteria:0.0034768674,WP_101490554.1-Variovorax_sp._RO1_Proteobacteria:0.0052115411)98:0.0000021671)88:0.0052043853,(((((WP_062470459.1-Variovorax_boronicumulans_Proteobacteria:0.0052256875,WP_095948515.1-Variovorax_boronicumulans_Proteobacteria:0.0000025529)72:0.0034830599,WP_159278964.1-Variovorax_boronicumulans_Proteobacteria:0.0034706320)88:0.0017541743,WP_159274326.1-Variovorax_boronicumulans_Proteobacteria:0.0034841068)54:0.0017458477,(WP_070061350.1-Variovorax_boronicumulans_Proteobacteria:0.0035041316,WP_095743122.1-Variovorax_boronicumulans_Proteobacteria:0.0017464559)61:0.0000029100)90:0.0034866720,WP_139703542.1-Variovorax_sp._KBS0712_Proteobacteria:0.0000025529)96:0.0035178671)81:0.0072394138)45:0.0052248600,WP_056574498.1-Variovorax_sp._Root473_Proteobacteria:0.0206617885)97:0.0334237883)58:0.0089811825,WP_124458460.1-Variovorax_sp._KBW07_Proteobacteria:0.0419721576)95:0.0221227419)99:0.0530969383,((((OQW56345.1-Proteobacteria_bacterium_SG_bin9_Proteobacteria:0.1632611585,((((((((((WP_175367589.1-Tardiphaga_robiniae_Proteobacteria:0.0017113415,WP_120288614.1-Tardiphaga_sp._YR296_Proteobacteria:0.0104275851)93:0.0028179907,WP_184513838.1-Tardiphaga_robiniae_Proteobacteria:0.0040764180)92:0.0055497464,WP_089261759.1-Tardiphaga_sp._OK246_Proteobacteria:0.0089328327)100:0.0314995603,WP_092138970.1-Bradyrhizobium_sp._NFR13_Proteobacteria:0.0243215626)91:0.0267618787,WP_115033941.1-Tardiphaga_sp._CF115_Proteobacteria:0.0231345813)100:0.0631786151,((((WP_062313220.1-Bradyrhizobium_sp._CCH10-C7_Proteobacteria:0.0230042298,((MBB5054515.1-Afipia_massiliensis_Proteobacteria:0.0017180650,WP_184089169.1-Afipia_massiliensis_Proteobacteria:0.0000025529)100:0.0313870386,WP_046827511.1-Afipia_massiliensis_Proteobacteria:0.0148923403)99:0.0173947160)82:0.0117042327,((HBR43714.1-Afipia_sp._Proteobacteria:0.0017487776,HAQ93654.1-Afipia_sp._Proteobacteria:0.0035127226)100:0.0065277838,(WP_006021976.1-Afipia_broomeae_Proteobacteria:0.0062353646,RTL81632.1-Bradyrhizobiaceae_bacterium_Proteobacteria:0.0026332983)100:0.0052171053)100:0.0180877410)94:0.0212074834,TXJ10197.1-Afipia_sp._Proteobacteria:0.0292725665)50:0.0056850197,(NGX94573.1-Candidatus_Afipia_apatlaquensis_Proteobacteria:0.0171254779,(WP_002713184.1-Afipia_clevelandensis_Proteobacteria:0.0017887565,WP_009734135.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria:0.0034874684)100:0.0436975592)91:0.0086592832)100:0.0436721253)99:0.0415336361,WP_149531854.1-Tardiphaga_sp._P9-11_Proteobacteria:0.0879683624)73:0.0088614741,OJY11205.1-Rhizobiales_bacterium_62-47_Proteobacteria:0.1272580020)94:0.0149509524,((WP_146690165.1-Bradyrhizobium_canariense_Proteobacteria:0.0159309791,WP_100386102.1-Afipia_broomeae_Proteobacteria:0.0183639381)100:0.0673779947,WP_008968903.1-Bradyrhizobium_sp._STM_3843_Proteobacteria:0.2058439051)99:0.0499892556)96:0.0275398810,(NVN87899.1-Rhodopseudomonas_sp._Proteobacteria:0.0651319322,((WP_011665574.1-Rhodopseudomonas_palustris_Proteobacteria:0.0822581641,(((WP_110782500.1-Rhodopseudomonas_faecalis_Proteobacteria:0.0017589439,WP_027276359.1-Rhodopseudomonas_palustris_Proteobacteria:0.0053115279)99:0.0030334387,TAH64925.1-Rhodopseudomonas_palustris_Proteobacteria:0.0040631651)100:0.1040817294,((((((WP_164571151.1-Rhodopseudomonas_sp._BR0C11_Proteobacteria:0.0000025529,WP_107345917.1-Rhodopseudomonas_palustris_Proteobacteria:0.0088363287)95:0.0017593662,WP_164638651.1-Rhodopseudomonas_sp._BR0G17_Proteobacteria:0.0052779844)90:0.0000025547,WP_107356882.1-Rhodopseudomonas_palustris_Proteobacteria:0.0088457360)97:0.0037224967,((WP_011159875.1-Rhodopseudomonas_palustris_Proteobacteria:0.0017511885,WP_012497548.1-Rhodopseudomonas_palustris_Proteobacteria:0.0070630722)84:0.0000025529,WP_119019080.1-Rhodopseudomonas_palustris_Proteobacteria:0.0035267369)100:0.0122025678)100:0.0461987355,(((WP_013504207.1-Rhodopseudomonas_palustris_Proteobacteria:0.0071830044,WP_047308756.1-Rhodopseudomonas_palustris_Proteobacteria:0.0000025547)99:0.0017987886,WP_164630935.1-Rhodopseudomonas_sp._WA056_Proteobacteria:0.0000025547)100:0.0116654318,(WP_119858943.1-Rhodopseudomonas_palustris_Proteobacteria:0.1270381688,WP_142883484.1-Rhodopseudomonas_palustris_Proteobacteria:0.0144391419)85:0.0235813830)87:0.0391133213)88:0.0317239131,(WP_022722993.1-Rhodopseudomonas_sp._B29_Proteobacteria:0.0599367324,WP_054162298.1-Rhodopseudomonas_sp._AAP120_Proteobacteria:0.0930437476)83:0.0154941700)100:0.0587662161)99:0.0362320236)100:0.0337380607,(ABD08837.1-Rhodopseudomonas_palustris_Proteobacteria:0.0000025529,WP_041798938.1-Rhodopseudomonas_palustris_Proteobacteria:0.0000025529)100:0.0681380805)100:0.0514751239)100:0.1128479878)98:0.0438744522)100:0.1432912386,WP_136963313.1-Phreatobacter_stygius_Proteobacteria:0.3107259148)100:0.0914841173,((((WP_057659955.1-Pseudoxanthomonas_dokdonensis_Proteobacteria:0.2499156290,WP_077034059.1-Pelomonas_sp._KK5_Proteobacteria:0.2911182532)100:0.0902755565,(((WP_108104178.1-Pseudomonas_mangrovi_Proteobacteria:0.1437074315,WP_017937932.1-Pseudomonas_thermotolerans_Proteobacteria:0.1463729146)100:0.1328203969,(((WP_136868902.1-Pseudomonas_bauzanensis_Proteobacteria:0.0070177890,EZQ18937.1-Pseudomonas_bauzanensis_Proteobacteria:0.0000025529)100:0.1116778476,WP_185267007.1-Pseudomonas_xiamenensis_Proteobacteria:0.1295799419)100:0.1552300850,WP_093476299.1-Pseudomonas_yangmingensis_Proteobacteria:0.2418671959)100:0.0522739951)100:0.0999993841,(((MAB24835.1-Pseudomonadales_bacterium_Proteobacteria:0.0190371508,WP_182248855.1-Pseudomonas_sp._5Ae-yellow_Proteobacteria:0.0166474000)100:0.1054476389,WP_083726556.1-Pseudomonas_pachastrellae_Proteobacteria:0.1002614641)100:0.1237244051,PKM29133.1-Gammaproteobacteria_bacterium_HGW-Gammaproteobacteria-11_Proteobacteria:0.1694416416)100:0.2028711037)100:0.1236209414)99:0.0853467408,WP_151072822.1-Cupriavidus_oxalaticus_Proteobacteria:0.4483536819)77:0.0381174254,((((((((WP_027475679.1-Curvibacter_gracilis_Proteobacteria:0.0152778017,WP_157443435.1-Curvibacter_lanceolatus_Proteobacteria:0.0139536985)100:0.0290141463,RUP23521.1-Curvibacter_sp._Proteobacteria:0.0268394324)100:0.3267455210,GBU15266.1-Polaromonas_sp._Proteobacteria:0.3000919531)100:0.1425417275,(((KAB2911669.1-Hyphomicrobiaceae_bacterium_Proteobacteria:0.1877171123,(WP_089945766.1-Candidatus_Entotheonella_palauensis_Candidatus:0.0633607112,WP_089717141.1-Candidatus_Entotheonella_palauensis_Candidatus:0.0516584331)100:0.2745369041)87:0.0443862242,((OGL20369.1-Candidatus_Rokubacteria_bacterium_RIFCSPLOWO2_12_FULL_71_22_Candidatus:0.1486473069,(PYN74367.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0963276916,PYM96198.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0928619892)100:0.0777905357)98:0.0164313295,(PYN46404.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0914063712,PYN32128.1-Candidatus_Rokubacteria_bacterium_Candidatus:0.0891855269)100:0.0652905740)100:0.0990880426)100:0.2068991184,((((((((((((((WP_084803943.1-Bradyrhizobium_sp._NAS80.1_Proteobacteria:0.0149731780,WP_074117602.1-Bradyrhizobium_sp._AS23.2_Proteobacteria:0.0033319189)100:0.0282990642,((((((((WP_128961978.1-Bradyrhizobium_guangzhouense_Proteobacteria:0.0026332813,WP_128953098.1-Bradyrhizobium_guangzhouense_Proteobacteria:0.0065055636)100:0.0157429012,WP_057753835.1-Bradyrhizobium_manausense_Proteobacteria:0.0340705790)95:0.0076656933,MBC9878718.1-Bradyrhizobium_campsiandrae_Proteobacteria:0.0312690452)52:0.0018929054,(WP_092295676.1-Bradyrhizobium_sp._Ghvi_Proteobacteria:0.0098480931,WP_128967591.1-Bradyrhizobium_guangdongense_Proteobacteria:0.0238440857)91:0.0036195235)100:0.0100130792,(WP_027528936.1-Bradyrhizobium_sp._WSM3983_Proteobacteria:0.0485579993,WP_148775460.1-Bradyrhizobium_rifense_Proteobacteria:0.0183375397)95:0.0058401219)66:0.0037692905,WP_148749019.1-Bradyrhizobium_cytisi_Proteobacteria:0.0178810667)100:0.0154724230,((((WP_145664020.1-Bradyrhizobium_stylosanthis_Proteobacteria:0.0098316338,WP_063691485.1-Bradyrhizobium_stylosanthis_Proteobacteria:0.0048258190)100:0.0314224290,(((((((WP_158669522.1-Bradyrhizobium_guangdongense_Proteobacteria:0.0066232698,WP_035715237.1-Bradyrhizobium_sp._CCBAU_43298_Proteobacteria:0.0082771095)100:0.0374209599,(WP_061878281.1-Bradyrhizobium_liaoningense_Proteobacteria:0.0199667350,((WP_035674808.1-Bradyrhizobium_liaoningense_Proteobacteria:0.0000025529,WP_028179375.1-Bradyrhizobium_japonicum_Proteobacteria:0.0017793110)100:0.0179237006,(WP_061021165.1-Bradyrhizobium_sp._CCH5-F6_Proteobacteria:0.0125673875,GAJ33771.1-Bradyrhizobium_sp._DOA9_Proteobacteria:0.0508525228)72:0.0057323593)100:0.0078473940)97:0.0122398389)97:0.0043057866,(RTM13090.1-Bradyrhizobiaceae_bacterium_Proteobacteria:0.0262181276,(WP_100175831.1-Bradyrhizobium_nitroreducens_Proteobacteria:0.0018055267,WP_142250055.1-Bradyrhizobium_sp._UNPF46_Proteobacteria:0.0000025529)100:0.0127560514)95:0.0130068156)53:0.0017470512,(WP_128939625.1-Bradyrhizobium_zhanjiangense_Proteobacteria:0.0054058695,WP_128955323.1-Bradyrhizobium_zhanjiangense_Proteobacteria:0.0053414731)100:0.0493879319)78:0.0061516798,((WP_091965654.1-Bradyrhizobium_shewense_Proteobacteria:0.0072162887,WP_104462928.1-Bradyrhizobium_sp._AC87j1_Proteobacteria:0.0090608714)99:0.0079885968,((WP_183237909.1-Bradyrhizobium_sp._CIR18_Proteobacteria:0.0019142209,(WP_018322728.1-Bradyrhizobium_sp._WSM2793_Proteobacteria:0.0018841203,((WP_183258594.1-Bradyrhizobium_sp._CIR48_Proteobacteria:0.0000025529,WP_183231495.1-Bradyrhizobium_sp._SBR1B_Proteobacteria:0.0017853318)60:0.0000025529,WP_092259760.1-Bradyrhizobium_sp._Rc3b_Proteobacteria:0.0017874989)100:0.0125649942)82:0.0036188114)100:0.0115125693,WP_152103320.1-Bradyrhizobium_sp._TM102_Proteobacteria:0.0194970679)98:0.0021597866)86:0.0041474627)73:0.0026110105,((WP_028135100.1-Bradyrhizobium_japonicum_Proteobacteria:0.0376223232,WP_135162274.1-Bradyrhizobium_frederickii_Proteobacteria:0.0223445808)48:0.0025807336,(WP_135167913.1-Bradyrhizobium_frederickii_Proteobacteria:0.0000025529,WP_126256569.1-Bradyrhizobium_sp._LVM_105_Proteobacteria:0.0018059536)100:0.0168840311)93:0.0110672126)30:0.0046708305,(WP_151642895.1-Bradyrhizobium_betae_Proteobacteria:0.0144650589,WP_015687718.1-Bradyrhizobium_cosmicum_Proteobacteria:0.0216945596)100:0.0093324888)42:0.0064542401)83:0.0025362292,(((((WP_007594037.1-Bradyrhizobium_sp._WSM1253_Proteobacteria:0.0166127899,WP_027516639.1-Bradyrhizobium_sp._WSM1417_Proteobacteria:0.0086715736)100:0.0053169533,WP_027568791.1-Bradyrhizobium_sp._URHA0013_Proteobacteria:0.0177530279)90:0.0021513434,(WP_063993269.1-Bradyrhizobium_sp._Proteobacteria:0.0163150959,(WP_085395770.1-Bradyrhizobium_canariense_Proteobacteria:0.0017808250,WP_085352090.1-Bradyrhizobium_canariense_Proteobacteria:0.0000025529)100:0.0108870232)74:0.0018350078)75:0.0035909479,WP_018457146.1-Bradyrhizobium_sp._WSM4349_Proteobacteria:0.0110683556)97:0.0054039141,WP_106942729.1-Bradyrhizobium_sp._MOS002_Proteobacteria:0.0179765107)100:0.0163708216)65:0.0060903245,(((((WP_011085536.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529,WP_038965832.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529)61:0.0000025529,WP_182869822.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0036067034)100:0.0073088647,(QHP72204.1-Bradyrhizobium_sp._LCT2_Proteobacteria:0.0000025529,WP_161535945.1-Bradyrhizobium_sp._LCT2_Proteobacteria:0.0000025529)99:0.0018077610)100:0.0018373206,((WP_060912981.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529,BAR59885.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529)100:0.0018134686,(KGJ68294.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529,WP_028174753.1-Bradyrhizobium_diazoefficiens_Proteobacteria:0.0000025529)100:0.0018160394)100:0.0036075077)100:0.0190570227,WP_148744709.1-Bradyrhizobium_hipponense_Proteobacteria:0.0581154032)38:0.0045486491)37:0.0047642211)24:0.0028434465,(((WP_008138438.1-Bradyrhizobium_sp._YR681_Proteobacteria:0.0194658600,WP_129271949.1-Bradyrhizobium_betae_Proteobacteria:0.0231766674)97:0.0017676556,WP_092029312.1-Bradyrhizobium_sp._OK095_Proteobacteria:0.0149106660)100:0.0081781604,WP_092214970.1-Bradyrhizobium_arachidis_Proteobacteria:0.0295593760)88:0.0090160276)65:0.0097075311)91:0.0071243118,(((((WP_071915975.1-Bradyrhizobium_japonicum_Proteobacteria:0.0035947553,WP_063984832.1-Bradyrhizobium_sp._Proteobacteria:0.0054339671)100:0.0024648194,WP_166089364.1-Bradyrhizobium_sp._1S5_Proteobacteria:0.0140608629)100:0.0091284774,WP_166350707.1-Bradyrhizobium_sp._323S2_Proteobacteria:0.0097077442)100:0.0137342174,(WP_038931390.1-Bradyrhizobium_japonicum_Proteobacteria:0.0017959339,WP_039157276.1-Bradyrhizobium_japonicum_Proteobacteria:0.0017999733)100:0.0007232537)98:0.0030715164,(WP_028156991.1-Bradyrhizobium_japonicum_Proteobacteria:0.0090085279,WP_041955910.1-Bradyrhizobium_japonicum_Proteobacteria:0.0000025529)100:0.0035547066)100:0.0157908339)99:0.0152170772,((WP_063680948.1-Bradyrhizobium_neotropicale_Proteobacteria:0.0196191366,WP_027550185.1-Bradyrhizobium_sp._Cp5.3_Proteobacteria:0.0094981002)100:0.0234601203,WP_063705824.1-Bradyrhizobium_centrolobii_Proteobacteria:0.0156788163)77:0.0066710175)91:0.0106956249,WP_027526029.1-Bradyrhizobium_sp._Ec3.3_Proteobacteria:0.0555912556)100:0.0150031037,WP_140980779.1-Bradyrhizobium_guangdongense_Proteobacteria:0.0384142384)100:0.0337784223,((((((((((WP_065748757.1-Bradyrhizobium_sp._LMTR_3_Proteobacteria:0.0300380735,(WP_028347371.1-Bradyrhizobium_murdochi_Proteobacteria:0.0192761298,WP_057843198.1-Bradyrhizobium_retamae_Proteobacteria:0.0177776765)100:0.0062231428)73:0.0022138705,WP_171577827.1-Bradyrhizobium_australiense_Proteobacteria:0.0263737606)100:0.0051958173,WP_065730813.1-Bradyrhizobium_icense_Proteobacteria:0.0247467235)100:0.0170358768,((WP_161852777.1-Bradyrhizobium_sp._CCBAU_051011_Proteobacteria:0.0288673541,(WP_065756637.1-Bradyrhizobium_paxllaeri_Proteobacteria:0.0216339578,WP_057859318.1-Bradyrhizobium_lablabi_Proteobacteria:0.0091303108)100:0.0073818466)100:0.0046259774,WP_057833547.1-Bradyrhizobium_jicamae_Proteobacteria:0.0178046212)100:0.0097279495)100:0.0134088462,WP_108514566.1-Bradyrhizobium_algeriense_Proteobacteria:0.0328499036)82:0.0069697373,(WP_057900995.1-Bradyrhizobium_valentinum_Proteobacteria:0.0000025529,WP_057851642.1-Bradyrhizobium_valentinum_Proteobacteria:0.0017887517)100:0.0550011833)93:0.0110628234,(((WP_155805222.1-Bradyrhizobium_sp._URHA0002_Proteobacteria:0.0355166756,(WP_092515866.1-Afipia_sp._GAS231_Proteobacteria:0.0018011061,SDP08864.1-Afipia_sp._GAS231_Proteobacteria:0.0000025529)100:0.0215545592)100:0.0055095726,WP_079586579.1-Bradyrhizobium_lablabi_Proteobacteria:0.0318814818)99:0.0103536336,((WP_143206068.1-Bradyrhizobium_erythrophlei_Proteobacteria:0.0360882130,(TKW79521.1-Bradyrhizobium_icense_Proteobacteria:0.0608251368,WP_100419024.1-Bradyrhizobium_lablabi_Proteobacteria:0.0515622272)92:0.0201950595)81:0.0104375494,MBA2399293.1-Bradyrhizobium_sp._Proteobacteria:0.0364287714)71:0.0066815175)74:0.0055604339)65:0.0061505875,MBA4036164.1-Bradyrhizobium_sp._Proteobacteria:0.0404953051)81:0.0226880788,WP_069276965.1-Bradyrhizobium_elkanii_Proteobacteria:0.0721663783)97:0.0164474533,(WP_130580234.1-Bradyrhizobium_sp._Leo170_Proteobacteria:0.0274388959,WP_130222300.1-Bradyrhizobium_sp._Leo121_Proteobacteria:0.0492456079)100:0.0546380571)65:0.0166606360)71:0.0145470127,((WP_079601315.1-Bradyrhizobium_erythrophlei_Proteobacteria:0.0483161927,(((WP_100380578.1-Afipia_broomeae_Proteobacteria:0.0177773789,WP_146687675.1-Bradyrhizobium_canariense_Proteobacteria:0.0021300952)100:0.0360098106,TMK06221.1-Alphaproteobacteria_bacterium_Proteobacteria:0.0636096138)78:0.0181351267,THD60673.1-Bradyrhizobium_sp._Proteobacteria:0.0652442628)80:0.0216684806)74:0.0197231469,WP_079544782.1-Bradyrhizobium_lablabi_Proteobacteria:0.0719475579)75:0.0173759806)77:0.0111861737,(WP_024518537.1-Bradyrhizobium_sp._Tv2a-2_Proteobacteria:0.0667305930,WP_024511517.1-Bradyrhizobium_sp._ARR65_Proteobacteria:0.0783072389)99:0.0359213514)94:0.0125116288,(TMJ47098.1-Alphaproteobacteria_bacterium_Proteobacteria:0.0339859459,TMK39387.1-Alphaproteobacteria_bacterium_Proteobacteria:0.0121275441)100:0.0494432825)99:0.0276357838,((((WP_035655465.1-Bradyrhizobium_sp._STM_3809_Proteobacteria:0.0000025547,CCD98599.1-Bradyrhizobium_sp._STM_3809_Proteobacteria:0.0000025529)100:0.0380438088,(((WP_172134110.1-Bradyrhizobium_sp._81013_Proteobacteria:0.0000025529,WP_172111906.1-Bradyrhizobium_sp._83012_Proteobacteria:0.0035435343)100:0.0021310828,WP_172180802.1-Bradyrhizobium_sp._83002_Proteobacteria:0.0050022168)100:0.0307601501,WP_083842450.1-Bradyrhizobium_sp._ORS_375_Proteobacteria:0.0300988167)100:0.0111099627)99:0.0256598907,WP_168167890.1-Bradyrhizobium_sp._BTAi1_Proteobacteria:0.0562562725)100:0.0959047665,(NVN85223.1-Rhodopseudomonas_sp._Proteobacteria:0.0664914122,WP_011439962.1-Rhodopseudomonas_palustris_Proteobacteria:0.1113703890)100:0.0416444945)84:0.0068706115)100:0.1888211768,(WP_046828790.1-Afipia_massiliensis_Proteobacteria:0.0543174324,((EGP08750.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria:0.0000025529,WP_043924226.1-Bradyrhizobiaceae_bacterium_SG-6C_Proteobacteria:0.0000025529)100:0.0056464678,WP_002714592.1-Afipia_clevelandensis_Proteobacteria:0.0066674351)100:0.0435158483)100:0.1755538613)100:0.1762574676,WP_076861029.1-Bradyrhizobium_mercantei_Proteobacteria:0.3527849081)100:0.1057181999,OJY09878.1-Rhizobiales_bacterium_62-47_Proteobacteria:0.3719739574)100:0.1223359533)84:0.0699481206)90:0.0450316305,(WP_155709830.1-Massilia_dura_Proteobacteria:0.5557312322,RZL87373.1-Variovorax_sp._Proteobacteria:0.3943420981)100:0.0738665777)83:0.0239120893,((((((WP_066731373.1-Cupriavidus_sp._D384_Proteobacteria:0.1243335709,((WP_071072555.1-Cupriavidus_malaysiensis_Proteobacteria:0.0000025529,WP_071038742.1-Cupriavidus_sp._USMAA2-4_Proteobacteria:0.0018029583)100:0.0018056173,WP_071018820.1-Cupriavidus_sp._USMAHM13_Proteobacteria:0.0000025529)100:0.1085152877)99:0.0424322974,WP_116319445.1-Cupriavidus_sp._P-10_Proteobacteria:0.1027139128)100:0.0836195533,((((WP_025586346.1-Cupriavidus_taiwanensis_Proteobacteria:0.0000025529,WP_116388232.1-Cupriavidus_taiwanensis_Proteobacteria:0.0036524134)100:0.0316566325,WP_116377884.1-Cupriavidus_taiwanensis_Proteobacteria:0.0302131340)99:0.0150531754,WP_062795892.1-Cupriavidus_nantongensis_Proteobacteria:0.0148595343)100:0.0624241545,WP_116320039.1-Cupriavidus_sp._P-10_Proteobacteria:0.0838952296)100:0.1460725142)100:0.1898169895,((WP_061999991.1-Burkholderia_sp._PAMC_28687_Proteobacteria:0.0087180253,WP_062170184.1-Burkholderia_sp._PAMC_26561_Proteobacteria:0.0025025517)100:0.0260311211,WP_081889718.1-Caballeronia_sordidicola_Proteobacteria:0.0276687298)100:0.4390211764)99:0.0721629128,(PZW26129.1-Thermosporothrix_hazakensis_Chloroflexi:0.0000025529,WP_111324427.1-Thermosporothrix_hazakensis_Chloroflexi:0.0000025529)100:0.4278367233)100:0.0982049050,((WP_150987011.1-Cupriavidus_basilensis_Proteobacteria:0.0061693719,(WP_183035411.1-Cupriavidus_sp._UME77_Proteobacteria:0.0000025529,MBB1634382.1-Cupriavidus_sp._UME77_Proteobacteria:0.0000025529)100:0.0121206681)100:0.1045331063,WP_092594144.1-Ralstonia_sp._25mfcol4.1_Proteobacteria:0.1852033396)100:0.3452799242)98:0.0688139200)86:0.0422214232,WP_119419155.1-Rhodospirillaceae_bacterium_SYSU_D60015_Proteobacteria:0.5052752110)88:0.0478196547,(WP_163259863.1-Caulobacter_sp._17J65-9_Proteobacteria:0.0359474717,WP_187448402.1-Caulobacter_sp._17J80-11_Proteobacteria:0.0559777341)100:0.4117043668)94:0.0539472751)67:0.0268488460)100:0.1412527212,WP_092831606.1-Rhodospirillales_bacterium_URHD0017_Proteobacteria:0.2964506726)100:0.0558856313)100:0.0848907630,(XP_018221989.1-Saccharomyces_eubayanus_Saccharomycotina:0.0010253739,QID88192.1-Saccharomyces_pastorianus_Saccharomycotina:0.0059815163)100:0.2278450821)100:0.1315758551,(XP_002555886.1-Lachancea_thermotolerans_Saccharomycotina:0.1332678749,SCW03834.1-Lachancea_fermentati_Saccharomycotina:0.1491417762)100:0.2398100364)100:0.1391876795,QUERY_Saccharomyces_cerevisiae_YOL164W:0.1506726866);
+
+TIME STAMP
+----------
+
+Date and time: Tue Sep 28 12:38:28 2021
+Total CPU time used: 4914.853401 seconds (1h:21m:54s)
+Total wall-clock time used: 846.6480441 seconds (0h:14m:6s)
+
