@@ -3,6 +3,10 @@
 
 echo 'Begin to run!!!'
 
+cd  ../
+
+python scripts/HGT_homologs_sequence.py input/YOL164W.fasta
+
 mafft --thread 6 --auto ./input/YOL164W_homologs.fasta > ./intermediate/YOL164W_aln.fasta
 
 trimal -in ./intermediate/YOL164W_aln.fasta -out ./intermediate/YOL164W_aln_trimmed.fasta -automated1
