@@ -25,7 +25,7 @@ $ pip install -r requirements.txt
 ```
 
 ## Example
-We provide a user-friendly example for small test, users just need to prepare a Fasta file including protein id and protein sequence, note that protein id should be from the GenBank protein db.<br><br>
+We provide a user-friendly example for small test, users just need to prepare a FASTA file including protein id and protein sequence, note that protein id should be from the GenBank protein database.<br><br>
 (1) If you are now in the HGTphyloDetect directory, just enter into the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) via the command line:
 ```linux
 cd example
@@ -36,7 +36,7 @@ cd example
 python HGT_workflow.py input.fasta
 ```
 
-(3) Finally, our software would generate the output results as a file under the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) for this gene/protein, i.e., Alien index, E value and donor information. For example:
+(3) Finally, our software could generate the output results as a file under the folder [example](https://github.com/SysBioChalmers/HGTphyloDetect/tree/master/example) for this gene/protein. The output file includes some important information, i.e., Alien index, E value and donor information. For example:
 |Gene/Protein | Alien index | E value | Donor id | 	Donor taxonomy |
 |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | AAT92670 |   199.18|    3.15e-87|  WP_208929673|  Bacteria/Firmicutes|
