@@ -14,7 +14,7 @@ is designed for ease of use and could accurately find HGT events with a very low
 in a high-throughput manner.
 
 ## HGT identification pipeline
-![image](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/doc/HGT_pipeline.png)
+![image](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/doc/HGT_workflow.png)
 
 ## Installation
 Install the latest version with:
