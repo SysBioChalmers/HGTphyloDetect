@@ -23,6 +23,7 @@ $ git clone https://github.com/SysBioChalmers/HGTphyloDetect.git
 $ cd HGTphyloDetect
 $ pip install -r requirements.txt
 ```
+Please note: this is sufficient to run the HGT detection functionality of HGTphyloDetect. Additional software dependencies and installation instructions are specified in the [User tutorial](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/User%20tutorial.pdf).
 
 ## Example
 We provide a user-friendly example for small test, users just need to prepare a FASTA file including protein id and protein sequence, note that protein id should be from the GenBank protein database.<br><br>
