@@ -174,7 +174,7 @@ def main() :
 
         print('Alien index: %s' % str(alienindex))
 
-        if float(alienindex) > 45 and float(outg_pct) > 0.90 :
+        if float(alienindex) >= 45 and float(outg_pct) >= 0.90 :
             print('This is a HGT event')
             print('Accession_id: %s' % min_outgroup_key)
             print('Evalue: %s' % evalue[min_outgroup_key])

@@ -173,7 +173,7 @@ def main() :
 
                 print('HGT index: %s' % str(HGT_index))
                 print('Out_pct: %s' % str(Outg_pct))
-                if max_outgroup_bitscore>100 and float(HGT_index)>=0.5 and float(Outg_pct)>=0.8 :
+                if max_outgroup_bitscore>=100 and float(HGT_index)>=0.5 and float(Outg_pct)>=0.8 :
                     print('This is a HGT event')
                     taxonomy = max_taxid2name[max_ranks2lineage['kingdom']] + '/' + max_taxid2name[max_ranks2lineage['subphylum']]
                     item = [gene, max_outgroup_bitscore, Outg_pct, HGT_index, taxonomy]
