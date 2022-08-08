@@ -43,7 +43,7 @@ python HGT_workflow.py input.fasta
 | AAT92670 |   199.18|    3.15e-87|  WP_208929673|  Bacteria/Firmicutes|
 
 ## User Manual
-Please check the documentation [User tutorial](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/User%20tutorial.pdf) for the user manual.
+Please check the documentation [User tutorial](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/User%20tutorial.pdf) for the user manual. Here you can download this file for your case studies.
 
 ## Contact
 * [Le Yuan](https://www.chalmers.se/en/Staff/Pages/leyu.aspx) ([@leyuan](https://github.com/le-yuan)), Chalmers University of Technology, Sweden
