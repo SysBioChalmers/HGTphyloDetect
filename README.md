@@ -32,12 +32,12 @@ We provide a user-friendly example for small test, users just need to prepare a 
 cd example
 ```
 
-(2.1) Then users can run the script for the input file (default AI value = 45, out_pct=0.90): 
+(2.1) Then users can run the script for the input file (default AI value = 45, out_pct = 0.90): 
 ```linux
 python HGT_workflow.py input.fasta
 ```
 
-(2.2) If users want to change the default values for the parameters used in the pipeline, e.g., AI=40, out_pct=0.80, just reset the constant value and run the following: 
+(2.2) If users want to change the default values for the parameters used in the pipeline, e.g., AI value = 40, out_pct = 0.80, just reset the constant value and run the following: 
 ```linux
 python HGT_workflow.py input.fasta AI=40 out_pct=0.80
 ```
