@@ -12,6 +12,8 @@ import sys
 import os
 import math
 import csv
+import warnings 
+from Bio import BiopythonWarning
 from Bio import SeqIO
 from Bio import Entrez
 from ete3 import NCBITaxa
@@ -55,10 +57,16 @@ def getTaxid(accession):
 
     return taxid
 
-def main() :
+def main(AI=45, out_pct=0.90) :
     name = sys.argv[1:][0]
+    if len(sys.argv) == 2 :
+        pass
+    else :
+        AI = float(sys.argv[2].split("=")[1])
+        out_pct = float(sys.argv[3].split("=")[1])
     genes = list()
     HGT = list()
+    warnings.simplefilter('ignore', BiopythonWarning)
 
     with open(name, 'r') as handleGene :
         for record in SeqIO.parse(handleGene, "fasta") :
@@ -164,7 +172,7 @@ def main() :
 
         print('Alien index: %s' % str(alienindex))
 
-        if float(alienindex) >= 45 and float(outg_pct) >= 0.90 :
+        if float(alienindex) >= AI and float(outg_pct) >= out_pct :
             print('This is a HGT event')
             print('Accession_id: %s' % min_outgroup_key)
             print('Evalue: %s' % evalue[min_outgroup_key])
