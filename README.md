@@ -37,7 +37,7 @@ cd example
 python HGT_workflow.py input.fasta
 ```
 
-(2.2) If users want to change the default values for the parameters used in the pipeline, e.g., AI value = 40, out_pct = 0.80, just reset the constant value and run the following: 
+(2.2) If users want to change the default values for the parameters used in the pipeline, e.g., AI value = 40, out_pct = 0.80, just reset the constant values and run the following: 
 ```linux
 python HGT_workflow.py input.fasta AI=40 out_pct=0.80
 ```
