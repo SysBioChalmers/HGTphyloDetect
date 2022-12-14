@@ -5,6 +5,8 @@ import sys
 import os
 import math
 import csv
+import warnings 
+from Bio import BiopythonWarning
 from Bio import SeqIO
 from Bio import Entrez
 from ete3 import NCBITaxa
@@ -48,11 +50,18 @@ def getTaxid(accession):
 
     return taxid
 
-def main() :
+def main(bitscore_parameter=100, HGTIndex=0.5, out_pct=0.8) :
     name = sys.argv[1:][0]
+    if len(sys.argv) == 2 :
+        pass
+    else :
+        bitscore_parameter = float(sys.argv[2].split("=")[1])
+        HGTIndex = float(sys.argv[3].split("=")[1])
+        out_pct = float(sys.argv[4].split("=")[1])
     genes = list()
     geneSeq = dict()
     HGT = list()
+    warnings.simplefilter('ignore', BiopythonWarning)
 
     with open(name, 'r') as handleGene :
         for record in SeqIO.parse(handleGene, "fasta") :
@@ -173,7 +182,7 @@ def main() :
 
                 print('HGT index: %s' % str(HGT_index))
                 print('Out_pct: %s' % str(Outg_pct))
-                if max_outgroup_bitscore>=100 and float(HGT_index)>=0.5 and float(Outg_pct)>=0.8 :
+                if max_outgroup_bitscore>=bitscore_parameter and float(HGT_index)>=HGTIndex and float(Outg_pct)>=out_pct :
                     print('This is a HGT event')
                     taxonomy = max_taxid2name[max_ranks2lineage['kingdom']] + '/' + max_taxid2name[max_ranks2lineage['subphylum']]
                     item = [gene, max_outgroup_bitscore, Outg_pct, HGT_index, taxonomy]
