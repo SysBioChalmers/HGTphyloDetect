@@ -16,6 +16,10 @@ in a high-throughput manner.
 ## HGT identification pipeline
 ![image](https://github.com/SysBioChalmers/HGTphyloDetect/blob/master/doc/HGT_pipeline.png)
 
+## Citation
+Please cite this paper:
+Yuan Le, et al. _HGTphyloDetect: facilitating the identification and phylogenetic analysis of horizontal gene transfer._ Briefings in Bioinformatics (2023). https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbad035/7031155.
+
 ## Installation
 Install the latest version with:
 ```bash
