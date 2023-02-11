@@ -1,4 +1,7 @@
 #!/usr/bin/perl -w
+# This script is obtained from one high impact paper shown as below: 
+# Shen, Xing-Xing, et al. "Tempo and mode of genome evolution in the budding yeast subphylum." Cell 175.6 (2018): 1533-1545
+
 use strict;
 use warnings;
 use Bio::TreeIO;
